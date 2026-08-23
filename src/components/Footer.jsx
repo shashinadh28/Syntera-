@@ -87,7 +87,7 @@ export default function Footer() {
             <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <img
                 src="/LOGO/new/Syntera-LOGO.webp"
-                alt="Syntera Solutions"
+                alt="Syntera | Technology & Talent Solutions"
                 style={{ height: '40px', width: 'auto', objectFit: 'contain' }}
               />
             </Link>
@@ -277,7 +277,7 @@ export default function Footer() {
           className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 text-xs text-white/45"
         >
           <motion.div variants={fadeUpSmall}>
-            © 2025 Syntera Solutions All Rights Reserved.
+            © 2025 Syntera | Technology &amp; Talent Solutions All Rights Reserved.
           </motion.div>
           <motion.div variants={fadeUpSmall} className="flex items-center gap-3">
             {SOCIALS.map(({ label, href, path }) => (
