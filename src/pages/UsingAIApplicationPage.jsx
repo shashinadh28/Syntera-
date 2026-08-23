@@ -589,7 +589,7 @@ function DiscoverMoreSection() {
                 Explore our Careers in AI
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                At Syntera Solutions, AI powers transformation. With ~20% revenue from AI and rising demand, you'll lead innovation that shapes industries and drives real impact.
+                At Syntera Tech, AI powers transformation. With ~20% revenue from AI and rising demand, you'll lead innovation that shapes industries and drives real impact.
               </p>
             </div>
 
@@ -619,10 +619,10 @@ function DiscoverMoreSection() {
           >
             <div>
               <h3 className="font-display text-2xl font-extrabold leading-tight" style={{ color: '#1E293B' }}>
-                How Syntera Solutions uses Responsible AI in Hiring
+                How Syntera Tech uses Responsible AI in Hiring
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Syntera Solutions follows responsible AI principles in our hiring, focused on transparency, accountability, and human oversight at the heart of all decision-making.
+                Syntera Tech follows responsible AI principles in our hiring, focused on transparency, accountability, and human oversight at the heart of all decision-making.
               </p>
             </div>
 
@@ -654,7 +654,7 @@ function DiscoverMoreSection() {
                 Explore our GenAI Virtual Experience
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Syntera Solutions could look like.
+                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Syntera Tech could look like.
               </p>
             </div>
 

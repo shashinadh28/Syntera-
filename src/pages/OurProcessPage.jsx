@@ -538,7 +538,7 @@ const SystemHealthCard = () => {
    ══════════════════════════════════════════════════════════════════════════ */
 export default function OurProcessPage() {
   useEffect(() => {
-    document.title = 'The Digital Brain Framework | Our Process | Syntera Solutions';
+    document.title = 'The Digital Brain Framework | Our Process | Syntera Tech';
     window.scrollTo(0, 0);
   }, []);
 

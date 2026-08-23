@@ -152,7 +152,7 @@ export default function DatabricksGoogleCloudPage() {
               { step: '01', title: 'DevOps Methodology', desc: 'Used DevOps methodologies to strategically facilitate the migration process, optimizing code to minimize manual execution.' },
               { step: '02', title: 'Artifactory Integration', desc: 'Integrated the library versioning tool Artifactory to provide full visibility into dependency libraries and version management.' },
               { step: '03', title: 'Repeatable Process Models', desc: 'Helped the customer use repeatable process models to eliminate redundancies and save time across the organization.' },
-              { step: '04', title: 'Innovation in Uncharted Territory', desc: 'Close collaboration between Syntera Solutions, the customer and dedicated Databricks resources ensured innovative problem-solving.' },
+              { step: '04', title: 'Innovation in Uncharted Territory', desc: 'Close collaboration between Syntera Tech, the customer and dedicated Databricks resources ensured innovative problem-solving.' },
             ].map((d, i) => (
               <motion.div key={d.step} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce}
                 transition={{ duration: 0.65, ease, delay: i * 0.12 }}
@@ -400,7 +400,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Solutions' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

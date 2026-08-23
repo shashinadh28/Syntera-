@@ -36,7 +36,7 @@ const Pill = ({ children, color = '#2F80ED' }) => (
 
 export default function DevOpsAgilePage() {
   useEffect(() => {
-    document.title = 'DevOps & Agile — Accelerate Delivery at Scale | Syntera Solutions';
+    document.title = 'DevOps & Agile — Accelerate Delivery at Scale | Syntera Tech';
     window.scrollTo(0, 0);
   }, []);
 
@@ -150,7 +150,7 @@ function HeroSection() {
               marginBottom: '2.5rem',
             }}
           >
-            Partner with Syntera Solutions to release faster, test smarter, and transform your engineering culture — spanning architecture, automation, and continuous delivery across your entire technology life cycle.
+            Partner with Syntera Tech to release faster, test smarter, and transform your engineering culture — spanning architecture, automation, and continuous delivery across your entire technology life cycle.
           </motion.p>
 
           {/* CTA buttons — matching screenshot style exactly */}
@@ -593,7 +593,7 @@ function PartnershipsSection() {
               Best-in-Class Integrations
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-6">
-              The world's leading technology and software providers partner with Syntera Solutions because of our scale, full-stack capabilities and speed. Together, we can deliver new, sustainable growth across your business.
+              The world's leading technology and software providers partner with Syntera Tech because of our scale, full-stack capabilities and speed. Together, we can deliver new, sustainable growth across your business.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-10">
               Working together, we deliver unprecedented value across four critical transformation pillars: optimizing existing technology, reshaping business functions, inventing new opportunities, and reimagining entire organizations.
@@ -643,7 +643,7 @@ function InsightsSection() {
       source: 'Cloud Insider',
       date: 'January 2026',
       title: 'Migrating to Modern',
-      desc: 'How Syntera Solutions and a global asset management firm embarked on a multiyear technology modernization initiative to migrate their full application portfolio to the cloud.',
+      desc: 'How Syntera Tech and a global asset management firm embarked on a multiyear technology modernization initiative to migrate their full application portfolio to the cloud.',
       img: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=700&q=80',
     },
     {
@@ -652,7 +652,7 @@ function InsightsSection() {
       source: 'Tech Report',
       date: 'November 2025',
       title: 'Leading the Way with Azure DevOps',
-      desc: 'How Syntera Solutions partnered with an organization to transform their Microsoft Azure DevOps pipeline for improved user experiences and increased velocity.',
+      desc: 'How Syntera Tech partnered with an organization to transform their Microsoft Azure DevOps pipeline for improved user experiences and increased velocity.',
       img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=80',
     },
   ];
@@ -751,7 +751,7 @@ function CTASection() {
               <span className="h-1.5 w-1.5 rounded-full bg-[#60A5FA]" /> Get Started
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              Interested in Speaking with Syntera Solutions?
+              Interested in Speaking with Syntera Tech?
             </h2>
             <p className="text-base leading-relaxed mb-8" style={{ color: 'rgba(191,219,254,0.72)' }}>
               Let's explore how our DevOps and Agile expertise can accelerate your software delivery and transform your engineering organization.

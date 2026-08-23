@@ -99,7 +99,7 @@ export default function AIIAMIntersection() {
             className="mt-4 text-base sm:text-lg leading-relaxed max-w-2xl"
             style={{ color: 'rgba(255,255,255,0.65)' }}
           >
-            Syntera Solutions sits at this crossroads by design. We have the AI implementation depth and the IAM architecture expertise
+            Syntera Tech sits at this crossroads by design. We have the AI implementation depth and the IAM architecture expertise
             to help you build AI systems that are governed from day one — not secured as an afterthought.
           </motion.p>
         </motion.div>

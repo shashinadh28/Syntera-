@@ -61,7 +61,7 @@ export default function ContactPage() {
           </motion.span>
 
           <ScrollText
-            text="Contact Syntera Solutions"
+            text="Contact Syntera Tech"
             as="h1"
             delay={0.2}
             stagger={0.12}

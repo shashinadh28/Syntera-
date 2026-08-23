@@ -41,7 +41,7 @@ const SectionHeading = ({ pill, title, subtitle, pillColor }) => (
 
 export default function AgenticAIPage() {
   useEffect(() => {
-    document.title = 'Agentic AI — Autonomous Decision-Making | Syntera Solutions';
+    document.title = 'Agentic AI — Autonomous Decision-Making | Syntera Tech';
     window.scrollTo(0, 0);
   }, []);
 
@@ -503,10 +503,10 @@ function OurPerspectiveSection() {
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.85, ease }}>
             <Pill>Our Perspective</Pill>
             <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-6">
-              Syntera Solutions' View on Agentic AI
+              Syntera Tech' View on Agentic AI
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-5">
-              At Syntera Solutions, we believe agentic AI represents the most significant enterprise technology shift since cloud computing. The organizations that will lead their industries in 2030 are those investing in agentic AI capabilities today.
+              At Syntera Tech, we believe agentic AI represents the most significant enterprise technology shift since cloud computing. The organizations that will lead their industries in 2030 are those investing in agentic AI capabilities today.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-8">
               However, we caution against a "deploy first, govern later" approach. Robust agent orchestration, memory isolation, and human-in-the-loop checkpoints are essential for enterprise-grade reliability and trust.
@@ -734,7 +734,7 @@ function TGSPartnerPortfolioSection() {
               Our Agentic AI Partner Portfolio
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-6">
-              Syntera Solutions' agentic AI practice is backed by deep partnerships with the world's leading AI infrastructure and platform providers, enabling us to design, build, and deploy enterprise-grade agent systems at scale.
+              Syntera Tech' agentic AI practice is backed by deep partnerships with the world's leading AI infrastructure and platform providers, enabling us to design, build, and deploy enterprise-grade agent systems at scale.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-10">
               From LLM providers to vector databases, orchestration frameworks to cloud infrastructure — our partner ecosystem ensures you access the best-in-class stack for your agentic AI journey.
@@ -861,7 +861,7 @@ function CTASection() {
             </span>
 
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight max-w-2xl mb-5">
-              Build Your Agentic AI Strategy with Syntera Solutions
+              Build Your Agentic AI Strategy with Syntera Tech
             </h2>
 
             <p className="text-base leading-relaxed max-w-xl mb-10" style={{ color: 'rgba(255,255,255,0.65)' }}>

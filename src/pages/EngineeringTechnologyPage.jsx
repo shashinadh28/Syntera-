@@ -251,7 +251,7 @@ function HeroSection() {
               >
                 <span className="h-2 w-2 rounded-full bg-[#2F80ED] animate-pulse" />
                 <span className="text-white text-[11px] font-bold uppercase tracking-wider">
-                  Syntera Solutions Tech Hub
+                  Syntera Tech Tech Hub
                 </span>
               </div>
 
@@ -337,18 +337,18 @@ function SolutionsSection() {
               Deliver digital solutions with our engineering and technology jobs.
             </h2>
             <p className="text-base sm:text-lg leading-relaxed text-slate-600 mb-8">
-              Our passionate teams of consultants and specialists pride themselves on developing cutting-edge advancements. From IT architecture and large-scale transformation with Syntera Solutions Platinion, to building platforms and software to address key business challenges with Syntera Solutions X, and more, we work on innovative projects that define—and create—the future of business.
+              Our passionate teams of consultants and specialists pride themselves on developing cutting-edge advancements. From IT architecture and large-scale transformation with Syntera Tech Platinion, to building platforms and software to address key business challenges with Syntera Tech X, and more, we work on innovative projects that define—and create—the future of business.
             </p>
 
             <div className="flex flex-col gap-4 border-l-2 border-accent-500 pl-5">
               <h4 className="font-bold text-ink-900 text-sm uppercase tracking-wider">Our Core Entities</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <h5 className="font-bold text-ink-900">Syntera Solutions Platinion</h5>
+                  <h5 className="font-bold text-ink-900">Syntera Tech Platinion</h5>
                   <p className="text-xs text-slate-500 mt-1">IT architecture and structural digital transformations.</p>
                 </div>
                 <div>
-                  <h5 className="font-bold text-ink-900">Syntera Solutions X</h5>
+                  <h5 className="font-bold text-ink-900">Syntera Tech X</h5>
                   <p className="text-xs text-slate-500 mt-1">Building platforms and cutting-edge software solutions.</p>
                 </div>
               </div>
@@ -387,7 +387,7 @@ function WhyJoinSection() {
     {
       img: '/engineering-technology/Gain-diverse-work-experience.webp',
       title: 'Gain diverse work experience',
-      desc: 'At Syntera Solutions, no two days—or projects—are alike. Our clients span a wide variety of industries and regions, which gives you the chance to work with diverse, collaborative teams and build a well-rounded skill set that will benefit you in your career at Syntera Solutions—and beyond.',
+      desc: 'At Syntera Tech, no two days—or projects—are alike. Our clients span a wide variety of industries and regions, which gives you the chance to work with diverse, collaborative teams and build a well-rounded skill set that will benefit you in your career at Syntera Tech—and beyond.',
     },
     {
       img: '/engineering-technology/Access-world-class-learning-programs.webp',
@@ -423,7 +423,7 @@ function WhyJoinSection() {
             Empowerment & Culture
           </span>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-ink-900 leading-[1.05] tracking-tight">
-            Why join Syntera Solutions?
+            Why join Syntera Tech?
           </h2>
         </motion.div>
 
@@ -593,18 +593,18 @@ function AdditionalOpportunitiesSection() {
   const items = [
     {
       badge: 'Artificial Intelligence',
-      title: 'Explore our careers in AI at Syntera Solutions',
-      desc: 'Whether you’re here to build cutting-edge solutions or leverage AI in your daily work, Syntera Solutions gives you the tools, training, and opportunities to advance your understanding of AI.',
+      title: 'Explore our careers in AI at Syntera Tech',
+      desc: 'Whether you’re here to build cutting-edge solutions or leverage AI in your daily work, Syntera Tech gives you the tools, training, and opportunities to advance your understanding of AI.',
     },
     {
       badge: 'Careers Blog',
       title: 'Hear Syntera team members tell their stories',
-      desc: 'Tune in to our careers blog every week to get a glimpse into our impactful work, learn what life at Syntera Solutions is really like, discover the tips and tricks that will help you nail your interview, and more.',
+      desc: 'Tune in to our careers blog every week to get a glimpse into our impactful work, learn what life at Syntera Tech is really like, discover the tips and tricks that will help you nail your interview, and more.',
     },
     {
       badge: 'Virtual Program',
       title: 'Discover what it’s like to work with us',
-      desc: 'Interested in a career at Syntera Solutions? Check out OneDay@Syntera Solutions, our self-paced virtual experience program to get a feel for what it’s like to work at Syntera Solutions through simulated, interactive challenges.',
+      desc: 'Interested in a career at Syntera Tech? Check out OneDay@Syntera Tech, our self-paced virtual experience program to get a feel for what it’s like to work at Syntera Tech through simulated, interactive challenges.',
     },
   ];
 
@@ -633,7 +633,7 @@ function AdditionalOpportunitiesSection() {
             Additional Opportunities
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-500 max-w-2xl">
-            Explore more ways to grow, learn, and engage with Syntera Solutions.
+            Explore more ways to grow, learn, and engage with Syntera Tech.
           </p>
         </motion.div>
 
@@ -736,7 +736,7 @@ function ReadyToApplySection() {
                 Introduce Yourself.
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Create a profile to get notified about Syntera Solutions jobs and career news that match your interests.
+                Create a profile to get notified about Syntera Tech jobs and career news that match your interests.
               </p>
             </div>
 

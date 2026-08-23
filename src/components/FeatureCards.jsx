@@ -80,7 +80,7 @@ export default function FeatureCards() {
             className="mt-5 text-base sm:text-lg leading-relaxed max-w-2xl"
             style={{ color: '#3D3D3A' }}
           >
-            Syntera Solutions combines deep technical expertise in AI and identity security with a delivery-first mindset.
+            Syntera Tech combines deep technical expertise in AI and identity security with a delivery-first mindset.
             We build, implement, and staff the systems that enterprise organizations depend on.
           </motion.p>
         </RevealGroup>

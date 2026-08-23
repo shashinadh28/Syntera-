@@ -129,7 +129,7 @@ export default function JBHuntPage() {
                 J.B. Hunt identified several areas of opportunity where improvements could be made to their existing enterprise data warehouse (EDW). By migrating from an on-premises DB2 solution to a cloud data warehouse, they could quickly process greater volumes of data, eliminate data siloes and arm stakeholders with near-real-time reports.
               </p>
               <p className="text-base leading-relaxed text-slate-500">
-                Google Cloud was J.B. Hunt's platform-of-choice for this undertaking, largely due to the benefits of their infrastructure and the reporting capabilities offered through BigQuery. As a Google Cloud Premier Partner, Syntera Solutions was more than up to the task.
+                Google Cloud was J.B. Hunt's platform-of-choice for this undertaking, largely due to the benefits of their infrastructure and the reporting capabilities offered through BigQuery. As a Google Cloud Premier Partner, Syntera Tech was more than up to the task.
               </p>
             </motion.div>
 
@@ -417,7 +417,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Solutions' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

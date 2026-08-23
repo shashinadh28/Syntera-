@@ -93,7 +93,7 @@ export default function AssessmentPromoSection() {
             </span>
           </h2>
           <p className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            Two free diagnostic tools designed by Syntera Solutions engineers. Get personalized scores, identify critical gaps, and walk away with an action plan.
+            Two free diagnostic tools designed by Syntera Tech engineers. Get personalized scores, identify critical gaps, and walk away with an action plan.
           </p>
         </motion.div>
 

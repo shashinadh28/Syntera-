@@ -1,6 +1,6 @@
-# Syntera Solutions — Premium Animated Landing Page
+# Syntera Tech — Premium Animated Landing Page
 
-A modern, animation-rich, Awwwards-style landing page for **Syntera Solutions**, built from scratch with **React**, **Tailwind CSS**, and **Framer Motion**.
+A modern, animation-rich, Awwwards-style landing page for **Syntera Tech**, built from scratch with **React**, **Tailwind CSS**, and **Framer Motion**.
 
 > Premium SaaS / agency feel · deep navy + brand blue (`#2f5fb3`) · large typography · clean 8px spacing · soft gradients, glow shapes, and tasteful motion.
 

@@ -59,7 +59,7 @@ export default function FindTalents() {
               className="inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent-700"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
-              Why Syntera Solutions
+              Why Syntera Tech
             </motion.span>
 
             {/* Heading */}
@@ -71,7 +71,7 @@ export default function FindTalents() {
               className="mt-5 font-display text-4xl sm:text-5xl font-extrabold leading-[1.05] tracking-tight text-ink-900"
             >
               Why leading technology organizations choose{' '}
-              <span style={{ color: '#1565D8' }}>Syntera Solutions.</span>
+              <span style={{ color: '#1565D8' }}>Syntera Tech.</span>
             </motion.h2>
 
             {/* Sub */}
@@ -188,7 +188,7 @@ export default function FindTalents() {
             >
               <img
                 src="/why-ancile/employee_discuss.png"
-                alt="Syntera Solutions team collaborating"
+                alt="Syntera Tech team collaborating"
                 className="w-full h-full object-cover"
                 style={{ aspectRatio: '4/3', display: 'block' }}
               />

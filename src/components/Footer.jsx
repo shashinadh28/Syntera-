@@ -112,7 +112,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-6 text-xs text-white/40">
-              © 2025 Syntera Solutions All Rights Reserved.
+              © 2025 Syntera Tech All Rights Reserved.
             </p>
             <Link to="/privacy-policy" className="mt-1 block text-xs text-white/40 hover:text-white transition-colors">
               Privacy Policy

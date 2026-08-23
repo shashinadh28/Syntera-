@@ -500,7 +500,7 @@ function ConnectSection() {
 
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-6">
             Interested in speaking<br className="hidden sm:block" />
-            <span style={{ color: '#2F80ED' }}> with Syntera Solutions?</span>
+            <span style={{ color: '#2F80ED' }}> with Syntera Tech?</span>
           </h2>
 
           <p className="text-base sm:text-lg leading-relaxed text-slate-500 max-w-xl mx-auto mb-12">

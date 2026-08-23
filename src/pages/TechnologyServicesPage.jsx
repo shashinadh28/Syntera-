@@ -479,7 +479,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round"/></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Solutions' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

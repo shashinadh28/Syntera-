@@ -681,7 +681,7 @@ function InsightsSection() {
       color: '#1E5DB8',
       tag: 'Success Story',
       title: 'Continuous Education in the Digital Health Age',
-      desc: 'A healthcare education program collaborated with Syntera Solutions to modernize their online presence with innovative learning solutions to help improve geriatric care.',
+      desc: 'A healthcare education program collaborated with Syntera Tech to modernize their online presence with innovative learning solutions to help improve geriatric care.',
       image: '/Workforce_Development/Featured-Insights/Continuous-Education-Digital-Health-Age.webp',
     },
     {
@@ -783,7 +783,7 @@ function FinalCTASection() {
             <motion.span initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.6, ease }}
               className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-6"
               style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: '#EAF3FF' }}>
-              <span className="h-1.5 w-1.5 rounded-full bg-current" />Interested in speaking with Syntera Solutions?
+              <span className="h-1.5 w-1.5 rounded-full bg-current" />Interested in speaking with Syntera Tech?
             </motion.span>
 
             <motion.h2 initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce}
@@ -866,7 +866,7 @@ function FinalCTASection() {
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Solutions' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

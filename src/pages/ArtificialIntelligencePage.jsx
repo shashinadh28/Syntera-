@@ -76,7 +76,7 @@ function HeroSection() {
             </motion.h1>
             <motion.div initial={{ scaleX: 0, originX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.9, ease, delay: 0.55 }} style={{ height: '1.5px', background: 'linear-gradient(90deg, rgba(47,128,237,0.7), transparent)', maxWidth: '340px', marginBottom: '1.6rem' }} />
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.28 }} className="text-base sm:text-lg leading-[1.8] mb-6 max-w-lg" style={{ color: 'rgba(255,255,255,0.68)' }}>
-              With artificial intelligence at a crucial inflection point, Syntera Solutions is helping organizations weave together human and technological capabilities to maximize value potential, productivity, and innovation from AI.
+              With artificial intelligence at a crucial inflection point, Syntera Tech is helping organizations weave together human and technological capabilities to maximize value potential, productivity, and innovation from AI.
             </motion.p>
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.35 }} className="text-sm leading-[1.7] mb-10 max-w-lg" style={{ color: 'rgba(255,255,255,0.52)' }}>
               When predictive AI is complemented by generative AI, their combined power offers stronger capabilities and greater, sustained AI value creation. Building from a proven strategic playbook, our AI strategy consulting team empowers clients to focus on key strategic opportunities and execute a comprehensive AI business transformation.
@@ -155,7 +155,7 @@ const AI_SERVICES = [
     id: 'responsible',
     tag: 'Responsible AI',
     title: 'Responsible AI',
-    desc: 'Our Syntera Solutions responsible AI consulting team helps organizations execute a strategic approach to responsible AI through a tailored program based on five pillars—ensuring AI deployments are fair, transparent, accountable, and aligned with human values.',
+    desc: 'Our Syntera Tech responsible AI consulting team helps organizations execute a strategic approach to responsible AI through a tailored program based on five pillars—ensuring AI deployments are fair, transparent, accountable, and aligned with human values.',
     img: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=900&q=80',
     color: '#0EA5E9',
     accent: '#7DD3FC',
@@ -333,7 +333,7 @@ function ApproachSection() {
             Our Approach to Artificial Intelligence at Scale
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-500">
-            For Syntera Solutions and our clients, the future of AI offers both a strategic tool to scale up value and a viable solution to our most pressing global challenges. We prioritize a <strong className="text-slate-700">10-20-70 approach</strong> that emphasizes algorithms (10%), tech and data (20%), and people and processes (70%).
+            For Syntera Tech and our clients, the future of AI offers both a strategic tool to scale up value and a viable solution to our most pressing global challenges. We prioritize a <strong className="text-slate-700">10-20-70 approach</strong> that emphasizes algorithms (10%), tech and data (20%), and people and processes (70%).
           </p>
         </motion.div>
 
@@ -467,7 +467,7 @@ function NewsSectionFull() {
               Explore the trends shaping CEO priorities with insights powered by AI.
             </p>
             <p className="text-sm leading-relaxed mt-3 max-w-2xl" style={{ color: 'rgba(255,255,255,0.65)' }}>
-              Powered by Syntera Solutions AI and deep industry expertise, it analyzes thousands of earnings call transcripts and keywords to reveal the trends gaining and losing momentum in CEO conversations.
+              Powered by Syntera Tech AI and deep industry expertise, it analyzes thousands of earnings call transcripts and keywords to reveal the trends gaining and losing momentum in CEO conversations.
             </p>
           </div>
 
@@ -547,7 +547,7 @@ function PartnersSection() {
               Our AI &amp; GenAI Collaborations
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-6">
-              Syntera Solutions is more than just a strategic consultant. Our clients benefit from our global ecosystem of AI and GenAI collaborations, including those with leading tech companies like AWS, Google Cloud, Microsoft Azure, Salesforce, and ServiceNow—and with AI-centered enterprises such as OpenAI, Anthropic, LangChain, and Palantir.
+              Syntera Tech is more than just a strategic consultant. Our clients benefit from our global ecosystem of AI and GenAI collaborations, including those with leading tech companies like AWS, Google Cloud, Microsoft Azure, Salesforce, and ServiceNow—and with AI-centered enterprises such as OpenAI, Anthropic, LangChain, and Palantir.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-10">
               Working together, we deliver unprecedented value across four critical transformation pillars: optimizing existing technology, reshaping business functions, inventing new business opportunities, and reimagining entire organizations.
@@ -663,11 +663,11 @@ function InsightsSection() {
   );
 }
 
-/* ══════════════════════════════════ SYNTERA SOLUTIONS ANSWER + EXPLORE MORE ═══ */
+/* ══════════════════════════════════ SYNTERA TECH ANSWER + EXPLORE MORE ═══ */
 function ExploreMoreSection() {
   return (
     <section className="overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
-      {/* Syntera Solutions Answer banner */}
+      {/* Syntera Tech Answer banner */}
       <div className="relative py-20 sm:py-28 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0B1120 0%, #0F1F45 50%, #1E3A6E 100%)' }}>
         {/* Decorative grid overlay */}
         <div aria-hidden className="pointer-events-none absolute inset-0"
@@ -684,14 +684,14 @@ function ExploreMoreSection() {
               </span>
               <h2 className="font-display text-4xl sm:text-5xl font-extrabold leading-[1.06] tracking-tight mb-6"
                 style={{ background: 'linear-gradient(135deg, #ffffff 0%, #BFDBFE 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                Syntera Solutions Answer
+                Syntera Tech Answer
               </h2>
               <div style={{ height: '1.5px', background: 'linear-gradient(90deg, rgba(47,128,237,0.7), transparent)', maxWidth: '280px', marginBottom: '1.5rem' }} />
               <p className="text-base leading-[1.85] mb-4 max-w-lg" style={{ color: 'rgba(255,255,255,0.72)' }}>
-                Discover the answer to your most important business challenges. Syntera Solutions Answer delivers integrated insights powered by our cross-functional expertise and the latest thinking shaping today's business decisions.
+                Discover the answer to your most important business challenges. Syntera Tech Answer delivers integrated insights powered by our cross-functional expertise and the latest thinking shaping today's business decisions.
               </p>
               <p className="text-sm leading-[1.8] mb-10 max-w-lg" style={{ color: 'rgba(191,219,254,0.58)' }}>
-                Bringing together our most relevant perspectives, Syntera Solutions Answer guides you to what matters most right now — faster, smarter, and with greater confidence.
+                Bringing together our most relevant perspectives, Syntera Tech Answer guides you to what matters most right now — faster, smarter, and with greater confidence.
               </p>
               <a href="#"
                 className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold text-white transition-all duration-300"
@@ -782,7 +782,7 @@ function ExploreMoreSection() {
               {[
                 {
                   tag: 'Capability',
-                  title: 'Syntera Solutions X',
+                  title: 'Syntera Tech X',
                   desc: 'Our in-house design-and-build capability, offering practical AI solutions and customized, industrial-grade platforms.',
                   img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80',
                   color: '#2F80ED',
