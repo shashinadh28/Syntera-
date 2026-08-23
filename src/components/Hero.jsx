@@ -61,7 +61,7 @@ export default function Hero() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease, delay: 0.1 }}
         style={{
-          top: '9%',
+          top: '2%',
           right: '-3%',
           transform: 'translateY(-50%)',
           width: '30vw',
@@ -90,9 +90,9 @@ export default function Hero() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
             gap: 'clamp(2rem, 5vw, 4rem)',
             alignItems: 'center',
-            minHeight: '100vh',
-            paddingTop: 'clamp(5rem, 10vw, 7rem)',
-            paddingBottom: '4rem',
+            minHeight: '90vh',
+            paddingTop: 'clamp(1.5rem, 3vw, 2.5rem)',
+            paddingBottom: '3rem',
           }}
         >
           {/* ── LEFT: Text ─────────────────────────────────────── */}
