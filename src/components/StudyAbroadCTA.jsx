@@ -92,7 +92,7 @@ export default function StudyAbroadCTA() {
                 variants={fadeUpSmall}
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-white"
               >
-                <GlobeIcon /> Ancile Academy
+                <GlobeIcon /> Syntera Solutions Academy
               </motion.span>
 
               <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.05] tracking-tightest text-white">
@@ -102,7 +102,7 @@ export default function StudyAbroadCTA() {
                   className="block"
                 />
                 <RevealText
-                  text="with Ancile Academy"
+                  text="with Syntera Solutions Academy"
                   staggerChildren={0.08}
                   delay={0.25}
                   className="block text-white"
@@ -113,7 +113,7 @@ export default function StudyAbroadCTA() {
                 variants={fadeUpSmall}
                 className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-white/85"
               >
-                Explore a realm of educational opportunities alongside Ancile Inc, your committed
+                Explore a realm of educational opportunities alongside Syntera Solutions, your committed
                 ally in Study Abroad services. Our proficient team leads you through each phase,
                 from choosing the perfect destination to navigating the application procedure.
               </motion.p>
@@ -157,7 +157,7 @@ export default function StudyAbroadCTA() {
               >
                 <img
                   src="/Academy.webp"
-                  alt="Study Abroad at Ancile Academy"
+                  alt="Study Abroad at Syntera Solutions Academy"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />

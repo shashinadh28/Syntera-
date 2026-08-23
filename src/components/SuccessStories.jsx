@@ -51,23 +51,23 @@ const STORIES = [
     company: 'HCL',
     image: '/success_stories/RamaKrishna.jpg',
     quote:
-      "From India to the world! Congratulations on landing the amazing opportunity as Infinidat Storage at HCL. Your journey is an inspiration, and we're grateful to Ancile Inc for making this leap possible.",
+      "From India to the world! Congratulations on landing the amazing opportunity as Infinidat Storage at HCL. Your journey is an inspiration, and we're grateful to Syntera Solutions for making this leap possible.",
   },
   {
-    name: '[Confirm with Ancile Team]',
+    name: '[Confirm with Syntera Solutions Team]',
     role: 'Senior AI/ML Engineer',
     company: 'Financial Services Client',
     image: '/success_stories/Sreekanth.jpg',
     quote:
-      'Ancile placed me in 9 days. The role matched exactly what they described — the team, the stack, the level of ownership. I have been working on LLM-powered risk models and the impact is real.',
+      'Syntera Solutions placed me in 9 days. The role matched exactly what they described — the team, the stack, the level of ownership. I have been working on LLM-powered risk models and the impact is real.',
   },
   {
-    name: '[Confirm with Ancile Team]',
+    name: '[Confirm with Syntera Solutions Team]',
     role: 'VP of IT Security',
     company: 'Regional Health System',
     image: '/success_stories/RamaKrishna.jpg',
     quote:
-      'Ancile staffed our entire IAM migration team — SailPoint architects, Okta engineers, and a delivery lead — and had the full team in place within two weeks. Our HIPAA compliance timeline would not have been possible without them.',
+      'Syntera Solutions staffed our entire IAM migration team — SailPoint architects, Okta engineers, and a delivery lead — and had the full team in place within two weeks. Our HIPAA compliance timeline would not have been possible without them.',
   },
 ];
 
@@ -119,7 +119,7 @@ export default function SuccessStories() {
             className="mt-4 text-base sm:text-lg leading-relaxed max-w-2xl"
             style={{ color: '#475569' }}
           >
-            From AI engineering roles at Fortune 500s to enterprise IAM migrations at health systems — these are the outcomes Ancile delivers.
+            From AI engineering roles at Fortune 500s to enterprise IAM migrations at health systems — these are the outcomes Syntera Solutions delivers.
           </motion.p>
         </div>
 

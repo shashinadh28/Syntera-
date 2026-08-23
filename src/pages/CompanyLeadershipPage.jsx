@@ -109,7 +109,7 @@ export default function CompanyLeadershipPage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed"
           >
-            Meet the visionary team driving innovation, strategic partnerships, and excellence at Ancile Inc.
+            Meet the visionary team driving innovation, strategic partnerships, and excellence at Syntera Solutions
           </motion.p>
         </div>
       </section>

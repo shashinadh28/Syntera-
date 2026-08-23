@@ -26,7 +26,7 @@ const POSTS = [
   {
     title: 'SailPoint to Entra ID: A Healthcare IAM Migration',
     excerpt:
-      'How Ancile staffed and co-led a 14-month IAM platform migration for a 6,000-employee regional health system — on time, zero compliance gaps, and 40% reduction in provisioning time.',
+      'How Syntera Solutions staffed and co-led a 14-month IAM platform migration for a 6,000-employee regional health system — on time, zero compliance gaps, and 40% reduction in provisioning time.',
     category: 'Case Study',
     readTime: '8 min read',
     img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1100&q=80',
@@ -35,7 +35,7 @@ const POSTS = [
 
 export default function BlogPage() {
   useEffect(() => {
-    document.title = 'Insights | AI Implementation + IAM — Ancile Inc';
+    document.title = 'Insights | AI Implementation + IAM — Syntera Solutions';
     window.scrollTo(0, 0);
   }, []);
 

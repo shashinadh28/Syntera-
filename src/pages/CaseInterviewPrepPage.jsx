@@ -67,7 +67,7 @@ function HeroSection() {
             </motion.h1>
             <motion.div initial={{ scaleX: 0, originX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.9, ease, delay: 0.55 }} style={{ height: '1.5px', background: 'linear-gradient(90deg, rgba(47,128,237,0.7), transparent)', maxWidth: '340px', marginBottom: '1.6rem' }} />
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.28 }} className="text-base sm:text-lg leading-[1.8] mb-10 max-w-lg" style={{ color: 'rgba(255,255,255,0.68)' }}>
-              Ready to go beyond and solve the world's biggest problems? Demystify case study interviews with our prep quizzes and top Ancile tips to succeed.
+              Ready to go beyond and solve the world's biggest problems? Demystify case study interviews with our prep quizzes and top Syntera Solutions tips to succeed.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease, delay: 0.42 }} className="flex flex-wrap gap-4">
               <a href="#expect" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-bold text-sm transition-all duration-300" style={{ backgroundColor: '#2F80ED', boxShadow: '0 8px 32px rgba(47,128,237,0.42)', textDecoration: 'none' }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#1E5DB8'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#2F80ED'; }}>
@@ -427,10 +427,10 @@ function ReadyToApplySection() {
 
             <div>
               <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Find a Job at Ancile
+                Find a Job at Syntera Solutions
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Discover opportunities that match your ambitions. At Ancile, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
+                Discover opportunities that match your ambitions. At Syntera Solutions, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
               </p>
             </div>
 
@@ -446,7 +446,7 @@ function ReadyToApplySection() {
             </div>
           </motion.div>
 
-          {/* Card 2: Ancile on Campus (3 cols out of 12) */}
+          {/* Card 2: Syntera Solutions on Campus (3 cols out of 12) */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -460,10 +460,10 @@ function ReadyToApplySection() {
           >
             <div>
               <h3 className="font-display text-2xl font-extrabold text-slate-800 leading-tight" style={{ color: '#1E293B' }}>
-                Ancile on Campus
+                Syntera Solutions on Campus
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Ancile at your campus.
+                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Syntera Solutions at your campus.
               </p>
             </div>
 

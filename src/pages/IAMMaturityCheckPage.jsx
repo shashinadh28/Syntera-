@@ -88,7 +88,7 @@ export default function IAMMaturityCheckPage() {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    document.title = 'IAM Security Challenge | Test Your Identity Security — Ancile Inc';
+    document.title = 'IAM Security Challenge | Test Your Identity Security — Syntera Solutions';
     window.scrollTo(0, 0);
     // Force white navbar on this page
     window.dispatchEvent(new CustomEvent('forceNavWhite'));
@@ -404,7 +404,7 @@ export default function IAMMaturityCheckPage() {
                 <div className="mt-8 pt-6 border-t border-slate-100 text-center">
                   <h3 className="text-base font-bold text-slate-800 mb-2">Ready to lock down your identity plane?</h3>
                   <p className="text-xs text-slate-500 font-medium mb-4">
-                    Book a free 30-minute credentials audit and architect session with an Ancile IAM Architect to review these gaps.
+                    Book a free 30-minute credentials audit and architect session with an Syntera Solutions IAM Architect to review these gaps.
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">

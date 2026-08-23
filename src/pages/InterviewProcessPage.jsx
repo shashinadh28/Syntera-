@@ -223,7 +223,7 @@ function HeroSection() {
                 style={{ background: 'rgba(11,17,32,0.65)', border: '1px solid rgba(255,255,255,0.14)' }}
               >
                 <span className="h-2 w-2 rounded-full bg-[#2F80ED] animate-pulse" />
-                <span className="text-white text-[11px] font-bold uppercase tracking-wider">Ancile Hiring</span>
+                <span className="text-white text-[11px] font-bold uppercase tracking-wider">Syntera Solutions Hiring</span>
               </div>
               <motion.div
                 animate={{ y: [0, -6, 0] }}
@@ -540,7 +540,7 @@ function LookForSection() {
             What our consulting interviewers look for
           </h2>
           <p className="text-base leading-relaxed text-slate-500 max-w-3xl">
-            Spotting trends. Advising senior leaders. Cutting fresh tracks. Moving quickly and creatively. Finding storylines in data sets. Making the world better. Ancile’s experienced hires do all this and more. Here are just a few examples of the value our experienced professionals deliver.
+            Spotting trends. Advising senior leaders. Cutting fresh tracks. Moving quickly and creatively. Finding storylines in data sets. Making the world better. Syntera Solutions' experienced hires do all this and more. Here are just a few examples of the value our experienced professionals deliver.
           </p>
         </motion.div>
 
@@ -578,7 +578,7 @@ function LookForSection() {
 }
 
 /* ───────────────────────────────────────────────────────── TIPS ─── */
-// TEMPORARILY HIDDEN: Advice & Insights — Ancile consultant interview tips
+// TEMPORARILY HIDDEN: Advice & Insights — Syntera Solutions consultant interview tips
 function TipsSection() { return null; }
 
 /* ───────────────────────────────────────────── READY TO APPLY ─── */
@@ -623,10 +623,10 @@ function ReadyToApplySection() {
 
             <div>
               <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Find a Job at Ancile
+                Find a Job at Syntera Solutions
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Discover opportunities that match your ambitions. At Ancile, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
+                Discover opportunities that match your ambitions. At Syntera Solutions, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
               </p>
             </div>
 
@@ -642,7 +642,7 @@ function ReadyToApplySection() {
             </div>
           </motion.div>
 
-          {/* Card 2: Ancile on Campus (3 cols out of 12) */}
+          {/* Card 2: Syntera Solutions on Campus (3 cols out of 12) */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -656,10 +656,10 @@ function ReadyToApplySection() {
           >
             <div>
               <h3 className="font-display text-2xl font-extrabold text-ink-900 leading-tight" style={{ color: '#1E293B' }}>
-                Ancile on Campus
+                Syntera Solutions on Campus
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Ancile at your campus.
+                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Syntera Solutions at your campus.
               </p>
             </div>
 

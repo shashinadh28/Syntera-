@@ -81,7 +81,7 @@ const CLIENT_WORK = [
 const TOOLS = [
   {
     type: null,
-    label: 'Ancile AI',
+    label: 'Syntera Solutions AI',
     desc: 'Our proprietary AI-powered platform for real-time pricing intelligence, revenue analytics, and automated decision support.',
     dark: true,
   },
@@ -290,7 +290,7 @@ function HeroSection() {
             style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '520px' }}
           >
             By transforming pricing, companies can drive significant value to the bottom line.
-            Ancile's pricing and revenue management teams help build the capabilities, processes, and
+            Syntera Solutions' pricing and revenue management teams help build the capabilities, processes, and
             mindset that unlock the power of pricing—in good times and bad.
           </motion.p>
           <motion.p
@@ -520,7 +520,7 @@ function HowWeHelpSection() {
             className="lg:col-span-9"
           >
             <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold text-ink-900 leading-[1.05] tracking-tight mb-3">
-              How Ancile Helps Companies Master Pricing and Revenue Management
+              How Syntera Solutions Helps Companies Master Pricing and Revenue Management
             </h2>
             <p className="text-base leading-relaxed mb-10" style={{ color: '#475569' }}>
               Pricing has no textbook solution. Different companies require different pricing
@@ -645,7 +645,7 @@ function ClientWorkSection() {
 function ToolCard({ t, i }) {
   const [hovered, setHovered] = useState(false);
 
-  // All cards adopt the dark style on hover (matching Ancile AI card baseline)
+  // All cards adopt the dark style on hover (matching Syntera Solutions AI card baseline)
   const isActive = t.dark || hovered;
 
   return (
@@ -676,7 +676,7 @@ function ToolCard({ t, i }) {
           </p>
         )}
 
-        {/* Ancile AI logo (always shown for Ancile AI card, shown on hover for others) */}
+        {/* Syntera Solutions AI logo (always shown for Syntera Solutions AI card, shown on hover for others) */}
         {t.dark && (
           <div className="flex items-center gap-2.5 mb-8">
             <div className="h-9 w-9 rounded-xl grid place-items-center shrink-0" style={{ background: '#2F80ED' }}>
@@ -684,11 +684,11 @@ function ToolCard({ t, i }) {
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
             </div>
-            <span className="text-white font-bold text-sm tracking-wide">ANCILE</span>
+            <span className="text-white font-bold text-sm tracking-wide">SYNTERA SOLUTIONS</span>
           </div>
         )}
 
-        {/* For non-Ancile cards on hover, show a small glow accent */}
+        {/* For non-Syntera Solutions cards on hover, show a small glow accent */}
         {!t.dark && hovered && (
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

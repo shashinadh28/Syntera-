@@ -123,7 +123,7 @@ function SalesforceLogo() {
 
 export default function RiskAndSecurityPage() {
   useEffect(() => {
-    document.title = 'Risk and Security — Unified Cyber Protection | Ancile Inc';
+    document.title = 'Risk and Security — Unified Cyber Protection | Syntera Solutions';
     window.scrollTo(0, 0);
   }, []);
 
@@ -374,7 +374,7 @@ function InItWithYouSection() {
             <div className="h-1 w-12 rounded-full mb-6" style={{ background: '#2F80ED' }} />
             <h3 className="font-display text-2xl font-extrabold text-white mb-4">Enterprise Defense Model</h3>
             <p className="leading-relaxed text-sm mb-6" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              Ancile unifies operational signals across physical, virtual, and cloud architectures. Our models adapt to your existing stack—enforcing compliance controls without vendor lock-in.
+              Syntera Solutions unifies operational signals across physical, virtual, and cloud architectures. Our models adapt to your existing stack—enforcing compliance controls without vendor lock-in.
             </p>
             <div className="rounded-2xl p-5" style={{ background: 'rgba(47,128,237,0.1)', border: '1px solid rgba(47,128,237,0.2)' }}>
               <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#60A5FA' }}>Security Architecture</span>
@@ -680,14 +680,14 @@ function InsightsSection() {
       color: '#1E5DB8',
       tag: 'Success Story',
       title: 'Cloud Capital: Investing in a Seamless AWS Migration',
-      desc: "See how a global investment management company cut costs and boosted security with Ancile Inc's AWS migration—enabling fast, reliable service and future-ready innovation.",
+      desc: "See how a global investment management company cut costs and boosted security with Syntera Solutions' AWS migration—enabling fast, reliable service and future-ready innovation.",
       image: '/Risk-and-Security/Featured-Insights/Cloud-Capital-Investing-Seamless-AWS-Migration.webp',
     },
     {
       color: '#6366F1',
       tag: 'Success Story',
       title: 'GLBA Compliance at Scale on AWS',
-      desc: 'A major U.S. mortgage lender achieved 100% GLBA compliance across 1.3 PB and 13.5B objects using an AWS-based data anonymization solution with Ancile Inc.',
+      desc: 'A major U.S. mortgage lender achieved 100% GLBA compliance across 1.3 PB and 13.5B objects using an AWS-based data anonymization solution with Syntera Solutions',
       image: '/Risk-and-Security/Featured-Insights/GLBA-Compliance-Scale-AWS.webp',
     }
   ];
@@ -777,7 +777,7 @@ function FinalCTASection() {
                 <span className="h-1.5 w-1.5 rounded-full bg-[#60A5FA]" /> Connect With Us
               </span>
               <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-                Interested in speaking with Ancile Inc?
+                Interested in speaking with Syntera Solutions?
               </h2>
               <p className="text-base leading-relaxed mb-8" style={{ color: 'rgba(191,219,254,0.72)' }}>
                 Let’s discuss how we can embed GRC, secure operations, and proactive threat management into your business architecture.

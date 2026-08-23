@@ -104,7 +104,7 @@ export default function Hero() {
             >
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#1565D8', borderRadius: '2px' }} />
               <span style={{ fontSize: '12px', fontWeight: 700, color: '#1565D8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-                Welcome to Ancile
+                Welcome to Syntera Solutions
               </span>
             </motion.div>
 
@@ -140,7 +140,7 @@ export default function Hero() {
               }}
             >
               We build and secure AI-powered enterprises. From LLM integration and agentic
-              workflows to Zero Trust IAM and identity governance — Ancile delivers the
+              workflows to Zero Trust IAM and identity governance — Syntera Solutions delivers the
               technology expertise and engineering talent you need to move fast and stay protected.
             </motion.p>
 

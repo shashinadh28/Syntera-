@@ -406,7 +406,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         </div>
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Ancile Inc's <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Solutions' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

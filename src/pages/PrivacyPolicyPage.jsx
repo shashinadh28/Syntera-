@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx';
 
 export default function PrivacyPolicyPage() {
   useEffect(() => {
-    document.title = 'Privacy Policy — Ancile Inc';
+    document.title = 'Privacy Policy — Syntera Solutions';
     window.scrollTo(0, 0);
   }, []);
 
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="prose prose-slate prose-sm sm:prose-base max-w-none text-slate-600 space-y-6">
             <p className="font-semibold leading-relaxed text-slate-700">
-              Ancile Inc ("we," "our," or "us") is dedicated to protecting the privacy of our website visitors, clients, partners, and candidate network. This Privacy Policy details how we handle information collected through our web platforms and recruitment databases.
+              Syntera Solutions ("we," "our," or "us") is dedicated to protecting the privacy of our website visitors, clients, partners, and candidate network. This Privacy Policy details how we handle information collected through our web platforms and recruitment databases.
             </p>
 
             <h2 className="text-lg font-black text-slate-800 pt-4 border-t border-slate-100">
@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
               For any questions, compliance queries, or access requests regarding this policy, please reach out to our identity team at:
             </p>
             <p className="font-extrabold text-blue-600">
-              📧 info@ancileinc.com
+              📧 info@synterasolutions.com
             </p>
           </div>
         </div>

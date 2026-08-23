@@ -102,7 +102,7 @@ export default function AIReadinessPage() {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    document.title = 'AI Readiness Assessment | Free Enterprise AI Score — Ancile Inc';
+    document.title = 'AI Readiness Assessment | Free Enterprise AI Score — Syntera Solutions';
     window.scrollTo(0, 0);
     // Force the page to appear scrolled so Navbar shows white bg
     window.dispatchEvent(new CustomEvent('forceNavWhite'));
@@ -368,7 +368,7 @@ export default function AIReadinessPage() {
                 <div className="mt-8 pt-6 border-t border-slate-100 text-center">
                   <h3 className="text-base font-bold text-slate-800 mb-2">Want to map out your full roadmap?</h3>
                   <p className="text-xs text-slate-500 font-medium mb-4">
-                    Book a free, 30-minute workshop with an Ancile AI Delivery Architect to detail these results.
+                    Book a free, 30-minute workshop with an Syntera Solutions AI Delivery Architect to detail these results.
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">

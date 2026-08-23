@@ -54,6 +54,18 @@ const NAV_LINKS = [
     ],
   },
   {
+    label: 'NEW PAGES',
+    href: '#new-pages',
+    dropdown: [
+      { label: 'Our Process', href: '/our-process', isRoute: true },
+      { label: 'Hosting', href: '/hosting', isRoute: true },
+      { label: 'Data Engineering', href: '/data-engineering', isRoute: true },
+      { label: 'QA as a Service', href: '/qa-as-a-service', isRoute: true },
+      { label: 'App Development', href: '/app-development', isRoute: true },
+      { label: 'Staffing', href: '/staffing', isRoute: true },
+    ],
+  },
+  {
     label: 'More',
     href: '#more',
     dropdown: [
@@ -154,8 +166,8 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '2px' }}>
           <img
-            src={(forceWhite || scrolled) ? '/LOGO/LOGO_WHITE.png' : '/LOGO/LOGO_BLACK.png'}
-            alt="Ancile Inc"
+            src="/LOGO/new/Syntera-LOGO.webp"
+            alt="Syntera Solutions"
             style={{
               height: (forceWhite || scrolled) ? '36px' : '42px',
               width: 'auto',

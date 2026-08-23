@@ -30,7 +30,7 @@ const CONTACT_INFO = [
     label: 'India Office',
     lines: ['D No: 5-141, Koudinya Nagar', 'Vijayawada, Andhra Pradesh 521139'],
     phones: ['+91 8885555474'],
-    email: 'info@ancileinc.com',
+    email: 'info@synterasolutions.com',
     flag: '🇮🇳',
   },
 ];
@@ -61,7 +61,7 @@ export default function ContactPage() {
           </motion.span>
 
           <ScrollText
-            text="Contact Ancile"
+            text="Contact Syntera Solutions"
             as="h1"
             delay={0.2}
             stagger={0.12}
@@ -206,8 +206,8 @@ export default function ContactPage() {
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.55, ease, delay: 0.35 }}
                 className="rounded-2xl p-6" style={{ background: 'rgba(47,128,237,0.06)', border: '1px solid rgba(47,128,237,0.18)' }}>
                 <p className="text-sm font-semibold text-ink-700 mb-1.5">Prefer email?</p>
-                <a href="mailto:info@ancileinc.com" className="text-sm font-bold transition-colors duration-200" style={{ color: '#2F80ED' }}>
-                  info@ancileinc.com →
+                <a href="mailto:info@synterasolutions.com" className="text-sm font-bold transition-colors duration-200" style={{ color: '#2F80ED' }}>
+                  info@synterasolutions.com →
                 </a>
               </motion.div>
             </motion.div>

@@ -6,7 +6,7 @@ import Footer from '../components/Footer.jsx';
 
 const ease = [0.22, 1, 0.36, 1];
 
-const COMPANY = 'Ancile';
+const COMPANY = 'Syntera Solutions';
 
 /* ═══════════════════════════════════════════════════════════════════
    ROOT PAGE
@@ -642,7 +642,7 @@ function DiscoverMoreSection() {
                 <span style={{ color: '#60A5FA' }}>Application</span>
               </h3>
               <p className="mt-2 text-sm leading-relaxed max-w-sm" style={{ color: 'rgba(255,255,255,0.62)' }}>
-                At Ancile, we recognize AI can support your job application, but it's your voice, insights, and authenticity that matter most.
+                At Syntera Solutions, we recognize AI can support your job application, but it's your voice, insights, and authenticity that matter most.
               </p>
             </div>
 
@@ -699,7 +699,7 @@ function DiscoverMoreSection() {
                 Explore Our Careers in AI
               </h3>
               <p className="text-xs leading-relaxed mt-2" style={{ color: '#475569' }}>
-                At Ancile, AI powers transformation. With rising demand for AI talent, you'll lead innovation that shapes industries and drives real impact.
+                At Syntera Solutions, AI powers transformation. With rising demand for AI talent, you'll lead innovation that shapes industries and drives real impact.
               </p>
             </div>
 
@@ -747,7 +747,7 @@ function DiscoverMoreSection() {
                 Explore our GenAI Virtual Experience
               </h3>
               <p className="text-xs leading-relaxed mt-2" style={{ color: '#475569' }}>
-                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Ancile could look like.
+                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Syntera Solutions could look like.
               </p>
             </div>
 

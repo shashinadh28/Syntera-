@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
@@ -16,6 +16,7 @@ import AIReadinessCTA from './components/AIReadinessCTA.jsx';
 import AssessmentPromoSection from './components/AssessmentPromoSection.jsx';
 import FinalCTA from './components/FinalCTA.jsx';
 import Footer from './components/Footer.jsx';
+import LogoIntro from './components/LogoIntro.jsx';
 
 import TalentSolutionsPage from './pages/TalentSolutionsPage.jsx';
 import TechnologyServicesPage from './pages/TechnologyServicesPage.jsx';
@@ -46,6 +47,12 @@ import DatabricksGoogleCloudPage from './pages/DatabricksGoogleCloudPage.jsx';
 import PartnershipsPage from './pages/PartnershipsPage.jsx';
 import LaborConditionApplicationsPage from './pages/LaborConditionApplicationsPage.jsx';
 import CompanyLeadershipPage from './pages/CompanyLeadershipPage.jsx';
+import HostingPage from './pages/HostingPage.jsx';
+import DataEngineeringPage from './pages/DataEngineeringPage.jsx';
+import QaAsAServicePage from './pages/QaAsAServicePage.jsx';
+import AppDevelopmentPage from './pages/AppDevelopmentPage.jsx';
+import StaffingPage from './pages/StaffingPage.jsx';
+import OurProcessPage from './pages/OurProcessPage.jsx';
 
 function HomePage() {
   const location = useLocation();
@@ -97,38 +104,57 @@ function HomePage() {
 }
 
 export default function App() {
+  const [introComplete, setIntroComplete] = useState(false);
+
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/talent-solutions" element={<TalentSolutionsPage />} />
-      <Route path="/technology-services" element={<TechnologyServicesPage />} />
-      <Route path="/pricing-revenue-management" element={<PricingRevenuePage />} />
-      <Route path="/engineering-technology" element={<EngineeringTechnologyPage />} />
-      <Route path="/interview-process" element={<InterviewProcessPage />} />
-      <Route path="/case-interview-prep" element={<CaseInterviewPrepPage />} />
-      <Route path="/using-ai-application-process" element={<UsingAIApplicationPage />} />
-      <Route path="/responsible-ai-in-hiring" element={<ResponsibleAIHiringPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/employee-benefits" element={<EmployeeBenefitsPage />} />
-      <Route path="/artificial-intelligence" element={<ArtificialIntelligencePage />} />
-      <Route path="/values-and-culture" element={<ValuesCulturePage />} />
-      
-      {/* New routes */}
-      <Route path="/ai-readiness-assessment" element={<AIReadinessPage />} />
-      <Route path="/iam-maturity-check" element={<IAMMaturityCheckPage />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-      <Route path="/blog" element={<BlogPage />} />
-      <Route path="/agentic-ai" element={<AgenticAIPage />} />
-      <Route path="/devops-agile" element={<DevOpsAgilePage />} />
-      <Route path="/risk-and-security" element={<RiskAndSecurityPage />} />
-      <Route path="/workforce-development" element={<WorkforceDevelopmentPage />} />
-      <Route path="/grid-modernization-integrated-ecosystems" element={<GridModernizationPage />} />
-      <Route path="/jb-hunt-the-road-to-better-data-gcp-bigquery" element={<JBHuntPage />} />
-      <Route path="/databricks-google-cloud" element={<DatabricksGoogleCloudPage />} />
-      <Route path="/partnerships" element={<PartnershipsPage />} />
-      <Route path="/labor-condition-applications" element={<LaborConditionApplicationsPage />} />
-      <Route path="/company-leadership" element={<CompanyLeadershipPage />} />
-      <Route path="/capabilities" element={<CapabilitiesPage />} />
-    </Routes>
+    <>
+      <LogoIntro onComplete={() => setIntroComplete(true)} />
+      <div
+        style={{
+          opacity: introComplete ? 1 : 0,
+          transition: 'opacity 0.8s ease',
+          pointerEvents: introComplete ? 'auto' : 'none',
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/talent-solutions" element={<TalentSolutionsPage />} />
+          <Route path="/technology-services" element={<TechnologyServicesPage />} />
+          <Route path="/pricing-revenue-management" element={<PricingRevenuePage />} />
+          <Route path="/engineering-technology" element={<EngineeringTechnologyPage />} />
+          <Route path="/interview-process" element={<InterviewProcessPage />} />
+          <Route path="/case-interview-prep" element={<CaseInterviewPrepPage />} />
+          <Route path="/using-ai-application-process" element={<UsingAIApplicationPage />} />
+          <Route path="/responsible-ai-in-hiring" element={<ResponsibleAIHiringPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/employee-benefits" element={<EmployeeBenefitsPage />} />
+          <Route path="/artificial-intelligence" element={<ArtificialIntelligencePage />} />
+          <Route path="/values-and-culture" element={<ValuesCulturePage />} />
+
+          {/* New routes */}
+          <Route path="/ai-readiness-assessment" element={<AIReadinessPage />} />
+          <Route path="/iam-maturity-check" element={<IAMMaturityCheckPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/agentic-ai" element={<AgenticAIPage />} />
+          <Route path="/devops-agile" element={<DevOpsAgilePage />} />
+          <Route path="/risk-and-security" element={<RiskAndSecurityPage />} />
+          <Route path="/workforce-development" element={<WorkforceDevelopmentPage />} />
+          <Route path="/grid-modernization-integrated-ecosystems" element={<GridModernizationPage />} />
+          <Route path="/jb-hunt-the-road-to-better-data-gcp-bigquery" element={<JBHuntPage />} />
+          <Route path="/databricks-google-cloud" element={<DatabricksGoogleCloudPage />} />
+          <Route path="/partnerships" element={<PartnershipsPage />} />
+          <Route path="/labor-condition-applications" element={<LaborConditionApplicationsPage />} />
+          <Route path="/company-leadership" element={<CompanyLeadershipPage />} />
+          <Route path="/capabilities" element={<CapabilitiesPage />} />
+          <Route path="/hosting" element={<HostingPage />} />
+          <Route path="/data-engineering" element={<DataEngineeringPage />} />
+          <Route path="/qa-as-a-service" element={<QaAsAServicePage />} />
+          <Route path="/app-development" element={<AppDevelopmentPage />} />
+          <Route path="/staffing" element={<StaffingPage />} />
+          <Route path="/our-process" element={<OurProcessPage />} />
+        </Routes>
+      </div>
+    </>
   );
 }

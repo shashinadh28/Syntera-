@@ -155,7 +155,7 @@ function HeroSection() {
               className="text-base sm:text-lg leading-[1.8] mb-10 max-w-lg"
               style={{ color: 'rgba(255,255,255,0.68)' }}
             >
-              We invest in every Anciler with our employee benefits package, crafted to support financial wellbeing, physical wellbeing, mental health, and work-life balance.
+              We invest in every Syntera Solutionsr with our employee benefits package, crafted to support financial wellbeing, physical wellbeing, mental health, and work-life balance.
             </motion.p>
 
             {/* CTAs */}
@@ -458,7 +458,7 @@ function BenefitsGridSection() {
             Our Benefits
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-500 max-w-2xl">
-            Ancile is committed to providing one of the most comprehensive benefit packages available,
+            Syntera Solutions is committed to providing one of the most comprehensive benefit packages available,
             designed to help you and your family stay physically and emotionally well while supporting your financial health.
           </p>
         </motion.div>
@@ -745,10 +745,10 @@ function DiscoverMoreSection() {
                 Careers
               </span>
               <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Find a Job at Ancile
+                Find a Job at Syntera Solutions
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Discover opportunities that match your ambitions. At Ancile, you'll work with
+                Discover opportunities that match your ambitions. At Syntera Solutions, you'll work with
                 exceptional people, solve meaningful challenges, and grow your career across
                 our global offices and disciplines.
               </p>

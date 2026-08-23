@@ -80,7 +80,7 @@ export default function Foundation() {
             <div className="overflow-hidden rounded-[32px] border border-white/10 shadow-glow-lg">
               <motion.img
                 src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80"
-                alt="The Ancile Foundation in action"
+                alt="The Syntera Solutions Foundation in action"
                 loading="lazy"
                 style={{ y: yImage, scale: imgScale }}
                 className="h-[480px] w-full object-cover will-change-transform"
@@ -127,7 +127,7 @@ export default function Foundation() {
           <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.08] tracking-tightest text-white">
             <RevealText text="The" staggerChildren={0.08} className="inline-block" />{' '}
             <RevealText
-              text="Ancile Foundation"
+              text="Syntera Solutions Foundation"
               staggerChildren={0.08}
               delay={0.2}
               className="inline-block text-white"
@@ -138,7 +138,7 @@ export default function Foundation() {
             variants={fadeUpSmall}
             className="mt-6 text-base sm:text-lg leading-relaxed text-white/70 max-w-xl"
           >
-            At Ancile, our mission is clear: we are dedicated to changing lives every single day.
+            At Syntera Solutions, our mission is clear: we are dedicated to changing lives every single day.
             With unwavering commitment and compassion, we strive to make a tangible difference in
             the world, one person at a time.
           </motion.p>
