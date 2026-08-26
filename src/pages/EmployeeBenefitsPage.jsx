@@ -93,7 +93,7 @@ function HeroSection() {
       />
 
       {/* ── Content ── */}
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT: Text content */}
@@ -155,7 +155,7 @@ function HeroSection() {
               className="text-base sm:text-lg leading-[1.8] mb-10 max-w-lg"
               style={{ color: 'rgba(255,255,255,0.68)' }}
             >
-              We invest in every Syntera Techr with our employee benefits package, crafted to support financial wellbeing, physical wellbeing, mental health, and work-life balance.
+              We invest in every Syntera Consultingr with our employee benefits package, crafted to support financial wellbeing, physical wellbeing, mental health, and work-life balance.
             </motion.p>
 
             {/* CTAs */}
@@ -324,7 +324,7 @@ function WellbeingSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden">
+    <section className="py-14 sm:py-32 bg-white overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left text */}
@@ -440,7 +440,7 @@ function BenefitsGridSection() {
   ];
 
   return (
-    <section id="benefits" className="py-24 sm:py-32 overflow-hidden" style={{ backgroundColor: '#F8FAFC', ...DOT_BG }}>
+    <section id="benefits" className="py-14 sm:py-32 overflow-hidden" style={{ backgroundColor: '#F8FAFC', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <motion.div
@@ -448,7 +448,7 @@ function BenefitsGridSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="max-w-3xl mb-16">
+          className="max-w-3xl mb-10">
           <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
             style={{ background: 'rgba(47,128,237,0.08)', border: '1px solid rgba(47,128,237,0.2)', color: '#2F80ED' }}>
             <span className="h-1.5 w-1.5 rounded-full bg-current" />
@@ -458,7 +458,7 @@ function BenefitsGridSection() {
             Our Benefits
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-500 max-w-2xl">
-            Syntera Tech is committed to providing one of the most comprehensive benefit packages available,
+            Syntera Consulting is committed to providing one of the most comprehensive benefit packages available,
             designed to help you and your family stay physically and emotionally well while supporting your financial health.
           </p>
         </motion.div>
@@ -504,7 +504,7 @@ function BenefitsGridSection() {
 /* ───────────────────────── STATS BANNER SECTION ───────────────────────── */
 function StatsBannerSection() {
   return (
-    <section id="stats" className="relative py-24 sm:py-32 overflow-hidden"
+    <section id="stats" className="relative py-14 sm:py-32 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E3A6E 50%, #2F80ED 100%)' }}>
 
       {/* Grid bg */}
@@ -641,14 +641,14 @@ function PerksSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden">
+    <section className="py-14 sm:py-32 bg-white overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16">
+          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
               style={{ background: 'rgba(47,128,237,0.08)', border: '1px solid rgba(47,128,237,0.2)', color: '#2F80ED' }}>
@@ -708,14 +708,14 @@ function PerksSection() {
 /* ────────────────────────── DISCOVER MORE SECTION ────────────────────────── */
 function DiscoverMoreSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden" style={{ backgroundColor: '#F8FAFC', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden" style={{ backgroundColor: '#F8FAFC', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="mb-14">
+          className="mb-8">
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.05] tracking-tight">
             Discover More
           </h2>
@@ -745,10 +745,10 @@ function DiscoverMoreSection() {
                 Careers
               </span>
               <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Find a Job at Syntera Tech
+                Find a Job at Syntera Consulting
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Discover opportunities that match your ambitions. At Syntera Tech, you'll work with
+                Discover opportunities that match your ambitions. At Syntera Consulting, you'll work with
                 exceptional people, solve meaningful challenges, and grow your career across
                 our global offices and disciplines.
               </p>

@@ -17,7 +17,7 @@ const CAPABILITIES = [
     headline: 'Design, build, and scale AI systems that work in production.',
     sub: 'From custom LLM integrations and RAG pipelines to full agentic workflow systems — our AI engineers bring the technical depth to move your AI initiatives from proof-of-concept to production-grade delivery.',
     body: [
-      "Modern enterprises need more than AI prototypes. They need systems that run reliably, scale seamlessly, and integrate deeply with existing infrastructure. Syntera Tech' AI implementation practice covers the complete engineering lifecycle — from model selection and data pipeline design to evaluation frameworks, MLOps orchestration, and governance controls.",
+      "Modern enterprises need more than AI prototypes. They need systems that run reliably, scale seamlessly, and integrate deeply with existing infrastructure. Syntera Consulting' AI implementation practice covers the complete engineering lifecycle — from model selection and data pipeline design to evaluation frameworks, MLOps orchestration, and governance controls.",
       "We work across the full AI stack with expertise spanning large language model (LLM) integration, retrieval-augmented generation (RAG), multi-agent architectures, and AI-native application development. Every system we build is designed for production: monitored, governed, and designed to deliver measurable business outcomes.",
     ],
     bullets: [
@@ -29,7 +29,7 @@ const CAPABILITIES = [
       'Prompt Engineering & Evaluation Frameworks',
     ],
     stats: [
-      { val: '20%', label: 'of Syntera Tech revenue from AI initiatives' },
+      { val: '20%', label: 'of Syntera Consulting revenue from AI initiatives' },
       { val: '50+', label: 'AI engineers and ML architects' },
       { val: '3x', label: 'faster time-to-production vs. typical' },
     ],
@@ -46,7 +46,7 @@ const CAPABILITIES = [
     headline: 'Secure every identity. Control every access point. At scale.',
     sub: 'Identity is the most critical control plane in the modern enterprise. Our IAM architects implement, migrate, and optimize the identity platforms that protect your organization.',
     body: [
-      "In an era of cloud complexity, remote work, and AI-driven systems, identity security is the frontline of enterprise protection. A misconfigured permission, an orphaned service account, or a poorly governed privileged role can cascade into catastrophic breaches. Syntera Tech IAM architects bring deep platform expertise and a security-first mindset to every engagement.",
+      "In an era of cloud complexity, remote work, and AI-driven systems, identity security is the frontline of enterprise protection. A misconfigured permission, an orphaned service account, or a poorly governed privileged role can cascade into catastrophic breaches. Syntera Consulting IAM architects bring deep platform expertise and a security-first mindset to every engagement.",
       "We are platform-certified across Okta, SailPoint, CyberArk, and Microsoft Entra ID — enabling us to work within your existing technology ecosystem while rapidly closing gaps in governance, access controls, and compliance posture. From Zero Trust architecture design to AI-native identity security, we secure what matters most.",
     ],
     bullets: [
@@ -75,7 +75,7 @@ const CAPABILITIES = [
     headline: 'Data platforms and cloud infrastructure for AI-ready enterprises.',
     sub: 'Modern AI systems require modern data architecture. We design and build data lakehouses, real-time pipelines, and cloud-native platforms that feed your AI workloads and analytics layers.',
     body: [
-      "AI is only as good as the data it runs on. Before your organization can unlock the full potential of machine learning and generative AI, you need a data foundation that is clean, governed, real-time, and architecturally sound. Syntera Tech' data and cloud practice builds exactly that — from raw pipeline engineering to end-to-end lakehouse architectures on AWS, Azure, and GCP.",
+      "AI is only as good as the data it runs on. Before your organization can unlock the full potential of machine learning and generative AI, you need a data foundation that is clean, governed, real-time, and architecturally sound. Syntera Consulting' data and cloud practice builds exactly that — from raw pipeline engineering to end-to-end lakehouse architectures on AWS, Azure, and GCP.",
       "We partner with leading cloud and data platform providers including Databricks, Snowflake, BigQuery, and dbt to deliver systems that are not only performant but built to scale. Whether you are migrating a legacy enterprise data warehouse, building new analytics capabilities, or architecting the data layer for an agentic AI system, our engineers bring the technical rigor to do it right.",
     ],
     bullets: [
@@ -102,9 +102,9 @@ const CAPABILITIES = [
     badgeBg: 'rgba(107,78,255,0.1)',
     accent: '#6B4EFF',
     headline: 'Specialized engineering talent when you need to move fast.',
-    sub: 'When projects need reinforcement fast, Syntera Tech provides pre-vetted engineers, analysts, and architects across AI, IAM, data, cloud, and QA.',
+    sub: 'When projects need reinforcement fast, Syntera Consulting provides pre-vetted engineers, analysts, and architects across AI, IAM, data, cloud, and QA.',
     body: [
-      "In high-stakes technology initiatives, the difference between success and delay often comes down to access to the right talent at the right time. Syntera Tech' talent practice is built around precisely this — giving enterprise organizations rapid access to deeply specialized engineers who can contribute from day one.",
+      "In high-stakes technology initiatives, the difference between success and delay often comes down to access to the right talent at the right time. Syntera Consulting' talent practice is built around precisely this — giving enterprise organizations rapid access to deeply specialized engineers who can contribute from day one.",
       "Every candidate in our network is rigorously screened across technical skills, platform certifications, and domain knowledge. We don't send generalists — we match AI engineers, IAM architects, data platform specialists, and cloud engineers who fit your stack, your culture, and your delivery timeline. Whether you need a single key hire or a project-based team, we move with speed and precision.",
     ],
     bullets: [
@@ -146,7 +146,7 @@ export default function CapabilitiesPage() {
         <div aria-hidden className="pointer-events-none absolute top-0 right-0 w-[600px] h-[500px] rounded-full blur-[120px]" style={{ background: 'rgba(47,128,237,0.09)' }} />
         <div aria-hidden className="pointer-events-none absolute bottom-0 left-0 w-[400px] h-[350px] rounded-full blur-[100px]" style={{ background: 'rgba(11,110,86,0.07)' }} />
 
-        <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12 py-20 flex flex-col items-center text-center">
+        <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12 py-12 flex flex-col items-center text-center">
           {/* Eye label */}
           <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-6"
@@ -165,7 +165,7 @@ export default function CapabilitiesPage() {
 
           <motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.55 }}
             className="mt-6 text-lg leading-relaxed max-w-3xl mx-auto" style={{ color: 'rgba(255,255,255,0.72)' }}>
-            Syntera Tech combines deep technical expertise in AI and identity security with a delivery-first mindset. We build, implement, and staff the systems that enterprise organizations depend on.
+            Syntera Consulting combines deep technical expertise in AI and identity security with a delivery-first mindset. We build, implement, and staff the systems that enterprise organizations depend on.
           </motion.p>
 
           {/* Meta badges */}
@@ -242,7 +242,7 @@ export default function CapabilitiesPage() {
       ))}
 
       {/* ── BOTTOM CTA ── */}
-      <section className="relative py-24 sm:py-32 overflow-hidden"
+      <section className="relative py-14 sm:py-32 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E3A6E 55%, #2F80ED 100%)' }}>
         <div aria-hidden className="pointer-events-none absolute inset-0"
           style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
@@ -285,7 +285,7 @@ export default function CapabilitiesPage() {
 function CapabilitySection({ cap, flip }) {
   const Icon = cap.icon;
   return (
-    <section id={cap.id} className="py-20 sm:py-28 border-b border-slate-100"
+    <section id={cap.id} className="py-12 sm:py-16 border-b border-slate-100"
       style={{ backgroundColor: flip ? '#FAFAF8' : '#ffffff' }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-start`}>

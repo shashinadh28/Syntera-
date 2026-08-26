@@ -538,7 +538,7 @@ const SystemHealthCard = () => {
    ══════════════════════════════════════════════════════════════════════════ */
 export default function OurProcessPage() {
   useEffect(() => {
-    document.title = 'The Digital Brain Framework | Our Process | Syntera Tech';
+    document.title = 'The Digital Brain Framework | Our Process | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -569,7 +569,7 @@ export default function OurProcessPage() {
           style={{ background: 'rgba(37,99,235,0.22)', zIndex: 1 }}
         />
 
-        <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24 text-center">
+        <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24 text-center">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -623,7 +623,7 @@ export default function OurProcessPage() {
 
 
       {/* ── STEP 01: Discover & Map ── */}
-      <section className="py-24 sm:py-32 bg-white border-b border-slate-100">
+      <section className="py-14 sm:py-32 bg-white border-b border-slate-100">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Content */}
@@ -690,7 +690,7 @@ export default function OurProcessPage() {
 
 
       {/* ── STEP 02: Architecture (Center Aligned Content) ── */}
-      <section className="py-24 sm:py-32 border-b border-slate-100" style={{ backgroundColor: '#FAFAF8' }}>
+      <section className="py-14 sm:py-32 border-b border-slate-100" style={{ backgroundColor: '#FAFAF8' }}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           {/* Header Content — Centered */}
           <motion.div
@@ -698,7 +698,7 @@ export default function OurProcessPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: EASE }}
-            className="text-center max-w-3xl mx-auto mb-14 space-y-4"
+            className="text-center max-w-3xl mx-auto mb-8 space-y-4"
           >
             <div className="flex items-center justify-center gap-3">
               <span className="font-mono text-xs font-bold uppercase tracking-widest text-amber-600 px-3 py-1 rounded-full bg-amber-50 border border-amber-200">
@@ -733,7 +733,7 @@ export default function OurProcessPage() {
 
 
       {/* ── STEP 03: Engineering & Training ── */}
-      <section className="py-24 sm:py-32 bg-white border-b border-slate-100">
+      <section className="py-14 sm:py-32 bg-white border-b border-slate-100">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Side Image */}
@@ -806,7 +806,7 @@ export default function OurProcessPage() {
 
 
       {/* ── STEP 04: Deploy & Swarm ── */}
-      <section className="py-24 sm:py-32 border-b border-slate-100" style={{ backgroundColor: '#FAFAF8' }}>
+      <section className="py-14 sm:py-32 border-b border-slate-100" style={{ backgroundColor: '#FAFAF8' }}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Content */}
@@ -873,7 +873,7 @@ export default function OurProcessPage() {
 
 
       {/* ── FINAL CTA ── */}
-      <section className="relative py-24 sm:py-32 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0B1120 0%, #0F1F45 50%, #1E3A6E 100%)' }}>
+      <section className="relative py-14 sm:py-32 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0B1120 0%, #0F1F45 50%, #1E3A6E 100%)' }}>
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"

@@ -85,7 +85,7 @@ function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT */}
@@ -223,7 +223,7 @@ function HeroSection() {
                 style={{ background: 'rgba(11,17,32,0.65)', border: '1px solid rgba(255,255,255,0.14)' }}
               >
                 <span className="h-2 w-2 rounded-full bg-[#2F80ED] animate-pulse" />
-                <span className="text-white text-[11px] font-bold uppercase tracking-wider">Syntera Tech Hiring</span>
+                <span className="text-white text-[11px] font-bold uppercase tracking-wider">Syntera Consulting Hiring</span>
               </div>
               <motion.div
                 animate={{ y: [0, -6, 0] }}
@@ -299,7 +299,7 @@ function ExpectSection() {
   ];
 
   return (
-    <section id="expect" className="py-24 lg:py-32 relative overflow-hidden" style={{ backgroundColor: '#F8FAFC' }}>
+    <section id="expect" className="py-14 lg:py-32 relative overflow-hidden" style={{ backgroundColor: '#F8FAFC' }}>
       {/* Background blobs */}
       <div className="absolute inset-0 opacity-[0.4] pointer-events-none overflow-hidden">
         <div className="absolute top-20 left-10 w-96 h-96 bg-[#2F80ED] rounded-full blur-[140px]" />
@@ -308,7 +308,7 @@ function ExpectSection() {
 
       <div className="max-w-[1360px] mx-auto px-6 lg:px-8 relative z-10">
         <motion.div
-          className="text-center mb-16 lg:mb-24"
+          className="text-center mb-10 lg:mb-24"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
@@ -515,7 +515,7 @@ function LookForSection() {
   ];
 
   return (
-    <section id="criteria" className="py-20 sm:py-28" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section id="criteria" className="py-12 sm:py-16" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <motion.div
@@ -523,7 +523,7 @@ function LookForSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
-          className="mb-16 max-w-4xl"
+          className="mb-10 max-w-4xl"
         >
           <span
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-4"
@@ -540,7 +540,7 @@ function LookForSection() {
             What our consulting interviewers look for
           </h2>
           <p className="text-base leading-relaxed text-slate-500 max-w-3xl">
-            Spotting trends. Advising senior leaders. Cutting fresh tracks. Moving quickly and creatively. Finding storylines in data sets. Making the world better. Syntera Tech' experienced hires do all this and more. Here are just a few examples of the value our experienced professionals deliver.
+            Spotting trends. Advising senior leaders. Cutting fresh tracks. Moving quickly and creatively. Finding storylines in data sets. Making the world better. Syntera Consulting' experienced hires do all this and more. Here are just a few examples of the value our experienced professionals deliver.
           </p>
         </motion.div>
 
@@ -578,20 +578,20 @@ function LookForSection() {
 }
 
 /* ───────────────────────────────────────────────────────── TIPS ─── */
-// TEMPORARILY HIDDEN: Advice & Insights — Syntera Tech consultant interview tips
+// TEMPORARILY HIDDEN: Advice & Insights — Syntera Consulting consultant interview tips
 function TipsSection() { return null; }
 
 /* ───────────────────────────────────────────── READY TO APPLY ─── */
 function ReadyToApplySection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#FAFAF8] overflow-hidden" style={DOT_BG}>
+    <section className="py-12 sm:py-16 bg-[#FAFAF8] overflow-hidden" style={DOT_BG}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
-          className="mb-14"
+          className="mb-8"
         >
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-ink-900 leading-[1.05] tracking-tight">
             Ready To Apply?
@@ -623,10 +623,10 @@ function ReadyToApplySection() {
 
             <div>
               <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Find a Job at Syntera Tech
+                Find a Job at Syntera Consulting
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Discover opportunities that match your ambitions. At Syntera Tech, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
+                Discover opportunities that match your ambitions. At Syntera Consulting, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
               </p>
             </div>
 
@@ -642,7 +642,7 @@ function ReadyToApplySection() {
             </div>
           </motion.div>
 
-          {/* Card 2: Syntera Tech on Campus (3 cols out of 12) */}
+          {/* Card 2: Syntera Consulting on Campus (3 cols out of 12) */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -656,10 +656,10 @@ function ReadyToApplySection() {
           >
             <div>
               <h3 className="font-display text-2xl font-extrabold text-ink-900 leading-tight" style={{ color: '#1E293B' }}>
-                Syntera Tech on Campus
+                Syntera Consulting on Campus
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Syntera Tech at your campus.
+                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Syntera Consulting at your campus.
               </p>
             </div>
 

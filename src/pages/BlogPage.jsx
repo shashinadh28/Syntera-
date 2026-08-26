@@ -26,7 +26,7 @@ const POSTS = [
   {
     title: 'SailPoint to Entra ID: A Healthcare IAM Migration',
     excerpt:
-      'How Syntera Tech staffed and co-led a 14-month IAM platform migration for a 6,000-employee regional health system — on time, zero compliance gaps, and 40% reduction in provisioning time.',
+      'How Syntera Consulting staffed and co-led a 14-month IAM platform migration for a 6,000-employee regional health system — on time, zero compliance gaps, and 40% reduction in provisioning time.',
     category: 'Case Study',
     readTime: '8 min read',
     img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1100&q=80',
@@ -35,7 +35,7 @@ const POSTS = [
 
 export default function BlogPage() {
   useEffect(() => {
-    document.title = 'Insights | AI Implementation + IAM — Syntera Tech';
+    document.title = 'Insights | AI Implementation + IAM — Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -43,9 +43,9 @@ export default function BlogPage() {
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col justify-between">
       <Navbar />
 
-      <main className="flex-grow pt-32 pb-20 px-6 sm:px-8 lg:px-12 max-w-[1280px] mx-auto w-full">
+      <main className="flex-grow pt-24 pb-12 px-6 sm:px-8 lg:px-12 max-w-[1280px] mx-auto w-full">
         {/* Header */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-10">
           <span
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-4"
             style={{ border: '1px solid rgba(21,101,216,0.15)', background: 'rgba(21,101,216,0.06)', color: '#1565D8' }}

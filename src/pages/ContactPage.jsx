@@ -48,7 +48,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* ── HERO ────────────────────────────────────────────── */}
-      <section className="relative pt-36 pb-16 overflow-hidden">
+      <section className="relative pt-24 pb-16 overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0"
           style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)`, backgroundSize: '48px 48px' }} />
         <div aria-hidden className="pointer-events-none absolute top-0 right-0 w-[500px] h-[400px] rounded-full blur-[100px]" style={{ background: 'rgba(47,128,237,0.09)' }} />
@@ -61,7 +61,7 @@ export default function ContactPage() {
           </motion.span>
 
           <ScrollText
-            text="Contact Syntera Tech"
+            text="Contact Syntera Consulting"
             as="h1"
             delay={0.2}
             stagger={0.12}
@@ -78,7 +78,7 @@ export default function ContactPage() {
 
       {/* ── MAIN CONTENT ────────────────────────────────────── */}
       <section
-        className="py-16 sm:py-20"
+        className="py-16 sm:py-12"
         style={{
           backgroundColor: '#FAFAF8',
           backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.07) 1.5px, transparent 1.5px)',

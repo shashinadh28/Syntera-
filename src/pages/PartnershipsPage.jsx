@@ -398,7 +398,7 @@ export default function PartnershipsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease }}
-              className="flex items-center gap-3 mb-8 pt-48 lg:pt-36"
+              className="flex items-center gap-3 mb-8 pt-48 lg:pt-24"
             >
               <span style={{ width: '28px', height: '2px', background: '#2F80ED', borderRadius: '2px', display: 'inline-block' }} />
               <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: '#2F80ED' }}>
@@ -526,7 +526,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* ── INTEGRATIONS SECTION (BIG THINKERS & DISTINCTIVE INNOVATORS) ── */}
-      <section id="integrations" className="py-24 bg-white" style={DOT_BG}>
+      <section id="integrations" className="py-14 bg-white" style={DOT_BG}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           {/* Big Thinkers */}
           <div className="mb-20">
@@ -600,7 +600,7 @@ export default function PartnershipsPage() {
 
       {/* ── DEPTH AND BREADTH SECTION — ENHANCED with images ── */}
       <section
-        className="py-24 sm:py-32 relative overflow-hidden"
+        className="py-14 sm:py-32 relative overflow-hidden"
         style={{ backgroundColor: '#0B1120' }}
       >
         {/* Background grid */}
@@ -760,14 +760,14 @@ export default function PartnershipsPage() {
       </section>
 
       {/* ── THINKING FORWARD (SUCCESS STORIES / ARTICLES) ── */}
-      <section className="py-24 bg-white">
+      <section className="py-14 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOnce}
             transition={{ duration: 0.7, ease }}
-            className="max-w-3xl mb-16"
+            className="max-w-3xl mb-10"
           >
             <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider block mb-2">Insights & Case Studies</span>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">Thinking Forward</h2>
@@ -826,7 +826,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* ── OUR TECHNOLOGY PARTNERSHIPS CTA ── */}
-      <section className="relative py-20 sm:py-24 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E5DB8 50%, #2F80ED 100%)' }}>
+      <section className="relative py-12 sm:py-16 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E5DB8 50%, #2F80ED 100%)' }}>
         <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
         <div aria-hidden className="pointer-events-none absolute -top-20 -right-20 w-[360px] h-[360px] rounded-full blur-[90px]" style={{ background: 'radial-gradient(circle, rgba(30,93,184,0.2) 0%, transparent 70%)' }} />
         <div aria-hidden className="pointer-events-none absolute -bottom-20 -left-20 w-[300px] h-[300px] rounded-full blur-[80px]" style={{ background: 'radial-gradient(circle, rgba(47,128,237,0.25) 0%, transparent 70%)' }} />

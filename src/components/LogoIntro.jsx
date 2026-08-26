@@ -18,7 +18,7 @@ const TIMING = {
 };
 
 /**
- * Syntera logo intro animation.
+ * Syntera Consulting logo intro animation.
  * Smoother timing, tighter gap, premium spring & easing.
  */
 const LogoIntro = ({ onComplete }) => {
@@ -129,7 +129,7 @@ const LogoIntro = ({ onComplete }) => {
         <motion.div
           key="syntera-intro"
           role="status"
-          aria-label="Loading Syntera"
+          aria-label="Loading Syntera Consulting"
           className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden"
           style={{ backgroundColor: '#ffffff' }}
           initial={{ opacity: 1 }}
@@ -210,7 +210,7 @@ const LogoIntro = ({ onComplete }) => {
               {/* Icon Image */}
               <motion.img
                 src="/LOGO/new/Syntera-ICON.webp"
-                alt="Syntera Icon"
+                alt="Syntera Consulting Icon"
                 className="w-full h-full object-contain object-center"
                 animate={phase === 'hold' && !prefersReducedMotion ? { y: [0, -4, 0] } : {}}
                 transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
@@ -235,7 +235,7 @@ const LogoIntro = ({ onComplete }) => {
             >
               <img
                 src="/LOGO/new/Syntera-LOGOO.jpg"
-                alt="Syntera"
+                alt="Syntera Consulting"
                 className="w-full h-full object-contain object-left"
                 style={{ display: 'block' }}
               />

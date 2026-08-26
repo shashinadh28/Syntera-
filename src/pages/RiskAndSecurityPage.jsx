@@ -123,7 +123,7 @@ function SalesforceLogo() {
 
 export default function RiskAndSecurityPage() {
   useEffect(() => {
-    document.title = 'Risk and Security — Unified Cyber Protection | Syntera Tech';
+    document.title = 'Risk and Security — Unified Cyber Protection | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -177,7 +177,7 @@ function HeroSection() {
       <motion.div aria-hidden animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.18, 0.08] }} transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }} className="pointer-events-none absolute top-[-80px] right-[-60px] w-[700px] h-[600px] rounded-full blur-[130px]" style={{ background: 'rgba(47,128,237,0.15)', zIndex: 1 }} />
       <motion.div aria-hidden animate={{ scale: [1, 1.15, 1], opacity: [0.06, 0.13, 0.06] }} transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 4 }} className="pointer-events-none absolute bottom-0 left-[-80px] w-[500px] h-[400px] rounded-full blur-[110px]" style={{ background: 'rgba(99,102,241,0.12)', zIndex: 1 }} />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }} className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-7" style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}>
@@ -244,7 +244,7 @@ function OverviewSection() {
   ];
 
   return (
-    <section id="overview" className="py-24 sm:py-32 border-b border-slate-100 overflow-hidden" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section id="overview" className="py-14 sm:py-32 border-b border-slate-100 overflow-hidden" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-20">
           <motion.div
@@ -308,7 +308,7 @@ function InItWithYouSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100 relative" style={{ backgroundColor: '#0B1120' }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100 relative" style={{ backgroundColor: '#0B1120' }}>
       {/* Grid overlay */}
       <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
       {/* Blue glow top-center */}
@@ -374,7 +374,7 @@ function InItWithYouSection() {
             <div className="h-1 w-12 rounded-full mb-6" style={{ background: '#2F80ED' }} />
             <h3 className="font-display text-2xl font-extrabold text-white mb-4">Enterprise Defense Model</h3>
             <p className="leading-relaxed text-sm mb-6" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              Syntera Tech unifies operational signals across physical, virtual, and cloud architectures. Our models adapt to your existing stack—enforcing compliance controls without vendor lock-in.
+              Syntera Consulting unifies operational signals across physical, virtual, and cloud architectures. Our models adapt to your existing stack—enforcing compliance controls without vendor lock-in.
             </p>
             <div className="rounded-2xl p-5" style={{ background: 'rgba(47,128,237,0.1)', border: '1px solid rgba(47,128,237,0.2)' }}>
               <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#60A5FA' }}>Security Architecture</span>
@@ -441,7 +441,7 @@ function CapabilitiesSection() {
   ];
 
   return (
-    <section id="capabilities" className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section id="capabilities" className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -518,9 +518,9 @@ function OurApproachSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 bg-white overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-10">
           <motion.div
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -592,7 +592,7 @@ function PartnershipsSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden border-b border-slate-100">
+    <section className="py-14 sm:py-32 bg-white overflow-hidden border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left panel */}
@@ -680,27 +680,27 @@ function InsightsSection() {
       color: '#1E5DB8',
       tag: 'Success Story',
       title: 'Cloud Capital: Investing in a Seamless AWS Migration',
-      desc: "See how a global investment management company cut costs and boosted security with Syntera Tech' AWS migration—enabling fast, reliable service and future-ready innovation.",
+      desc: "See how a global investment management company cut costs and boosted security with Syntera Consulting' AWS migration—enabling fast, reliable service and future-ready innovation.",
       image: '/Risk-and-Security/Featured-Insights/Cloud-Capital-Investing-Seamless-AWS-Migration.webp',
     },
     {
       color: '#6366F1',
       tag: 'Success Story',
       title: 'GLBA Compliance at Scale on AWS',
-      desc: 'A major U.S. mortgage lender achieved 100% GLBA compliance across 1.3 PB and 13.5B objects using an AWS-based data anonymization solution with Syntera Tech',
+      desc: 'A major U.S. mortgage lender achieved 100% GLBA compliance across 1.3 PB and 13.5B objects using an AWS-based data anonymization solution with Syntera Consulting',
       image: '/Risk-and-Security/Featured-Insights/GLBA-Compliance-Scale-AWS.webp',
     }
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14"
+          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8"
         >
           <div>
             <Pill>Featured Insights</Pill>
@@ -760,7 +760,7 @@ function InsightsSection() {
 /* ═══════════════════════════ FINAL CTA ═══ */
 function FinalCTASection() {
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden">
+    <section className="py-14 sm:py-32 bg-white overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -777,7 +777,7 @@ function FinalCTASection() {
                 <span className="h-1.5 w-1.5 rounded-full bg-[#60A5FA]" /> Connect With Us
               </span>
               <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-                Interested in speaking with Syntera Tech?
+                Interested in speaking with Syntera Consulting?
               </h2>
               <p className="text-base leading-relaxed mb-8" style={{ color: 'rgba(191,219,254,0.72)' }}>
                 Let’s discuss how we can embed GRC, secure operations, and proactive threat management into your business architecture.

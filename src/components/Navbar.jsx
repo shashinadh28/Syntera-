@@ -30,6 +30,7 @@ const NAV_LINKS = [
     label: 'Success Stories',
     href: '#stories',
     dropdown: [
+      { label: 'Our Work (All Case Studies)', href: '/our-work', isRoute: true },
       { label: 'Grid Modernization', href: '/grid-modernization-integrated-ecosystems', isRoute: true },
       { label: 'J.B. Hunt', href: '/jb-hunt-the-road-to-better-data-gcp-bigquery', isRoute: true },
       { label: 'Databricks + Google Cloud', href: '/databricks-google-cloud', isRoute: true },
@@ -50,6 +51,7 @@ const NAV_LINKS = [
     label: 'Careers',
     href: '#careers',
     dropdown: [
+      { label: 'Syntera Careers', href: '/syntera-careers', isRoute: true },
       { label: 'Engineering & Tech', href: '/engineering-technology', isRoute: true },
       { label: 'Values & Culture', href: '/values-and-culture', isRoute: true },
       { label: 'Employee Benefits', href: '/employee-benefits', isRoute: true },
@@ -155,7 +157,7 @@ export default function Navbar() {
         <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
           <img
             src="/LOGO/new/Syntera-LOGO.webp"
-            alt="Syntera | Technology & Talent Solutions"
+            alt="Syntera Consulting"
             style={{
               height: '38px',
               width: 'auto',

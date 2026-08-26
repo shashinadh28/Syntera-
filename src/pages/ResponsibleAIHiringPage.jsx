@@ -6,7 +6,7 @@ import Footer from '../components/Footer.jsx';
 
 const ease = [0.22, 1, 0.36, 1];
 
-const COMPANY = 'Syntera Tech';
+const COMPANY = 'Syntera Consulting';
 
 /* ═══════════════════════════════════════════════════════════════════
    ROOT PAGE
@@ -43,7 +43,7 @@ function HeroSection() {
       <motion.div aria-hidden animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.18, 0.08] }} transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }} className="pointer-events-none absolute top-[-80px] right-[-60px] w-[700px] h-[600px] rounded-full blur-[130px]" style={{ background: 'rgba(47,128,237,0.15)', zIndex: 1 }} />
       <motion.div aria-hidden animate={{ scale: [1, 1.15, 1], opacity: [0.06, 0.13, 0.06] }} transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 4 }} className="pointer-events-none absolute bottom-0 left-[-80px] w-[500px] h-[400px] rounded-full blur-[110px]" style={{ background: 'rgba(99,102,241,0.12)', zIndex: 1 }} />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }} className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-7" style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}>
@@ -143,7 +143,7 @@ const TALENT_PILLARS = [
 
 function TalentFrameworkSection() {
   return (
-    <section className="py-24 sm:py-32 bg-white border-b border-slate-100" id="framework">
+    <section className="py-14 sm:py-32 bg-white border-b border-slate-100" id="framework">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10 lg:px-16">
         {/* Intro text */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
@@ -235,7 +235,7 @@ function TalentFrameworkSection() {
    ═══════════════════════════════════════════════════════════════════ */
 function TalentPromiseSection() {
   return (
-    <section id="talent-promise" className="py-24 sm:py-32 overflow-hidden" style={{ backgroundColor: '#F8FAFC' }}>
+    <section id="talent-promise" className="py-14 sm:py-32 overflow-hidden" style={{ backgroundColor: '#F8FAFC' }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Abstract animated visual with Promise Image */}
@@ -467,7 +467,7 @@ function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" className="py-24 sm:py-32 bg-white">
+    <section id="faq" className="py-14 sm:py-32 bg-white">
       <div className="mx-auto max-w-[1100px] px-6 sm:px-10 lg:px-16">
         {/* Header */}
         <motion.div
@@ -475,7 +475,7 @@ function FAQSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="mb-16"
+          className="mb-10"
         >
           <span
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
@@ -582,7 +582,7 @@ const DOT_BG = {
 
 function DiscoverMoreSection() {
   return (
-    <section className="py-16 sm:py-20 overflow-hidden" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-16 sm:py-12 overflow-hidden" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-16">
         {/* Heading */}
         <motion.div
@@ -642,7 +642,7 @@ function DiscoverMoreSection() {
                 <span style={{ color: '#60A5FA' }}>Application</span>
               </h3>
               <p className="mt-2 text-sm leading-relaxed max-w-sm" style={{ color: 'rgba(255,255,255,0.62)' }}>
-                At Syntera Tech, we recognize AI can support your job application, but it's your voice, insights, and authenticity that matter most.
+                At Syntera Consulting, we recognize AI can support your job application, but it's your voice, insights, and authenticity that matter most.
               </p>
             </div>
 
@@ -699,7 +699,7 @@ function DiscoverMoreSection() {
                 Explore Our Careers in AI
               </h3>
               <p className="text-xs leading-relaxed mt-2" style={{ color: '#475569' }}>
-                At Syntera Tech, AI powers transformation. With rising demand for AI talent, you'll lead innovation that shapes industries and drives real impact.
+                At Syntera Consulting, AI powers transformation. With rising demand for AI talent, you'll lead innovation that shapes industries and drives real impact.
               </p>
             </div>
 
@@ -747,7 +747,7 @@ function DiscoverMoreSection() {
                 Explore our GenAI Virtual Experience
               </h3>
               <p className="text-xs leading-relaxed mt-2" style={{ color: '#475569' }}>
-                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Syntera Tech could look like.
+                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Syntera Consulting could look like.
               </p>
             </div>
 

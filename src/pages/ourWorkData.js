@@ -2028,3 +2028,11 @@ export const ourWorkItems = [
     ctaButtonText: "Talk to our clinical AI team",
   },
 ];
+
+export function getWorkBySlug(slug) {
+  return ourWorkItems.find((item) => item.slug === slug);
+}
+
+export function getAllWorkSlugs() {
+  return ourWorkItems.map((item) => item.slug);
+}

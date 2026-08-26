@@ -37,7 +37,7 @@ function HeroSection() {
       <motion.div aria-hidden animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.18, 0.08] }} transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }} className="pointer-events-none absolute top-[-80px] right-[-60px] w-[700px] h-[600px] rounded-full blur-[130px]" style={{ background: 'rgba(47,128,237,0.15)', zIndex: 1 }} />
       <motion.div aria-hidden animate={{ scale: [1, 1.15, 1], opacity: [0.06, 0.13, 0.06] }} transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 4 }} className="pointer-events-none absolute bottom-0 left-[-80px] w-[500px] h-[400px] rounded-full blur-[110px]" style={{ background: 'rgba(99,102,241,0.12)', zIndex: 1 }} />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }} className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-7" style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}>
@@ -93,7 +93,7 @@ function HeroSection() {
 /* ─────────────────────────────────────── AUTHENTIC SECTION ─── */
 function AuthenticSection() {
   return (
-    <section id="authentic" className="py-20 sm:py-28 bg-white border-b border-slate-100">
+    <section id="authentic" className="py-12 sm:py-16 bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left col */}
@@ -189,7 +189,7 @@ function UseAISection() {
   ];
 
   return (
-    <section className="py-20 sm:py-28" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-12 sm:py-16" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
 
         {/* USE AI TO: */}
@@ -407,7 +407,7 @@ function TipsSection() {
   const currentTab = TABS.find(t => t.key === activeTab);
 
   return (
-    <section id="tips" className="py-20 sm:py-28 bg-white">
+    <section id="tips" className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <motion.div
@@ -547,14 +547,14 @@ function TipsSection() {
 /* ───────────────────────────────── DISCOVER MORE (CTA) ─── */
 function DiscoverMoreSection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#FAFAF8] overflow-hidden" style={DOT_BG}>
+    <section className="py-12 sm:py-16 bg-[#FAFAF8] overflow-hidden" style={DOT_BG}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
-          className="mb-14"
+          className="mb-8"
         >
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.05] tracking-tight">
             Discover More
@@ -589,7 +589,7 @@ function DiscoverMoreSection() {
                 Explore our Careers in AI
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                At Syntera Tech, AI powers transformation. With ~20% revenue from AI and rising demand, you'll lead innovation that shapes industries and drives real impact.
+                At Syntera Consulting, AI powers transformation. With ~20% revenue from AI and rising demand, you'll lead innovation that shapes industries and drives real impact.
               </p>
             </div>
 
@@ -619,10 +619,10 @@ function DiscoverMoreSection() {
           >
             <div>
               <h3 className="font-display text-2xl font-extrabold leading-tight" style={{ color: '#1E293B' }}>
-                How Syntera Tech uses Responsible AI in Hiring
+                How Syntera Consulting uses Responsible AI in Hiring
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Syntera Tech follows responsible AI principles in our hiring, focused on transparency, accountability, and human oversight at the heart of all decision-making.
+                Syntera Consulting follows responsible AI principles in our hiring, focused on transparency, accountability, and human oversight at the heart of all decision-making.
               </p>
             </div>
 
@@ -654,7 +654,7 @@ function DiscoverMoreSection() {
                 Explore our GenAI Virtual Experience
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Syntera Tech could look like.
+                Get hands-on exposure to real-world AI problem-solving and see what a career in AI at Syntera Consulting could look like.
               </p>
             </div>
 

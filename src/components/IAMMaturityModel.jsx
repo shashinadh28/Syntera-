@@ -16,7 +16,7 @@ const LEVELS = [
       'Offboarding takes days or weeks, leaving residual access window vulnerability.',
       'Admin passwords or API keys are shared among developers and operations.',
     ],
-    whatWeDo: 'Syntera Tech conducts a complete IAM discovery scan, implements centralized directory integration, and deploys unified SSO/MFA for rapid security stabilization.',
+    whatWeDo: 'Syntera Consulting conducts a complete IAM discovery scan, implements centralized directory integration, and deploys unified SSO/MFA for rapid security stabilization.',
   },
   {
     lvl: 2,
@@ -74,12 +74,12 @@ export default function IAMMaturityModel() {
   return (
     <section
       id="maturity"
-      className="relative py-20 sm:py-28 overflow-hidden bg-white"
+      className="relative py-12 sm:py-16 overflow-hidden bg-white"
     >
       <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-10">
           <span
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-4"
             style={{ border: '1px solid rgba(60,52,137,0.15)', background: 'rgba(60,52,137,0.06)', color: '#3C3489' }}
@@ -208,7 +208,7 @@ export default function IAMMaturityModel() {
                     <div>
                       <h3 className="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                        What Syntera Tech does:
+                        What Syntera Consulting does:
                       </h3>
                       <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium mb-6">
                         {LEVELS[activeLvl - 1].whatWeDo}

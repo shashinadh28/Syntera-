@@ -17,12 +17,12 @@ export default function SectionWrapper({
     align === 'center' ? 'items-center text-center mx-auto' : 'items-start text-left';
 
   return (
-    <section id={id} className={`relative py-24 sm:py-28 lg:py-32 ${className}`}>
+    <section id={id} className={`relative py-12 sm:py-16 lg:py-12 ${className}`}>
       <div className={`mx-auto max-w-page container-px ${innerClassName}`}>
         {(eyebrow || title || description) && (
           <RevealGroup
             staggerChildren={staggerAmount}
-            className={`flex flex-col ${alignClasses} max-w-3xl mb-14 sm:mb-16 ${
+            className={`flex flex-col ${alignClasses} max-w-3xl mb-8 sm:mb-10 ${
               align === 'center' ? 'mx-auto' : ''
             }`}
           >

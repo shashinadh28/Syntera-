@@ -362,7 +362,7 @@ export default function OurWorkDetailClient({ item }: Props) {
       {/* ═══════════════════════════════════════════════════════════════
           SECTION 3 — OUTCOMES & HIGHLIGHTS
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="bg-[#0A1628] py-20 mb-20 relative overflow-hidden">
+      <section className="bg-[#0A1628] py-12 mb-20 relative overflow-hidden">
         {/* Subtle dot grid */}
         <div
           aria-hidden
@@ -526,7 +526,7 @@ export default function OurWorkDetailClient({ item }: Props) {
       {/* ═══════════════════════════════════════════════════════════════
           SECTION 5 — BOTTOM CTA
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <FadeUp>
           <div className="relative bg-[#0A1628] text-white rounded-3xl overflow-hidden text-center">
             {/* Top accent bar */}

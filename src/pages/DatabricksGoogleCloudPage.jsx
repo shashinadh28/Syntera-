@@ -98,7 +98,7 @@ export default function DatabricksGoogleCloudPage() {
       </section>
 
       {/* ── OVERVIEW ── */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.85, ease }}>
@@ -143,7 +143,7 @@ export default function DatabricksGoogleCloudPage() {
       </section>
 
       {/* ── OUR SOLUTION ── */}
-      <section className="py-20 sm:py-28" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+      <section className="py-12 sm:py-16" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr badge="Our Solution" title="Mapping a new route"
             sub="Leveraging DevOps to build efficient communication between old and new cloud environments, enabling seamless data migration and deployment." />
@@ -152,7 +152,7 @@ export default function DatabricksGoogleCloudPage() {
               { step: '01', title: 'DevOps Methodology', desc: 'Used DevOps methodologies to strategically facilitate the migration process, optimizing code to minimize manual execution.' },
               { step: '02', title: 'Artifactory Integration', desc: 'Integrated the library versioning tool Artifactory to provide full visibility into dependency libraries and version management.' },
               { step: '03', title: 'Repeatable Process Models', desc: 'Helped the customer use repeatable process models to eliminate redundancies and save time across the organization.' },
-              { step: '04', title: 'Innovation in Uncharted Territory', desc: 'Close collaboration between Syntera Tech, the customer and dedicated Databricks resources ensured innovative problem-solving.' },
+              { step: '04', title: 'Innovation in Uncharted Territory', desc: 'Close collaboration between Syntera Consulting, the customer and dedicated Databricks resources ensured innovative problem-solving.' },
             ].map((d, i) => (
               <motion.div key={d.step} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce}
                 transition={{ duration: 0.65, ease, delay: i * 0.12 }}
@@ -171,7 +171,7 @@ export default function DatabricksGoogleCloudPage() {
       </section>
 
       {/* ── POWERFUL PARTNERSHIP ── */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.85, ease }}>
@@ -234,7 +234,7 @@ export default function DatabricksGoogleCloudPage() {
       </section>
 
       {/* ── REAL WORLD RESULTS ── */}
-      <section className="py-20 sm:py-28" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+      <section className="py-12 sm:py-16" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr badge="Real-World Results" title="Turning complexity into confidence"
             sub="We handled this migration process one step at a time, turning what could have been a minefield of downtime and lost data into just another cloud journey." />
@@ -313,7 +313,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
   const handleSubmit = (e) => { e.preventDefault(); if (!agreed) return; setSubmitted(true); };
 
   return (
-    <section id={id} className="relative py-20 sm:py-28 overflow-hidden"
+    <section id={id} className="relative py-12 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E5DB8 50%, #2F80ED 100%)' }}>
       <div aria-hidden className="pointer-events-none absolute inset-0"
         style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
@@ -400,7 +400,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Consulting' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

@@ -43,7 +43,7 @@ export default function Industries() {
   return (
     <section
       id="industries"
-      className="relative py-20 sm:py-28 overflow-hidden"
+      className="relative py-12 sm:py-16 overflow-hidden"
       style={{ backgroundColor: '#ffffff' }}
     >
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
@@ -54,7 +54,7 @@ export default function Industries() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 sm:mb-20"
+          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-10 sm:mb-20"
         >
           <motion.span
             initial={{ opacity: 0, scale: 0.9 }}

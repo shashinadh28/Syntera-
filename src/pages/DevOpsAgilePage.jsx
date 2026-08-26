@@ -36,7 +36,7 @@ const Pill = ({ children, color = '#2F80ED' }) => (
 
 export default function DevOpsAgilePage() {
   useEffect(() => {
-    document.title = 'DevOps & Agile — Accelerate Delivery at Scale | Syntera Tech';
+    document.title = 'DevOps & Agile — Accelerate Delivery at Scale | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -150,7 +150,7 @@ function HeroSection() {
               marginBottom: '2.5rem',
             }}
           >
-            Partner with Syntera Tech to release faster, test smarter, and transform your engineering culture — spanning architecture, automation, and continuous delivery across your entire technology life cycle.
+            Partner with Syntera Consulting to release faster, test smarter, and transform your engineering culture — spanning architecture, automation, and continuous delivery across your entire technology life cycle.
           </motion.p>
 
           {/* CTA buttons — matching screenshot style exactly */}
@@ -221,7 +221,7 @@ function HeroSection() {
 /* ═══════════════════════════ AIRLINE SUCCESS — white ═══ */
 function AirlineStorySection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }}
           className="rounded-3xl p-10 sm:p-14 relative overflow-hidden"
@@ -267,7 +267,7 @@ function AirlineStorySection() {
 /* ═══════════════════════════ BUILT FOR SPEED — #F8FAFC dot ═══ */
 function BuiltForSpeedSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }}>
@@ -329,7 +329,7 @@ function InItWithYouSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100" style={GRID_BG}>
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100" style={GRID_BG}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left */}
@@ -392,9 +392,9 @@ function InItWithYouSection() {
 /* ═══════════════════════════ AT A GLANCE — #F8FAFC dot ═══ */
 function AtAGlanceSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>At a Glance</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">Proven Results</h2>
         </motion.div>
@@ -466,9 +466,9 @@ function CapabilitiesSection() {
   ];
 
   return (
-    <section id="capabilities" className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100" style={GRID_BG}>
+    <section id="capabilities" className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100" style={GRID_BG}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>Our Capabilities</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-4">From Harder to Smarter</h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-500 max-w-3xl">
@@ -530,9 +530,9 @@ function CapabilitiesSection() {
 /* ═══════════════════════════ OUR APPROACH — #F8FAFC dot ═══ */
 function OurApproachSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>Our Approach</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">How We Do It</h2>
         </motion.div>
@@ -584,7 +584,7 @@ const DEVOPS_PARTNERS = [
 
 function PartnershipsSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.9, ease }}>
@@ -593,7 +593,7 @@ function PartnershipsSection() {
               Best-in-Class Integrations
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-6">
-              The world's leading technology and software providers partner with Syntera Tech because of our scale, full-stack capabilities and speed. Together, we can deliver new, sustainable growth across your business.
+              The world's leading technology and software providers partner with Syntera Consulting because of our scale, full-stack capabilities and speed. Together, we can deliver new, sustainable growth across your business.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-10">
               Working together, we deliver unprecedented value across four critical transformation pillars: optimizing existing technology, reshaping business functions, inventing new opportunities, and reimagining entire organizations.
@@ -643,7 +643,7 @@ function InsightsSection() {
       source: 'Cloud Insider',
       date: 'January 2026',
       title: 'Migrating to Modern',
-      desc: 'How Syntera Tech and a global asset management firm embarked on a multiyear technology modernization initiative to migrate their full application portfolio to the cloud.',
+      desc: 'How Syntera Consulting and a global asset management firm embarked on a multiyear technology modernization initiative to migrate their full application portfolio to the cloud.',
       img: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=700&q=80',
     },
     {
@@ -652,16 +652,16 @@ function InsightsSection() {
       source: 'Tech Report',
       date: 'November 2025',
       title: 'Leading the Way with Azure DevOps',
-      desc: 'How Syntera Tech partnered with an organization to transform their Microsoft Azure DevOps pipeline for improved user experiences and increased velocity.',
+      desc: 'How Syntera Consulting partnered with an organization to transform their Microsoft Azure DevOps pipeline for improved user experiences and increased velocity.',
       img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=80',
     },
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
+          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8">
           <div>
             <Pill>Our Latest News Headlines</Pill>
             <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">Thinking Forward</h2>
@@ -716,7 +716,7 @@ function InsightsSection() {
 /* ═══════════════════════════ CTA ═══ */
 function CTASection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -751,7 +751,7 @@ function CTASection() {
               <span className="h-1.5 w-1.5 rounded-full bg-[#60A5FA]" /> Get Started
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              Interested in Speaking with Syntera Tech?
+              Interested in Speaking with Syntera Consulting?
             </h2>
             <p className="text-base leading-relaxed mb-8" style={{ color: 'rgba(191,219,254,0.72)' }}>
               Let's explore how our DevOps and Agile expertise can accelerate your software delivery and transform your engineering organization.

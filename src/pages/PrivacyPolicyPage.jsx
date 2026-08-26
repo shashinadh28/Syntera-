@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx';
 
 export default function PrivacyPolicyPage() {
   useEffect(() => {
-    document.title = 'Privacy Policy — Syntera Tech';
+    document.title = 'Privacy Policy — Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col justify-between">
       <Navbar />
 
-      <main className="flex-grow pt-32 pb-16 px-6 sm:px-8 lg:px-12 max-w-4xl mx-auto w-full">
+      <main className="flex-grow pt-24 pb-16 px-6 sm:px-8 lg:px-12 max-w-4xl mx-auto w-full">
         <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-100 shadow-xl">
           <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">
             Privacy Policy
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="prose prose-slate prose-sm sm:prose-base max-w-none text-slate-600 space-y-6">
             <p className="font-semibold leading-relaxed text-slate-700">
-              Syntera Tech ("we," "our," or "us") is dedicated to protecting the privacy of our website visitors, clients, partners, and candidate network. This Privacy Policy details how we handle information collected through our web platforms and recruitment databases.
+              Syntera Consulting ("we," "our," or "us") is dedicated to protecting the privacy of our website visitors, clients, partners, and candidate network. This Privacy Policy details how we handle information collected through our web platforms and recruitment databases.
             </p>
 
             <h2 className="text-lg font-black text-slate-800 pt-4 border-t border-slate-100">

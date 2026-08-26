@@ -51,7 +51,7 @@ export default function AssessmentPromoSection() {
   return (
     <section
       id="assessments"
-      className="relative py-20 sm:py-28 overflow-hidden"
+      className="relative py-12 sm:py-16 overflow-hidden"
       style={{ backgroundColor: '#0B1120' }}
     >
       {/* Dot grid */}
@@ -77,7 +77,7 @@ export default function AssessmentPromoSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
-          className="text-center max-w-3xl mx-auto mb-14"
+          className="text-center max-w-3xl mx-auto mb-8"
         >
           <span
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
@@ -93,7 +93,7 @@ export default function AssessmentPromoSection() {
             </span>
           </h2>
           <p className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            Two free diagnostic tools designed by Syntera Tech engineers. Get personalized scores, identify critical gaps, and walk away with an action plan.
+            Two free diagnostic tools designed by Syntera Consulting engineers. Get personalized scores, identify critical gaps, and walk away with an action plan.
           </p>
         </motion.div>
 

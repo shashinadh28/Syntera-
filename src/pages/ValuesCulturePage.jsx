@@ -245,7 +245,7 @@ function HeroSection() {
 /* ══════════════════════════════════ INTRO TEXT ══════════════════════ */
 function IntroSection() {
   return (
-    <section className="py-20 sm:py-24 bg-white">
+    <section className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }}
@@ -469,7 +469,7 @@ function ConnectSection() {
   const navigate = useNavigate();
 
   return (
-    <section id="connect" className="relative py-24 sm:py-32 overflow-hidden">
+    <section id="connect" className="relative py-14 sm:py-32 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1800&q=80"
@@ -500,7 +500,7 @@ function ConnectSection() {
 
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-6">
             Interested in speaking<br className="hidden sm:block" />
-            <span style={{ color: '#2F80ED' }}> with Syntera Tech?</span>
+            <span style={{ color: '#2F80ED' }}> with Syntera Consulting?</span>
           </h2>
 
           <p className="text-base sm:text-lg leading-relaxed text-slate-500 max-w-xl mx-auto mb-12">

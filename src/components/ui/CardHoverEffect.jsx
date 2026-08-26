@@ -10,7 +10,7 @@ const ease = [0.22, 1, 0.36, 1];
  * Usage:
  *   <CardHoverEffect items={[ { num, title, desc, icon } ]} />
  *
- * Theme colour: #2F80ED (Syntera Tech blue)
+ * Theme colour: #2F80ED (Syntera Consulting blue)
  */
 export function CardHoverEffect({ items, className = '', showIcon = true, showNumber = true }) {
   const [hoveredIdx, setHoveredIdx] = useState(null);

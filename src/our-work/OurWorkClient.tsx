@@ -672,7 +672,7 @@ export default function OurWorkClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              className="text-center py-24 bg-white rounded-2xl border border-[#E8EDF2]"
+              className="text-center py-14 bg-white rounded-2xl border border-[#E8EDF2]"
             >
               <p className="text-[#6B7280] text-lg font-medium">No projects found in this category.</p>
               <button

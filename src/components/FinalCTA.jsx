@@ -90,7 +90,7 @@ export default function FinalCTA() {
   return (
     <section
       id="contact"
-      className="relative py-20 sm:py-28 overflow-hidden"
+      className="relative py-12 sm:py-16 overflow-hidden"
       style={{ backgroundColor: '#0A1628' }}
     >
       {/* Grid overlay */}

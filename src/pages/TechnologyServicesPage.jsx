@@ -168,7 +168,7 @@ export default function TechnologyServicesPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease }}
-              className="flex items-center gap-3 mb-8 pt-48 lg:pt-32"
+              className="flex items-center gap-3 mb-8 pt-48 lg:pt-24"
             >
               <span style={{ width: '28px', height: '2px', background: '#2F80ED', borderRadius: '2px', display: 'inline-block' }} />
               <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: '#2F80ED' }}>
@@ -257,7 +257,7 @@ export default function TechnologyServicesPage() {
         </div>
       </section>
       {/* CAPABILITIES */}
-      <section id="capabilities" className="py-20 sm:py-28 bg-white">
+      <section id="capabilities" className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr
             badge="Capabilities"
@@ -308,7 +308,7 @@ export default function TechnologyServicesPage() {
       {/* DELIVERY APPROACH */}
       <section
         id="delivery"
-        className="py-20 sm:py-28 border-b border-slate-100"
+        className="py-12 sm:py-16 border-b border-slate-100"
         style={{
           backgroundColor: '#FAFAF8',
           backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.08) 1.5px, transparent 1.5px)',
@@ -334,7 +334,7 @@ export default function TechnologyServicesPage() {
       </section>
 
       {/* OUTCOMES */}
-      <section id="outcomes" className="py-20 sm:py-28 bg-white">
+      <section id="outcomes" className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr badge="Case Studies" title="Outcomes we've delivered" sub="Real results from real engagements." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-14">
@@ -380,7 +380,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
   const handleSubmit = (e) => { e.preventDefault(); if (!agreed) return; setSubmitted(true); };
 
   return (
-    <section id={id} className="relative py-20 sm:py-28 overflow-hidden"
+    <section id={id} className="relative py-12 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E5DB8 50%, #2F80ED 100%)' }}>
       <div aria-hidden className="pointer-events-none absolute inset-0"
         style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
@@ -479,7 +479,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round"/></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Consulting' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

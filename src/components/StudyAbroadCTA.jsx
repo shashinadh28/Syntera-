@@ -37,7 +37,7 @@ export default function StudyAbroadCTA() {
   const sceneScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.96, 1, 0.98]);
 
   return (
-    <section id="academy" ref={ref} className="relative py-16 sm:py-20 lg:py-28">
+    <section id="academy" ref={ref} className="relative py-16 sm:py-12 lg:py-28">
       <div className="mx-auto max-w-page container-px">
         <motion.div
           style={{ scale: sceneScale }}
@@ -92,7 +92,7 @@ export default function StudyAbroadCTA() {
                 variants={fadeUpSmall}
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-white"
               >
-                <GlobeIcon /> Syntera Tech Academy
+                <GlobeIcon /> Syntera Consulting Academy
               </motion.span>
 
               <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.05] tracking-tightest text-white">
@@ -102,7 +102,7 @@ export default function StudyAbroadCTA() {
                   className="block"
                 />
                 <RevealText
-                  text="with Syntera Tech Academy"
+                  text="with Syntera Consulting Academy"
                   staggerChildren={0.08}
                   delay={0.25}
                   className="block text-white"
@@ -113,7 +113,7 @@ export default function StudyAbroadCTA() {
                 variants={fadeUpSmall}
                 className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-white/85"
               >
-                Explore a realm of educational opportunities alongside Syntera Tech, your committed
+                Explore a realm of educational opportunities alongside Syntera Consulting, your committed
                 ally in Study Abroad services. Our proficient team leads you through each phase,
                 from choosing the perfect destination to navigating the application procedure.
               </motion.p>
@@ -157,7 +157,7 @@ export default function StudyAbroadCTA() {
               >
                 <img
                   src="/Academy.webp"
-                  alt="Study Abroad at Syntera Tech Academy"
+                  alt="Study Abroad at Syntera Consulting Academy"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />

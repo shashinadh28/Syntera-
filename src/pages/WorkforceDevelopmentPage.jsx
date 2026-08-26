@@ -161,7 +161,7 @@ function HeroSection() {
       <motion.div aria-hidden animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.18, 0.08] }} transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }} className="pointer-events-none absolute top-[-80px] right-[-60px] w-[700px] h-[600px] rounded-full blur-[130px]" style={{ background: 'rgba(47,128,237,0.15)', zIndex: 1 }} />
       <motion.div aria-hidden animate={{ scale: [1, 1.15, 1], opacity: [0.06, 0.13, 0.06] }} transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 4 }} className="pointer-events-none absolute bottom-0 left-[-80px] w-[500px] h-[400px] rounded-full blur-[110px]" style={{ background: 'rgba(99,102,241,0.12)', zIndex: 1 }} />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left text */}
           <div>
@@ -285,7 +285,7 @@ function OverviewSection() {
   ];
 
   return (
-    <section id="overview" className="py-24 sm:py-32 overflow-hidden relative" style={{ backgroundColor: '#FAFAF8' }}>
+    <section id="overview" className="py-14 sm:py-32 overflow-hidden relative" style={{ backgroundColor: '#FAFAF8' }}>
       {/* Dot background */}
       <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.06) 1.5px, transparent 1.5px)', backgroundSize: '26px 26px' }} />
 
@@ -376,7 +376,7 @@ function InItWithYouSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100 relative" style={{ backgroundColor: '#0B1120' }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100 relative" style={{ backgroundColor: '#0B1120' }}>
       {/* Dark grid bg */}
       <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
       <div aria-hidden className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] blur-[120px]" style={{ background: 'rgba(47,128,237,0.08)' }} />
@@ -474,11 +474,11 @@ function CapabilitiesSection() {
   ];
 
   return (
-    <section id="capabilities" className="py-24 sm:py-32 overflow-hidden border-b border-slate-100 relative"
+    <section id="capabilities" className="py-14 sm:py-32 overflow-hidden border-b border-slate-100 relative"
       style={{ backgroundColor: '#FAFAF8', backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.13) 1.5px, transparent 1.5px)', backgroundSize: '26px 26px' }}
     >
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="max-w-3xl mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="max-w-3xl mb-10">
           <Pill>Our Capabilities</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-6">
             Powered by Expertise, Delivered with Impact
@@ -549,9 +549,9 @@ function OurApproachSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden border-b border-slate-100">
+    <section className="py-14 sm:py-32 bg-white overflow-hidden border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-10">
           <motion.div initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.75, ease }} className="lg:col-span-5">
             <Pill>Our Approach</Pill>
             <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.05] tracking-tight">
@@ -616,7 +616,7 @@ function PartnershipsSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden border-b border-slate-100"
+    <section className="py-14 sm:py-32 bg-white overflow-hidden border-b border-slate-100"
       style={{ backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.08) 1px, transparent 1px)', backgroundSize: '24px 24px' }}
     >
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
@@ -681,7 +681,7 @@ function InsightsSection() {
       color: '#1E5DB8',
       tag: 'Success Story',
       title: 'Continuous Education in the Digital Health Age',
-      desc: 'A healthcare education program collaborated with Syntera Tech to modernize their online presence with innovative learning solutions to help improve geriatric care.',
+      desc: 'A healthcare education program collaborated with Syntera Consulting to modernize their online presence with innovative learning solutions to help improve geriatric care.',
       image: '/Workforce_Development/Featured-Insights/Continuous-Education-Digital-Health-Age.webp',
     },
     {
@@ -694,13 +694,13 @@ function InsightsSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden relative" style={{ backgroundColor: '#FAFAF8' }}>
+    <section className="py-14 sm:py-32 overflow-hidden relative" style={{ backgroundColor: '#FAFAF8' }}>
       {/* Dot bg */}
       <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.13) 1.5px, transparent 1.5px)', backgroundSize: '26px 26px' }} />
 
       <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
+          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8">
           <div>
             <Pill>Featured Insights</Pill>
             <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">Thinking Forward</h2>
@@ -769,7 +769,7 @@ function FinalCTASection() {
   ];
 
   return (
-    <section id="contact-wd" className="relative py-20 sm:py-28 overflow-hidden"
+    <section id="contact-wd" className="relative py-12 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E5DB8 50%, #2F80ED 100%)' }}>
       <div aria-hidden className="pointer-events-none absolute inset-0"
         style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
@@ -783,7 +783,7 @@ function FinalCTASection() {
             <motion.span initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.6, ease }}
               className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-6"
               style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: '#EAF3FF' }}>
-              <span className="h-1.5 w-1.5 rounded-full bg-current" />Interested in speaking with Syntera Tech?
+              <span className="h-1.5 w-1.5 rounded-full bg-current" />Interested in speaking with Syntera Consulting?
             </motion.span>
 
             <motion.h2 initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce}
@@ -866,7 +866,7 @@ function FinalCTASection() {
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Consulting' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

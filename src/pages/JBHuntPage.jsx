@@ -56,7 +56,7 @@ export default function JBHuntPage() {
         <div aria-hidden className="pointer-events-none absolute top-0 right-0 w-[600px] h-[500px] rounded-full blur-[120px]" style={{ background: 'rgba(47,128,237,0.08)' }} />
         <div aria-hidden className="pointer-events-none absolute bottom-0 left-0 w-[400px] h-[350px] rounded-full blur-[100px]" style={{ background: 'rgba(99,102,241,0.06)' }} />
 
-        <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12 py-20 flex flex-col items-center text-center">
+        <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12 py-12 flex flex-col items-center text-center">
           <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-6"
             style={{ border: '1px solid rgba(47,128,237,0.3)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}>
@@ -112,7 +112,7 @@ export default function JBHuntPage() {
       </section>
 
       {/* ── OVERVIEW (BigQuery Data Modernization) with real image ── */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.85, ease }}>
@@ -129,7 +129,7 @@ export default function JBHuntPage() {
                 J.B. Hunt identified several areas of opportunity where improvements could be made to their existing enterprise data warehouse (EDW). By migrating from an on-premises DB2 solution to a cloud data warehouse, they could quickly process greater volumes of data, eliminate data siloes and arm stakeholders with near-real-time reports.
               </p>
               <p className="text-base leading-relaxed text-slate-500">
-                Google Cloud was J.B. Hunt's platform-of-choice for this undertaking, largely due to the benefits of their infrastructure and the reporting capabilities offered through BigQuery. As a Google Cloud Premier Partner, Syntera Tech was more than up to the task.
+                Google Cloud was J.B. Hunt's platform-of-choice for this undertaking, largely due to the benefits of their infrastructure and the reporting capabilities offered through BigQuery. As a Google Cloud Premier Partner, Syntera Consulting was more than up to the task.
               </p>
             </motion.div>
 
@@ -162,7 +162,7 @@ export default function JBHuntPage() {
 
       {/* ── MIGRATION PLAN — Delivery Approach clone design ── */}
       <section
-        className="py-20 sm:py-28 border-b border-slate-100"
+        className="py-12 sm:py-16 border-b border-slate-100"
         style={{ backgroundColor: '#FAFAF8', backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.08) 1.5px, transparent 1.5px)', backgroundSize: '24px 24px' }}
       >
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
@@ -191,7 +191,7 @@ export default function JBHuntPage() {
       </section>
 
       {/* ── KEEPING CUSTOMER IN DRIVER SEAT with real image ── */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }}>
@@ -249,7 +249,7 @@ export default function JBHuntPage() {
       </section>
 
       {/* ── REAL WORLD RESULTS ── */}
-      <section className="py-20 sm:py-28" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+      <section className="py-12 sm:py-16" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr badge="Real-World Results" title="The road to better data" sub="The serverless infrastructure of J.B. Hunt's new BigQuery solution delivers near-real-time data, empowering smarter business decisions and improving customer experience." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
@@ -271,7 +271,7 @@ export default function JBHuntPage() {
       </section>
 
       {/* ── MORE STORIES with real images ── */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr badge="More Stories" title="More stories of owning change" sub="Explore more transformation journeys across industries and technologies." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
@@ -329,7 +329,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
   const handleSubmit = (e) => { e.preventDefault(); if (!agreed) return; setSubmitted(true); };
 
   return (
-    <section id={id} className="relative py-20 sm:py-28 overflow-hidden"
+    <section id={id} className="relative py-12 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E5DB8 50%, #2F80ED 100%)' }}>
       <div aria-hidden className="pointer-events-none absolute inset-0"
         style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
@@ -417,7 +417,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         {agreed && <svg className="w-3 h-3" fill="none" viewBox="0 0 12 12" stroke="#fff" strokeWidth="2.5"><path d="M2 6l3 3 5-5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Consulting' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

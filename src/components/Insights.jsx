@@ -24,7 +24,7 @@ const POSTS = [
   {
     title: 'SailPoint to Entra ID: A Healthcare IAM Migration',
     excerpt:
-      'How Syntera Tech staffed and co-led a 14-month IAM platform migration for a 6,000-employee regional health system — on time, zero compliance gaps, and 40% reduction in provisioning time.',
+      'How Syntera Consulting staffed and co-led a 14-month IAM platform migration for a 6,000-employee regional health system — on time, zero compliance gaps, and 40% reduction in provisioning time.',
     category: 'Case Study',
     readTime: '8 min read',
     slug: '/blog/healthcare-iam-migration',
@@ -39,7 +39,7 @@ const cardVariant = {
 
 export default function Insights() {
   return (
-    <section id="insights" className="relative py-16 sm:py-20 overflow-hidden" style={{ backgroundColor: '#FAFAF8' }}>
+    <section id="insights" className="relative py-16 sm:py-12 overflow-hidden" style={{ backgroundColor: '#FAFAF8' }}>
       <div className="mx-auto max-w-page container-px">
         {/* Section header */}
         <motion.div
@@ -47,7 +47,7 @@ export default function Insights() {
           whileInView="visible"
           viewport={viewportOnce}
           variants={stagger(0.18)}
-          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 sm:mb-16"
+          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-8 sm:mb-10"
         >
           <motion.span
             variants={{
@@ -66,7 +66,7 @@ export default function Insights() {
             }}
             className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tightest text-ink-900"
           >
-            Insights and perspectives from the Syntera Tech team.
+            Insights and perspectives from the Syntera Consulting team.
           </motion.h2>
           <motion.p
             variants={{

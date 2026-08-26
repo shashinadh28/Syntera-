@@ -185,7 +185,7 @@ export default function TechPartners() {
   return (
     <section
       id="tech-partners"
-      className="relative py-20 sm:py-24 overflow-hidden border-y border-gray-100"
+      className="relative py-12 sm:py-16 overflow-hidden border-y border-gray-100"
       style={{ backgroundColor: '#F8FAFC' }}
     >
       {/* Glow shapes */}
@@ -207,7 +207,7 @@ export default function TechPartners() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16"
+          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-10"
         >
           <span
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-4"
@@ -225,7 +225,7 @@ export default function TechPartners() {
         </motion.div>
 
         {/* ROW 1: IAM Platforms */}
-        <div className="mb-14">
+        <div className="mb-8">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-6 text-center lg:text-left">
             Identity &amp; Access Management (IAM) Platforms
           </div>

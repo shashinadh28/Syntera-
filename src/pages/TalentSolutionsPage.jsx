@@ -138,7 +138,7 @@ export default function TalentSolutionsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease }}
-              className="flex items-center gap-3 mb-8 pt-48 lg:pt-32"
+              className="flex items-center gap-3 mb-8 pt-48 lg:pt-24"
             >
               <span style={{ width: '28px', height: '2px', background: '#2F80ED', borderRadius: '2px', display: 'inline-block' }} />
               <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: '#2F80ED' }}>
@@ -228,7 +228,7 @@ export default function TalentSolutionsPage() {
       </section>
 
       {/* ENGAGEMENT MODELS */}
-      <section id="engagement-models" className="py-20 sm:py-28" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+      <section id="engagement-models" className="py-12 sm:py-16" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr badge="Engagement Models" title="Choose the model that fits your needs"
             sub="From rapid staff augmentation to full program delivery—structured for outcomes, not just headcount." />
@@ -237,7 +237,7 @@ export default function TalentSolutionsPage() {
       </section>
 
       {/* ROLES */}
-      <section id="roles" className="py-20 sm:py-28 bg-white">
+      <section id="roles" className="py-12 sm:py-16 bg-white">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <SectionHdr badge="Roles & Specialties" title="The talent we place"
             sub="High-demand engineering and technology disciplines that drive modern delivery." />
@@ -289,7 +289,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
   const handleSubmit = (e) => { e.preventDefault(); if (!agreed) return; setSubmitted(true); };
 
   return (
-    <section id={id} className="relative py-20 sm:py-28 overflow-hidden"
+    <section id={id} className="relative py-12 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E5DB8 50%, #2F80ED 100%)' }}>
       {/* Grid overlay */}
       <div aria-hidden className="pointer-events-none absolute inset-0"
@@ -406,7 +406,7 @@ function OrangeCTASection({ id, badge, headline, sub, steps, ctaLabel, formHeadl
                         </div>
                       </div>
                       <span className="text-xs leading-relaxed" style={{ color: '#6b7280' }}>
-                        I agree to Syntera Tech' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
+                        I agree to Syntera Consulting' <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Privacy Policy</a> and <a href="/contact" style={{ color: '#2F80ED', fontWeight: 600 }}>Terms</a> *
                       </span>
                     </label>
                     <motion.button type="submit"

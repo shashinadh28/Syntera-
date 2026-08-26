@@ -81,7 +81,7 @@ const CLIENT_WORK = [
 const TOOLS = [
   {
     type: null,
-    label: 'Syntera Tech AI',
+    label: 'Syntera Consulting AI',
     desc: 'Our proprietary AI-powered platform for real-time pricing intelligence, revenue analytics, and automated decision support.',
     dark: true,
   },
@@ -227,7 +227,7 @@ function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
-            className="flex items-center gap-3 mb-8 pt-48 lg:pt-32"
+            className="flex items-center gap-3 mb-8 pt-48 lg:pt-24"
           >
             <span style={{ width: '28px', height: '2px', background: '#2F80ED', borderRadius: '2px', display: 'inline-block' }} />
             <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: '#2F80ED' }}>
@@ -290,7 +290,7 @@ function HeroSection() {
             style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '520px' }}
           >
             By transforming pricing, companies can drive significant value to the bottom line.
-            Syntera Tech' pricing and revenue management teams help build the capabilities, processes, and
+            Syntera Consulting' pricing and revenue management teams help build the capabilities, processes, and
             mindset that unlock the power of pricing—in good times and bad.
           </motion.p>
           <motion.p
@@ -382,7 +382,7 @@ function ServicesSection() {
   return (
     <section
       id="services"
-      className="py-20 sm:py-28"
+      className="py-12 sm:py-16"
       style={{
         backgroundColor: '#FAFAF8',
         backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.13) 1.5px, transparent 1.5px)',
@@ -395,7 +395,7 @@ function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="font-display text-4xl sm:text-5xl font-extrabold text-ink-900 mb-14 max-w-xl leading-[1.05] tracking-tight"
+          className="font-display text-4xl sm:text-5xl font-extrabold text-ink-900 mb-8 max-w-xl leading-[1.05] tracking-tight"
         >
           Our Pricing and Revenue Management Services
         </motion.h2>
@@ -476,7 +476,7 @@ function HowWeHelpSection() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="py-20 sm:py-28 bg-white">
+    <section className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left sidebar */}
@@ -520,7 +520,7 @@ function HowWeHelpSection() {
             className="lg:col-span-9"
           >
             <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold text-ink-900 leading-[1.05] tracking-tight mb-3">
-              How Syntera Tech Helps Companies Master Pricing and Revenue Management
+              How Syntera Consulting Helps Companies Master Pricing and Revenue Management
             </h2>
             <p className="text-base leading-relaxed mb-10" style={{ color: '#475569' }}>
               Pricing has no textbook solution. Different companies require different pricing
@@ -580,7 +580,7 @@ function HowWeHelpSection() {
 /* ─────────────────────────────────────────── CLIENT WORK ─── */
 function ClientWorkSection() {
   return (
-    <section className="py-20 sm:py-28 relative overflow-hidden" style={{ backgroundColor: '#0B1120' }}>
+    <section className="py-12 sm:py-16 relative overflow-hidden" style={{ backgroundColor: '#0B1120' }}>
       <div aria-hidden className="pointer-events-none absolute inset-0"
         style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
       <div aria-hidden className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] blur-[120px]"
@@ -592,7 +592,7 @@ function ClientWorkSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
-          className="mb-14"
+          className="mb-8"
         >
           <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
             style={{ background: 'rgba(47,128,237,0.1)', border: '1px solid rgba(47,128,237,0.25)', color: '#2F80ED' }}>
@@ -645,7 +645,7 @@ function ClientWorkSection() {
 function ToolCard({ t, i }) {
   const [hovered, setHovered] = useState(false);
 
-  // All cards adopt the dark style on hover (matching Syntera Tech AI card baseline)
+  // All cards adopt the dark style on hover (matching Syntera Consulting AI card baseline)
   const isActive = t.dark || hovered;
 
   return (
@@ -676,7 +676,7 @@ function ToolCard({ t, i }) {
           </p>
         )}
 
-        {/* Syntera Tech AI logo (always shown for Syntera Tech AI card, shown on hover for others) */}
+        {/* Syntera Consulting AI logo (always shown for Syntera Consulting AI card, shown on hover for others) */}
         {t.dark && (
           <div className="flex items-center gap-2.5 mb-8">
             <div className="h-9 w-9 rounded-xl grid place-items-center shrink-0" style={{ background: '#2F80ED' }}>
@@ -688,7 +688,7 @@ function ToolCard({ t, i }) {
           </div>
         )}
 
-        {/* For non-Syntera Tech cards on hover, show a small glow accent */}
+        {/* For non-Syntera Consulting cards on hover, show a small glow accent */}
         {!t.dark && hovered && (
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -724,7 +724,7 @@ function ToolCard({ t, i }) {
 function ToolsSection() {
   return (
     <section
-      className="py-20 sm:py-28"
+      className="py-12 sm:py-16"
       style={{
         backgroundColor: '#FAFAF8',
         backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.13) 1.5px, transparent 1.5px)',
@@ -851,7 +851,7 @@ function CTASection() {
   const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); };
 
   return (
-    <section id="pricing-contact" className="py-20 sm:py-28 bg-white">
+    <section id="pricing-contact" className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-[860px] px-6 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 28 }}

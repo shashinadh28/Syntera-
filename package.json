@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Premium animated landing page for Syntera Tech — built with React, Tailwind CSS, and Framer Motion.",
+  "description": "Premium animated landing page for Syntera Consulting — built with React, Tailwind CSS, and Framer Motion.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

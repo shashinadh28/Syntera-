@@ -76,7 +76,7 @@ export default function Footer() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[400px] w-[800px] rounded-full bg-accent-500/5 blur-[120px]" />
       </div>
 
-      <div className="mx-auto max-w-page container-px py-16 sm:py-20">
+      <div className="mx-auto max-w-page container-px py-16 sm:py-12">
         {/* ── ROW 1: Company Info + Quick Links + Services ── */}
         <RevealGroup
           staggerChildren={0.12}
@@ -87,7 +87,7 @@ export default function Footer() {
             <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <img
                 src="/LOGO/new/Syntera-LOGO.webp"
-                alt="Syntera | Technology & Talent Solutions"
+                alt="Syntera Consulting"
                 style={{ height: '40px', width: 'auto', objectFit: 'contain' }}
               />
             </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-6 text-xs text-white/40">
-              © 2025 Syntera Tech All Rights Reserved.
+              © 2025 Syntera Consulting All Rights Reserved.
             </p>
             <Link to="/privacy-policy" className="mt-1 block text-xs text-white/40 hover:text-white transition-colors">
               Privacy Policy
@@ -277,7 +277,7 @@ export default function Footer() {
           className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 text-xs text-white/45"
         >
           <motion.div variants={fadeUpSmall}>
-            © 2025 Syntera | Technology &amp; Talent Solutions All Rights Reserved.
+            © 2025 Syntera Consulting | Technology &amp; Talent Solutions All Rights Reserved.
           </motion.div>
           <motion.div variants={fadeUpSmall} className="flex items-center gap-3">
             {SOCIALS.map(({ label, href, path }) => (

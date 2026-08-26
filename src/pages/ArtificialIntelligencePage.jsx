@@ -63,7 +63,7 @@ function HeroSection() {
       <motion.div aria-hidden animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.18, 0.08] }} transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }} className="pointer-events-none absolute top-[-80px] right-[-60px] w-[700px] h-[600px] rounded-full blur-[130px]" style={{ background: 'rgba(47,128,237,0.15)', zIndex: 1 }} />
       <motion.div aria-hidden animate={{ scale: [1, 1.15, 1], opacity: [0.06, 0.13, 0.06] }} transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 4 }} className="pointer-events-none absolute bottom-0 left-[-80px] w-[500px] h-[400px] rounded-full blur-[110px]" style={{ background: 'rgba(99,102,241,0.12)', zIndex: 1 }} />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }} className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-7" style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}>
@@ -76,7 +76,7 @@ function HeroSection() {
             </motion.h1>
             <motion.div initial={{ scaleX: 0, originX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.9, ease, delay: 0.55 }} style={{ height: '1.5px', background: 'linear-gradient(90deg, rgba(47,128,237,0.7), transparent)', maxWidth: '340px', marginBottom: '1.6rem' }} />
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.28 }} className="text-base sm:text-lg leading-[1.8] mb-6 max-w-lg" style={{ color: 'rgba(255,255,255,0.68)' }}>
-              With artificial intelligence at a crucial inflection point, Syntera Tech is helping organizations weave together human and technological capabilities to maximize value potential, productivity, and innovation from AI.
+              With artificial intelligence at a crucial inflection point, Syntera Consulting is helping organizations weave together human and technological capabilities to maximize value potential, productivity, and innovation from AI.
             </motion.p>
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.35 }} className="text-sm leading-[1.7] mb-10 max-w-lg" style={{ color: 'rgba(255,255,255,0.52)' }}>
               When predictive AI is complemented by generative AI, their combined power offers stronger capabilities and greater, sustained AI value creation. Building from a proven strategic playbook, our AI strategy consulting team empowers clients to focus on key strategic opportunities and execute a comprehensive AI business transformation.
@@ -155,7 +155,7 @@ const AI_SERVICES = [
     id: 'responsible',
     tag: 'Responsible AI',
     title: 'Responsible AI',
-    desc: 'Our Syntera Tech responsible AI consulting team helps organizations execute a strategic approach to responsible AI through a tailored program based on five pillars—ensuring AI deployments are fair, transparent, accountable, and aligned with human values.',
+    desc: 'Our Syntera Consulting responsible AI consulting team helps organizations execute a strategic approach to responsible AI through a tailored program based on five pillars—ensuring AI deployments are fair, transparent, accountable, and aligned with human values.',
     img: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=900&q=80',
     color: '#0EA5E9',
     accent: '#7DD3FC',
@@ -186,10 +186,10 @@ function AIServicesSection() {
   const svc = AI_SERVICES[active];
 
   return (
-    <section id="services" className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section id="services" className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* Header */}
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
             style={{ background: 'rgba(47,128,237,0.08)', border: '1px solid rgba(47,128,237,0.2)', color: '#2F80ED' }}>
             <span className="h-1.5 w-1.5 rounded-full bg-current" />
@@ -320,10 +320,10 @@ function ApproachSection() {
   const play = DRI_PLAYS[activePlay];
 
   return (
-    <section id="approach" className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section id="approach" className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* Header */}
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="max-w-3xl mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="max-w-3xl mb-10">
           <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
             style={{ background: 'rgba(47,128,237,0.08)', border: '1px solid rgba(47,128,237,0.2)', color: '#2F80ED' }}>
             <span className="h-1.5 w-1.5 rounded-full bg-current" />
@@ -333,12 +333,12 @@ function ApproachSection() {
             Our Approach to Artificial Intelligence at Scale
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-500">
-            For Syntera Tech and our clients, the future of AI offers both a strategic tool to scale up value and a viable solution to our most pressing global challenges. We prioritize a <strong className="text-slate-700">10-20-70 approach</strong> that emphasizes algorithms (10%), tech and data (20%), and people and processes (70%).
+            For Syntera Consulting and our clients, the future of AI offers both a strategic tool to scale up value and a viable solution to our most pressing global challenges. We prioritize a <strong className="text-slate-700">10-20-70 approach</strong> that emphasizes algorithms (10%), tech and data (20%), and people and processes (70%).
           </p>
         </motion.div>
 
         {/* 10-20-70 visual */}
-        <div className="grid grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-3 gap-4 mb-10">
           {[
             { pct: '10%', label: 'Algorithms', color: '#2F80ED' },
             { pct: '20%', label: 'Tech & Data', color: '#1E5DB8' },
@@ -434,7 +434,7 @@ const NEWS = [
 
 function NewsSectionFull() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
 
         {/* CEO Data Point highlight */}
@@ -444,7 +444,7 @@ function NewsSectionFull() {
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
           whileHover={{ y: -5, boxShadow: '0 20px 40px rgba(11,26,46,0.4)' }}
-          className="group relative rounded-[28px] overflow-hidden flex flex-col justify-between p-8 sm:p-10 cursor-pointer transition-all duration-300 mb-16"
+          className="group relative rounded-[28px] overflow-hidden flex flex-col justify-between p-8 sm:p-10 cursor-pointer transition-all duration-300 mb-10"
           style={{
             backgroundColor: '#0B1A2E',
             minHeight: '280px',
@@ -467,7 +467,7 @@ function NewsSectionFull() {
               Explore the trends shaping CEO priorities with insights powered by AI.
             </p>
             <p className="text-sm leading-relaxed mt-3 max-w-2xl" style={{ color: 'rgba(255,255,255,0.65)' }}>
-              Powered by Syntera Tech AI and deep industry expertise, it analyzes thousands of earnings call transcripts and keywords to reveal the trends gaining and losing momentum in CEO conversations.
+              Powered by Syntera Consulting AI and deep industry expertise, it analyzes thousands of earnings call transcripts and keywords to reveal the trends gaining and losing momentum in CEO conversations.
             </p>
           </div>
 
@@ -534,7 +534,7 @@ const AI_PARTNERS = [
 
 function PartnersSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.9, ease }}>
@@ -547,7 +547,7 @@ function PartnersSection() {
               Our AI &amp; GenAI Collaborations
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-6">
-              Syntera Tech is more than just a strategic consultant. Our clients benefit from our global ecosystem of AI and GenAI collaborations, including those with leading tech companies like AWS, Google Cloud, Microsoft Azure, Salesforce, and ServiceNow—and with AI-centered enterprises such as OpenAI, Anthropic, LangChain, and Palantir.
+              Syntera Consulting is more than just a strategic consultant. Our clients benefit from our global ecosystem of AI and GenAI collaborations, including those with leading tech companies like AWS, Google Cloud, Microsoft Azure, Salesforce, and ServiceNow—and with AI-centered enterprises such as OpenAI, Anthropic, LangChain, and Palantir.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-10">
               Working together, we deliver unprecedented value across four critical transformation pillars: optimizing existing technology, reshaping business functions, inventing new business opportunities, and reimagining entire organizations.
@@ -607,10 +607,10 @@ const INSIGHTS = [
 
 function InsightsSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
+          className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-5"
               style={{ background: 'rgba(47,128,237,0.08)', border: '1px solid rgba(47,128,237,0.2)', color: '#2F80ED' }}>
@@ -667,8 +667,8 @@ function InsightsSection() {
 function ExploreMoreSection() {
   return (
     <section className="overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
-      {/* Syntera Tech Answer banner */}
-      <div className="relative py-20 sm:py-28 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0B1120 0%, #0F1F45 50%, #1E3A6E 100%)' }}>
+      {/* Syntera Consulting Answer banner */}
+      <div className="relative py-12 sm:py-16 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0B1120 0%, #0F1F45 50%, #1E3A6E 100%)' }}>
         {/* Decorative grid overlay */}
         <div aria-hidden className="pointer-events-none absolute inset-0"
           style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px)', backgroundSize: '48px 48px' }} />
@@ -684,14 +684,14 @@ function ExploreMoreSection() {
               </span>
               <h2 className="font-display text-4xl sm:text-5xl font-extrabold leading-[1.06] tracking-tight mb-6"
                 style={{ background: 'linear-gradient(135deg, #ffffff 0%, #BFDBFE 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                Syntera Tech Answer
+                Syntera Consulting Answer
               </h2>
               <div style={{ height: '1.5px', background: 'linear-gradient(90deg, rgba(47,128,237,0.7), transparent)', maxWidth: '280px', marginBottom: '1.5rem' }} />
               <p className="text-base leading-[1.85] mb-4 max-w-lg" style={{ color: 'rgba(255,255,255,0.72)' }}>
-                Discover the answer to your most important business challenges. Syntera Tech Answer delivers integrated insights powered by our cross-functional expertise and the latest thinking shaping today's business decisions.
+                Discover the answer to your most important business challenges. Syntera Consulting Answer delivers integrated insights powered by our cross-functional expertise and the latest thinking shaping today's business decisions.
               </p>
               <p className="text-sm leading-[1.8] mb-10 max-w-lg" style={{ color: 'rgba(191,219,254,0.58)' }}>
-                Bringing together our most relevant perspectives, Syntera Tech Answer guides you to what matters most right now — faster, smarter, and with greater confidence.
+                Bringing together our most relevant perspectives, Syntera Consulting Answer guides you to what matters most right now — faster, smarter, and with greater confidence.
               </p>
               <a href="#"
                 className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold text-white transition-all duration-300"
@@ -737,7 +737,7 @@ function ExploreMoreSection() {
       </div>
 
       {/* Explore More grid */}
-      <div className="py-20 sm:py-24">
+      <div className="py-12 sm:py-16">
         <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
           <motion.h2 initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.7, ease }}
             className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 mb-12">
@@ -782,7 +782,7 @@ function ExploreMoreSection() {
               {[
                 {
                   tag: 'Capability',
-                  title: 'Syntera Tech X',
+                  title: 'Syntera Consulting X',
                   desc: 'Our in-house design-and-build capability, offering practical AI solutions and customized, industrial-grade platforms.',
                   img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80',
                   color: '#2F80ED',

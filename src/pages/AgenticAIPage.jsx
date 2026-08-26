@@ -32,7 +32,7 @@ const Pill = ({ children, color = '#2F80ED' }) => (
 
 /* ══ Section heading shared ══ */
 const SectionHeading = ({ pill, title, subtitle, pillColor }) => (
-  <div className="mb-14">
+  <div className="mb-8">
     <Pill color={pillColor}>{pill}</Pill>
     <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-4">{title}</h2>
     {subtitle && <p className="text-base sm:text-lg leading-relaxed text-slate-500 max-w-3xl">{subtitle}</p>}
@@ -41,7 +41,7 @@ const SectionHeading = ({ pill, title, subtitle, pillColor }) => (
 
 export default function AgenticAIPage() {
   useEffect(() => {
-    document.title = 'Agentic AI — Autonomous Decision-Making | Syntera Tech';
+    document.title = 'Agentic AI — Autonomous Decision-Making | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -228,7 +228,7 @@ function HeroSection() {
 /* ═══════════════════════════ WHAT IS AGENTIC AI — white ═══ */
 function WhatIsAgenticSection() {
   return (
-    <section id="what-is-agentic" className="py-24 sm:py-32 bg-white overflow-hidden">
+    <section id="what-is-agentic" className="py-14 sm:py-32 bg-white overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }}>
@@ -283,9 +283,9 @@ function WhatIsAgenticSection() {
 /* ═══════════════════════════ THE CHANGE AGENT — #F8FAFC dot bg ═══ */
 function TheChangeAgentSection() {
   return (
-    <section id="change-agent" className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section id="change-agent" className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="max-w-3xl mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="max-w-3xl mb-10">
           <Pill>The Change Agent</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-5">
             Technology Investments at a Crucial Inflection Point
@@ -349,9 +349,9 @@ function CoreComponentsSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>Core Components</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">Blueprint Architecture</h2>
         </motion.div>
@@ -390,9 +390,9 @@ function CoreComponentsSection() {
 /* ═══════════════════════════ HISTORY — image only ═══ */
 function HistorySection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-14 text-center">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-8 text-center">
           <Pill>History</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">History of Agentic AI</h2>
         </motion.div>
@@ -443,9 +443,9 @@ function MarketPerspectiveSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>Market Perspective</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">Expert Dialogue on Agentic AI</h2>
         </motion.div>
@@ -497,16 +497,16 @@ function MarketPerspectiveSection() {
 /* ═══════════════════════════ OUR PERSPECTIVE — #F8FAFC dot ═══ */
 function OurPerspectiveSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.85, ease }}>
             <Pill>Our Perspective</Pill>
             <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight mb-6">
-              Syntera Tech' View on Agentic AI
+              Syntera Consulting' View on Agentic AI
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-5">
-              At Syntera Tech, we believe agentic AI represents the most significant enterprise technology shift since cloud computing. The organizations that will lead their industries in 2030 are those investing in agentic AI capabilities today.
+              At Syntera Consulting, we believe agentic AI represents the most significant enterprise technology shift since cloud computing. The organizations that will lead their industries in 2030 are those investing in agentic AI capabilities today.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-8">
               However, we caution against a "deploy first, govern later" approach. Robust agent orchestration, memory isolation, and human-in-the-loop checkpoints are essential for enterprise-grade reliability and trust.
@@ -557,9 +557,9 @@ function ChallengesSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>Challenges</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">Key Technical Challenges</h2>
         </motion.div>
@@ -598,9 +598,9 @@ function ChallengesSection() {
 /* ═══════════════════════════ BENEFITS — #F8FAFC dot ═══ */
 function BenefitsSection() {
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>Benefits</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">Business Benefits of Agentic AI</h2>
         </motion.div>
@@ -725,7 +725,7 @@ function TGSPartnerPortfolioSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
+    <section className="py-14 sm:py-32 overflow-hidden bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={viewportOnce} transition={{ duration: 0.9, ease }}>
@@ -734,7 +734,7 @@ function TGSPartnerPortfolioSection() {
               Our Agentic AI Partner Portfolio
             </h2>
             <p className="text-base leading-relaxed text-slate-500 mb-6">
-              Syntera Tech' agentic AI practice is backed by deep partnerships with the world's leading AI infrastructure and platform providers, enabling us to design, build, and deploy enterprise-grade agent systems at scale.
+              Syntera Consulting' agentic AI practice is backed by deep partnerships with the world's leading AI infrastructure and platform providers, enabling us to design, build, and deploy enterprise-grade agent systems at scale.
             </p>
             <p className="text-base leading-relaxed text-slate-500 mb-10">
               From LLM providers to vector databases, orchestration frameworks to cloud infrastructure — our partner ecosystem ensures you access the best-in-class stack for your agentic AI journey.
@@ -778,9 +778,9 @@ function HowItWorksSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-14 sm:py-32 overflow-hidden border-b border-slate-100" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-16">
+        <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.8, ease }} className="mb-10">
           <Pill>How It Works</Pill>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.06] tracking-tight">The Agentic AI Lifecycle</h2>
         </motion.div>
@@ -807,7 +807,7 @@ function HowItWorksSection() {
 /* ═══════════════════════════ CTA — centered dark card ═══ */
 function CTASection() {
   return (
-    <section className="py-24 sm:py-32 bg-white overflow-hidden">
+    <section className="py-14 sm:py-32 bg-white overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -861,7 +861,7 @@ function CTASection() {
             </span>
 
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight max-w-2xl mb-5">
-              Build Your Agentic AI Strategy with Syntera Tech
+              Build Your Agentic AI Strategy with Syntera Consulting
             </h2>
 
             <p className="text-base leading-relaxed max-w-xl mb-10" style={{ color: 'rgba(255,255,255,0.65)' }}>

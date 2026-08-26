@@ -54,7 +54,7 @@ function HeroSection() {
       <motion.div aria-hidden animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.18, 0.08] }} transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }} className="pointer-events-none absolute top-[-80px] right-[-60px] w-[700px] h-[600px] rounded-full blur-[130px]" style={{ background: 'rgba(47,128,237,0.15)', zIndex: 1 }} />
       <motion.div aria-hidden animate={{ scale: [1, 1.15, 1], opacity: [0.06, 0.13, 0.06] }} transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 4 }} className="pointer-events-none absolute bottom-0 left-[-80px] w-[500px] h-[400px] rounded-full blur-[110px]" style={{ background: 'rgba(99,102,241,0.12)', zIndex: 1 }} />
 
-      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 mx-auto max-w-[1280px] w-full px-6 sm:px-8 lg:px-12 pt-24 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }} className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-7" style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}>
@@ -67,7 +67,7 @@ function HeroSection() {
             </motion.h1>
             <motion.div initial={{ scaleX: 0, originX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.9, ease, delay: 0.55 }} style={{ height: '1.5px', background: 'linear-gradient(90deg, rgba(47,128,237,0.7), transparent)', maxWidth: '340px', marginBottom: '1.6rem' }} />
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.28 }} className="text-base sm:text-lg leading-[1.8] mb-10 max-w-lg" style={{ color: 'rgba(255,255,255,0.68)' }}>
-              Ready to go beyond and solve the world's biggest problems? Demystify case study interviews with our prep quizzes and top Syntera Tech tips to succeed.
+              Ready to go beyond and solve the world's biggest problems? Demystify case study interviews with our prep quizzes and top Syntera Consulting tips to succeed.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease, delay: 0.42 }} className="flex flex-wrap gap-4">
               <a href="#expect" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-bold text-sm transition-all duration-300" style={{ backgroundColor: '#2F80ED', boxShadow: '0 8px 32px rgba(47,128,237,0.42)', textDecoration: 'none' }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#1E5DB8'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#2F80ED'; }}>
@@ -112,7 +112,7 @@ function HeroSection() {
 /* ─────────────────────────────────────────────────── WHAT TO EXPECT ─── */
 function ExpectSection() {
   return (
-    <section id="expect" className="py-20 sm:py-28 bg-white border-b border-slate-100">
+    <section id="expect" className="py-12 sm:py-16 bg-white border-b border-slate-100">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left col */}
@@ -181,7 +181,7 @@ function DosAndDontsSection() {
   ];
 
   return (
-    <section className="py-20 sm:py-28" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
+    <section className="py-12 sm:py-16" style={{ backgroundColor: '#FAFAF8', ...DOT_BG }}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         
         {/* DO'S CONTAINER */}
@@ -290,7 +290,7 @@ function GetReadySection() {
   ];
 
   return (
-    <section id="quizzes" className="py-20 sm:py-28 bg-white">
+    <section id="quizzes" className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <motion.div
@@ -298,7 +298,7 @@ function GetReadySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
-          className="mb-16"
+          className="mb-10"
         >
           <span
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] mb-4"
@@ -388,14 +388,14 @@ function GetReadySection() {
 /* ───────────────────────────────────────────── READY TO APPLY ─── */
 function ReadyToApplySection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#FAFAF8] overflow-hidden" style={DOT_BG}>
+    <section className="py-12 sm:py-16 bg-[#FAFAF8] overflow-hidden" style={DOT_BG}>
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.75, ease }}
-          className="mb-14"
+          className="mb-8"
         >
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.05] tracking-tight">
             Ready To Apply?
@@ -427,10 +427,10 @@ function ReadyToApplySection() {
 
             <div>
               <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Find a Job at Syntera Tech
+                Find a Job at Syntera Consulting
               </h3>
               <p className="text-sm leading-relaxed mt-4 max-w-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Discover opportunities that match your ambitions. At Syntera Tech, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
+                Discover opportunities that match your ambitions. At Syntera Consulting, you’ll work with exceptional people, solve meaningful challenges, and grow your career across our global offices and disciplines.
               </p>
             </div>
 
@@ -446,7 +446,7 @@ function ReadyToApplySection() {
             </div>
           </motion.div>
 
-          {/* Card 2: Syntera Tech on Campus (3 cols out of 12) */}
+          {/* Card 2: Syntera Consulting on Campus (3 cols out of 12) */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -460,10 +460,10 @@ function ReadyToApplySection() {
           >
             <div>
               <h3 className="font-display text-2xl font-extrabold text-slate-800 leading-tight" style={{ color: '#1E293B' }}>
-                Syntera Tech on Campus
+                Syntera Consulting on Campus
               </h3>
               <p className="text-sm leading-relaxed mt-4" style={{ color: '#475569' }}>
-                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Syntera Tech at your campus.
+                Explore opportunities to meet our team on campus or online, learn about recruiting timelines, and get connected with Syntera Consulting at your campus.
               </p>
             </div>
 

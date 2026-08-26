@@ -53,6 +53,9 @@ import QaAsAServicePage from './pages/QaAsAServicePage.jsx';
 import AppDevelopmentPage from './pages/AppDevelopmentPage.jsx';
 import StaffingPage from './pages/StaffingPage.jsx';
 import OurProcessPage from './pages/OurProcessPage.jsx';
+import SynteraCareersPage from './pages/SynteraCareersPage.jsx';
+import OurWorkPage from './pages/OurWorkPage.jsx';
+import OurWorkDetailPage from './pages/OurWorkDetailPage.jsx';
 
 function HomePage() {
   const location = useLocation();
@@ -153,6 +156,10 @@ export default function App() {
           <Route path="/app-development" element={<AppDevelopmentPage />} />
           <Route path="/staffing" element={<StaffingPage />} />
           <Route path="/our-process" element={<OurProcessPage />} />
+          <Route path="/syntera-careers" element={<SynteraCareersPage />} />
+          <Route path="/careers" element={<SynteraCareersPage />} />
+          <Route path="/our-work" element={<OurWorkPage />} />
+          <Route path="/our-work/:slug" element={<OurWorkDetailPage />} />
         </Routes>
       </div>
     </>

@@ -25,7 +25,7 @@ export default function AIIAMIntersection() {
   return (
     <section
       id="ai-iam"
-      className="relative py-20 sm:py-28 overflow-hidden"
+      className="relative py-12 sm:py-16 overflow-hidden"
       style={{ backgroundColor: '#0A1628' }}
     >
       {/* Subtle grid */}
@@ -51,7 +51,7 @@ export default function AIIAMIntersection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8, ease }}
-          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16"
+          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-10"
         >
           {/* Eyebrow */}
           <motion.span
@@ -99,7 +99,7 @@ export default function AIIAMIntersection() {
             className="mt-4 text-base sm:text-lg leading-relaxed max-w-2xl"
             style={{ color: 'rgba(255,255,255,0.65)' }}
           >
-            Syntera Tech sits at this crossroads by design. We have the AI implementation depth and the IAM architecture expertise
+            Syntera Consulting sits at this crossroads by design. We have the AI implementation depth and the IAM architecture expertise
             to help you build AI systems that are governed from day one — not secured as an afterthought.
           </motion.p>
         </motion.div>
