@@ -107,72 +107,27 @@ export default function LaborConditionApplicationsPage() {
               </motion.div>
             </div>
 
-            {/* Right — decorative triangle / building visual */}
+            {/* Right — decorative triangle skyscraper visual */}
             <motion.div
               initial={{ opacity: 0, x: 40, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="hidden lg:flex items-center justify-center flex-shrink-0"
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="hidden lg:flex items-center justify-center flex-shrink-0 relative"
             >
-              {/* Triangle shape with building image inside — mimics the reference */}
-              <div className="relative w-[300px] h-[300px]">
-                {/* Outer triangle shape */}
-                <svg
-                  viewBox="0 0 300 300"
-                  className="absolute inset-0 w-full h-full drop-shadow-2xl"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <clipPath id="triangleClip">
-                      <polygon points="150,10 295,280 5,280" />
-                    </clipPath>
-                    <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#2F80ED" stopOpacity="0.9" />
-                      <stop offset="100%" stopColor="#1E5DB8" stopOpacity="1" />
-                    </linearGradient>
-                  </defs>
+              {/* Subtle blue ambient glow behind triangle */}
+              <div
+                aria-hidden
+                className="absolute w-[360px] h-[360px] rounded-full bg-blue-500/15 blur-[50px] -z-10"
+              />
 
-                  {/* Filled blue triangle */}
-                  <polygon
-                    points="150,10 295,280 5,280"
-                    fill="url(#triGrad)"
-                    opacity="0.15"
-                    stroke="#2F80ED"
-                    strokeWidth="2"
-                  />
-
-                  {/* Image clipped to triangle */}
-                  <image
-                    href="/company-leadership/nrupen.webp"
-                    x="0" y="0"
-                    width="300" height="300"
-                    preserveAspectRatio="xMidYMid slice"
-                    clipPath="url(#triangleClip)"
-                    style={{ filter: 'brightness(0.6) saturate(0.3) hue-rotate(200deg)' }}
-                  />
-
-                  {/* Blue overlay */}
-                  <polygon
-                    points="150,10 295,280 5,280"
-                    fill="url(#triGrad)"
-                    opacity="0.55"
-                  />
-                </svg>
-
-                {/* Building icon overlay */}
-                <div className="absolute inset-0 flex items-center justify-center" style={{ paddingTop: '40px' }}>
-                  <svg
-                    className="w-20 h-20 text-white opacity-80"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-              </div>
+              {/* Triangle Skyscraper image */}
+              <motion.img
+                src="/trainagle.png"
+                alt="Labor Condition Applications - Syntera Consulting"
+                className="w-[380px] lg:w-[430px] max-w-full h-auto object-contain drop-shadow-[0_20px_35px_rgba(15,23,42,0.16)]"
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              />
             </motion.div>
           </div>
         </div>
