@@ -95,7 +95,7 @@ export default function Footer() {
               Your growth is our progress
             </p>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
-              AI + Identity. Enterprise technology delivery.
+              Where Talent Meets Technology.
             </p>
 
             <div className="mt-6 text-sm text-white/65 space-y-1">

@@ -148,3 +148,30 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #9CA3AF, #D1D5DB);
 }
+/* Train marquee animations */
+@keyframes trainMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-train-marquee {
+  display: flex;
+  width: max-content;
+  animation: trainMarquee 30s linear infinite;
+}
+.animate-train-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-train-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: trainMarquee 42s linear infinite;
+}
+.animate-train-marquee-slow:hover {
+  animation-play-state: paused;
+}

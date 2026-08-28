@@ -5,15 +5,13 @@ const ease = [0.22, 1, 0.36, 1];
 
 /* Per-item stagger variant */
 const item = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 28 },
   visible: (i = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.85, ease, delay: i * 0.12 },
+    transition: { duration: 0.75, ease, delay: i * 0.1 },
   }),
 };
-
-const LOGOS = ['Google', 'GM', 'Oracle', 'FedEx', 'HP', 'Verizon'];
 
 export default function Hero() {
   const ref = useRef(null);
@@ -22,336 +20,233 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className="relative isolate overflow-hidden"
-      style={{ backgroundColor: '#0A1628', minHeight: '100vh' }}
+      className="relative overflow-hidden bg-[#F7F8FB] px-6 pb-32 pt-8 sm:pb-36 sm:pt-10 md:px-12 lg:px-16 lg:pb-40 lg:pt-12"
     >
-      {/* Dot grid texture */}
+      {/* ── 1. FAINT WORLD-MAP / DOT PATTERN BACKGROUND ───────────────────────── */}
       <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px)',
-          backgroundSize: '32px 32px',
-        }}
-      />
-
-      {/* Blue glow top-right */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute"
-        style={{
-          top: '-10%',
-          right: '-5%',
-          width: '600px',
-          height: '600px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(21,101,216,0.18) 0%, transparent 70%)',
-          filter: 'blur(40px)',
-          zIndex: 0,
-        }}
-      />
-
-      {/* Background blue circle decoration */}
-      <motion.img
-        src="/SVG/Orange_Circle.png"
-        alt=""
         aria-hidden="true"
-        className="absolute pointer-events-none hidden lg:block"
-        initial={{ x: '100%', opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease, delay: 0.1 }}
+        className="pointer-events-none absolute inset-0 opacity-60 z-0"
         style={{
-          top: '2%',
-          right: '-3%',
-          transform: 'translateY(-50%)',
-          width: '30vw',
-          maxWidth: '700px',
-          minWidth: '400px',
-          zIndex: 0,
-          filter: 'hue-rotate(190deg) saturate(1.2)',
+          backgroundImage: 'radial-gradient(circle, #c7cee6 1.2px, transparent 1.2px)',
+          backgroundSize: '14px 14px',
+          WebkitMaskImage: 'radial-gradient(ellipse 65% 65% at 45% 20%, black 40%, transparent 75%)',
+          maskImage: 'radial-gradient(ellipse 65% 65% at 45% 20%, black 40%, transparent 75%)',
         }}
       />
 
-      {/* ── CONTENT ─────────────────────────────────────────────── */}
+      {/* ── 2. TOP RIGHT BLUE BACKDROP SWOOSH / CURVE ─────────────────────────── */}
       <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-24 -right-20 w-[550px] h-[550px] lg:w-[750px] lg:h-[750px] z-0 opacity-90 hidden sm:block"
         style={{
-          position: 'relative',
-          zIndex: 2,
-          maxWidth: '1280px',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          paddingLeft: 'clamp(1.25rem, 4vw, 3rem)',
-          paddingRight: 'clamp(1.25rem, 4vw, 3rem)',
+          background: 'radial-gradient(circle at top right, #0d288a 0%, #1742c4 40%, transparent 70%)',
+          clipPath: 'polygon(30% 0%, 100% 0%, 100% 100%, 0% 70%)',
+          filter: 'blur(20px)',
         }}
+      />
+
+      {/* Solid right organic backdrop path matching reference */}
+      <svg
+        className="pointer-events-none absolute top-0 right-0 h-full w-[45vw] max-w-[650px] z-0 hidden lg:block"
+        viewBox="0 0 500 700"
+        preserveAspectRatio="none"
+        aria-hidden="true"
       >
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
-            gap: 'clamp(2rem, 5vw, 4rem)',
-            alignItems: 'center',
-            minHeight: '90vh',
-            paddingTop: 'clamp(1.5rem, 3vw, 2.5rem)',
-            paddingBottom: '3rem',
-          }}
-        >
-          {/* ── LEFT: Text ─────────────────────────────────────── */}
-          <div className="hero-text-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            {/* Eyebrow Badge */}
-            <motion.div
-              custom={0} variants={item} initial="hidden" animate="visible"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', marginBottom: '1.75rem' }}
-            >
-              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#1565D8', borderRadius: '2px' }} />
-              <span style={{ fontSize: '12px', fontWeight: 700, color: '#1565D8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-                Welcome to Syntera Consulting
-              </span>
-            </motion.div>
+        <path
+          d="M150,0 C30,180 20,400 120,700 L500,700 L500,0 Z"
+          fill="#0c2377"
+          opacity="0.95"
+        />
+        <path
+          d="M200,0 C100,160 90,380 180,700 L500,700 L500,0 Z"
+          fill="#1744cf"
+          opacity="0.45"
+        />
+      </svg>
 
-            {/* Main Headline */}
-            <motion.h1
-              custom={1} variants={item} initial="hidden" animate="visible"
-              style={{
-                fontSize: 'clamp(2.2rem, 5vw, 3.75rem)',
-                fontWeight: 800,
-                lineHeight: 1.1,
-                letterSpacing: '-0.03em',
-                color: '#FFFFFF',
-                fontFamily: '"Plus Jakarta Sans", Inter, sans-serif',
-                marginBottom: '1.75rem',
-              }}
-            >
-              AI Implementation +{' '}
-              <span style={{ display: 'inline' }}>Identity Security</span>
-              <br />
-              <span style={{ color: '#1565D8' }}>for the Enterprise.</span>
-            </motion.h1>
-
-            {/* Subheadline */}
-            <motion.p
-              custom={2} variants={item} initial="hidden" animate="visible"
-              style={{
-                fontSize: 'clamp(0.9rem, 1.6vw, 1rem)',
-                lineHeight: 1.8,
-                color: 'rgba(255,255,255,0.65)',
-                maxWidth: '460px',
-                marginBottom: '1.25rem',
-                fontWeight: 400,
-              }}
-            >
-              We build and secure AI-powered enterprises. From LLM integration and agentic
-              workflows to Zero Trust IAM and identity governance — Syntera Consulting delivers the
-              technology expertise and engineering talent you need to move fast and stay protected.
-            </motion.p>
-
-            {/* Trust line */}
-            <motion.p
-              custom={3} variants={item} initial="hidden" animate="visible"
-              style={{
-                fontSize: '11.5px',
-                color: 'rgba(255,255,255,0.35)',
-                letterSpacing: '0.05em',
-                marginBottom: '2.5rem',
-                borderLeft: '2px solid rgba(21,101,216,0.5)',
-                paddingLeft: '10px',
-                lineHeight: 1.6,
-              }}
-            >
-              Trusted by technology, financial services, and healthcare organizations across the U.S. and globally.
-            </motion.p>
-
-            {/* CTA Buttons */}
-            <motion.div
-              custom={4} variants={item} initial="hidden" animate="visible"
-              className="hero-cta-row"
-              style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}
-            >
-              <motion.a
-                href="#contact"
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '10px',
-                  background: '#1565D8', color: '#fff', fontWeight: 700,
-                  fontSize: '15px', padding: '14px 28px', borderRadius: '50px',
-                  textDecoration: 'none', boxShadow: '0 8px 32px rgba(21,101,216,0.4)',
-                  letterSpacing: '0.01em',
-                }}
-                whileHover={{ scale: 1.04, boxShadow: '0 12px 40px rgba(21,101,216,0.55)' }}
-                whileTap={{ scale: 0.97 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              >
-                Talk to an Expert
-                <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,0.2)' }}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                  </svg>
-                </span>
-              </motion.a>
-
-              <motion.a
-                href="#services"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: 600, fontSize: '14px', textDecoration: 'none' }}
-                whileHover={{ color: '#fff' }}
-              >
-                See AI + IAM Services
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </motion.a>
-            </motion.div>
-
-            {/* Stats Row — 4 stats */}
-            <motion.div
-              custom={5} variants={item} initial="hidden" animate="visible"
-              className="hero-stats-row"
-              style={{ display: 'flex', alignItems: 'center', gap: '2rem', marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.08)', flexWrap: 'wrap' }}
-            >
-              <Stat value="500+" label="Talent Engagements" />
-              <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.1)' }} />
-              <Stat value="20+" label="Industries Served" />
-              <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.1)' }} />
-              <Stat value="98%" label="Client Retention" />
-              <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.1)' }} />
-              <Stat value="18k+" label="Enterprise Connections" />
-            </motion.div>
-          </div>
-
-          {/* ── RIGHT: Hero Image (desktop only) ─────────────── */}
+      {/* ── 3. MAIN HERO CONTENT CONTAINER ───────────────────────────────────── */}
+      <div className="relative z-10 mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
+        
+        {/* ── LEFT COLUMN: Text, Buttons, Ratings & Stats ── */}
+        <div className="flex flex-col items-start text-left">
+          
+          {/* Eyebrow Pill Badge */}
           <motion.div
-            initial={{ opacity: 0, x: 60, scale: 0.95 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ delay: 0.5, duration: 1.1, ease }}
-            className="hidden lg:flex"
-            style={{ position: 'relative', justifyContent: 'center', alignItems: 'flex-end' }}
+            custom={0}
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            className="mb-4 inline-flex items-center gap-2.5 rounded-full border border-[#d7ddf0] bg-white py-1.5 pl-2 pr-4 text-xs sm:text-sm font-semibold text-[#0b1b3f] shadow-[0_2px_8px_-2px_rgba(11,27,63,0.08)]"
           >
-            {/* White Circle — slides up */}
-            <motion.img
-              src="/SVG/white_circle.png" alt="" aria-hidden="true"
-              initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.0, duration: 0.8, ease }}
-              style={{ position: 'absolute', top: '-70px', left: '156px', zIndex: 2, width: '35px', objectFit: 'contain', pointerEvents: 'none' }}
-            />
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2f5fe0] text-xs text-white">
+              👥
+            </span>
+            <span>Welcome to Syntera · Staffing &amp; Technology</span>
+          </motion.div>
 
-            {/* Tall rectangle behind white circle */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }} animate={{ opacity: 0.2, y: 0 }}
-              transition={{ delay: 1.1, duration: 0.8, ease }}
-              style={{ position: 'absolute', top: '-50px', left: '156px', zIndex: 1, width: '35px', height: '150px', background: '#ffffff', borderRadius: '4px', pointerEvents: 'none' }}
-            />
+          {/* Main Headline */}
+          <motion.h1
+            custom={1}
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            className="mb-4 font-display text-4xl sm:text-5xl lg:text-[50px] font-extrabold leading-[1.1] tracking-tight text-[#0b1b3f]"
+          >
+            Where Talent Meets <br />
+            <span className="text-[#2f5fe0]">Technology.</span>
+          </motion.h1>
 
-            {/* Blue Circle mid-left */}
-            <motion.img
-              src="/SVG/Orange_Circle.png" alt="" aria-hidden="true"
-              initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.05, duration: 0.8, ease }}
-              style={{ position: 'absolute', top: '-34px', left: '105px', zIndex: 2, width: '35px', objectFit: 'contain', pointerEvents: 'none', filter: 'hue-rotate(190deg) saturate(1.2)' }}
-            />
+          {/* Subheadline */}
+          <motion.p
+            custom={2}
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            className="mb-4 max-w-[500px] text-base leading-relaxed text-[#5b6478] sm:text-lg"
+          >
+            Connecting exceptional talent, innovative technology, and ambitious businesses to build what’s next.
+          </motion.p>
 
-            {/* White Circle bottom-left */}
-            <motion.img
-              src="/SVG/white_circle.png" alt="" aria-hidden="true"
-              initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.95, duration: 0.8, ease }}
-              style={{ position: 'absolute', top: '-8px', left: '54px', zIndex: 2, width: '35px', objectFit: 'contain', pointerEvents: 'none' }}
-            />
+          {/* Trust callout line */}
+          <motion.p
+            custom={3}
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            className="mb-6 text-xs sm:text-sm font-medium text-[#5b6478]/90 border-l-2 border-[#2f5fe0] pl-3 leading-relaxed max-w-[480px]"
+          >
+            Let’s build what’s next, together. Trusted by enterprise organizations across the U.S. and globally.
+          </motion.p>
 
-            {/* Rectangle behind blue circle */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }} animate={{ opacity: 0.2, y: 0 }}
-              transition={{ delay: 1.15, duration: 0.8, ease }}
-              style={{ position: 'absolute', top: '-10px', left: '105px', zIndex: 1, width: '35px', height: '150px', background: '#ffffff', borderRadius: '4px', pointerEvents: 'none' }}
-            />
-
-            {/* Rectangle far left */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }} animate={{ opacity: 0.2, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.8, ease }}
-              style={{ position: 'absolute', top: '15px', left: '54px', zIndex: 1, width: '35px', height: '150px', background: '#ffffff', borderRadius: '4px', pointerEvents: 'none' }}
-            />
-
-            {/* Stars */}
-            <motion.img
-              src="/SVG/stars.png" alt="" aria-hidden="true"
-              initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.3, duration: 0.8, ease }}
-              style={{ position: 'absolute', top: '80%', left: '-80px', zIndex: 1, width: '80px', objectFit: 'contain', pointerEvents: 'none' }}
-            />
-
-            {/* 18k+ Enterprise Connections badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.25, duration: 0.8, ease }}
-              style={{ position: 'absolute', left: '-20px', top: '42%', zIndex: 10, background: 'white', borderRadius: '50px', padding: '8px 16px 8px 8px', display: 'flex', alignItems: 'center', gap: '10px', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' }}
+          {/* CTA Buttons Row */}
+          <motion.div
+            custom={4}
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            className="mb-7 flex flex-wrap gap-4"
+          >
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-[10px] bg-[#2f5fe0] px-6 py-3.5 sm:px-7 sm:py-3.5 text-sm font-bold text-white shadow-[0_10px_20px_-8px_rgba(47,95,224,0.55)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1c3fae] hover:shadow-[0_14px_24px_-8px_rgba(47,95,224,0.7)]"
             >
-              <div style={{ display: 'flex' }}>
-                {['#6366f1', '#1565D8', '#0EA5E9'].map((color, i) => (
-                  <div key={i} style={{ width: '30px', height: '30px', borderRadius: '50%', background: color, border: '2px solid white', marginLeft: i > 0 ? '-8px' : '0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
-                      <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-                    </svg>
-                  </div>
-                ))}
-                <div style={{ width: '30px', height: '30px', borderRadius: '50%', background: '#1E5DB8', border: '2px solid white', marginLeft: '-8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
-                    <line x1="12" y1="5" x2="12" y2="19" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                    <line x1="5" y1="12" x2="19" y2="12" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                  </svg>
+              <span>Talk to an Expert</span>
+              <span className="text-base font-normal">↗</span>
+            </a>
+            <a
+              href="#services"
+              className="inline-flex items-center gap-2 rounded-[10px] border-[1.5px] border-[#2f5fe0] bg-white px-6 py-3.5 sm:px-7 sm:py-3.5 text-sm font-bold text-[#2f5fe0] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#eef2ff]"
+            >
+              <span>Explore Services &amp; Talent</span>
+              <span className="text-base font-normal">↗</span>
+            </a>
+          </motion.div>
+
+          {/* Rating & Trust */}
+          <motion.div
+            custom={5}
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            className="w-full"
+          >
+            <div className="mb-6">
+              <span className="mb-2 block text-xs font-bold uppercase tracking-wider text-[#5b6478]">
+                Trusted By Our Clients
+              </span>
+              <div className="flex items-center gap-3">
+                <div className="flex gap-1 text-lg leading-none text-[#2f5fe0]">
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span className="opacity-60">★</span>
                 </div>
+                <span className="text-[#c7cee6]">|</span>
+                <span className="text-xs sm:text-sm font-bold text-[#0b1b3f]">
+                  500+ Happy Enterprise Engagements
+                </span>
+              </div>
+            </div>
+
+            {/* 4 Stats Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-5 border-t border-slate-200/90 w-full">
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-[#0b1b3f]">500+</div>
+                <div className="text-xs text-[#5b6478] font-semibold mt-0.5">Talent Engagements</div>
               </div>
               <div>
-                <div style={{ fontSize: '15px', fontWeight: 800, color: '#0A1628', lineHeight: 1 }}>18k+</div>
-                <div style={{ fontSize: '11px', color: '#64748b', marginTop: '2px' }}>Enterprise Connections</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-[#0b1b3f]">20+</div>
+                <div className="text-xs text-[#5b6478] font-semibold mt-0.5">Industries Served</div>
               </div>
-            </motion.div>
-
-            {/* Main hero image */}
-            <img
-              src="/ancile_Landing_Page.webp"
-              alt="Professional team collaborating"
-              style={{
-                width: '100%',
-                maxWidth: '560px',
-                objectFit: 'contain',
-                position: 'relative',
-                zIndex: 2,
-                marginTop: '-80px',
-                marginLeft: '200px',
-                filter: 'drop-shadow(0 40px 80px rgba(0,0,0,0.6))'
-              }}
-            />
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-[#0b1b3f]">98%</div>
+                <div className="text-xs text-[#5b6478] font-semibold mt-0.5">Client Retention</div>
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-[#0b1b3f]">18k+</div>
+                <div className="text-xs text-[#5b6478] font-semibold mt-0.5">Enterprise Connections</div>
+              </div>
+            </div>
           </motion.div>
         </div>
 
-        {/* Trust marquee */}
+        {/* ── RIGHT COLUMN: Image Collage Matching Reference Design ── */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.8, ease }}
-          style={{ borderTop: '1px solid rgba(255,255,255,0.07)', paddingTop: '2rem', paddingBottom: '3rem' }}
+          initial={{ opacity: 0, x: 40, scale: 0.96 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          transition={{ duration: 0.9, ease, delay: 0.2 }}
+          className="grid h-[380px] sm:h-[460px] md:h-[520px] grid-cols-[1.35fr_1fr] grid-rows-2 gap-4 sm:gap-5"
         >
-          <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'rgba(255,255,255,0.25)', textAlign: 'center', marginBottom: '1.5rem' }}>
-            Trusted by delivery-focused teams at
+          {/* Main Large Photo (Left spanning 2 rows) */}
+          <div className="row-span-2 overflow-hidden rounded-[20px] border-[6px] border-white shadow-[0_20px_40px_-18px_rgba(11,27,63,0.35)] relative group bg-slate-100">
+            <img
+              src="/hero/hero_main_photo.jpg"
+              alt="Syntera Executive & Tech Leadership"
+              className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
           </div>
-          <div className="mask-fade-edges" style={{ overflow: 'hidden' }}>
-            <div className="flex w-max animate-marquee items-center gap-14">
-              {[...LOGOS, ...LOGOS].map((logo, i) => (
-                <span key={i} style={{ fontSize: '16px', fontFamily: '"Inter", "Plus Jakarta Sans", sans-serif', fontWeight: 600, color: 'rgba(255,255,255,0.18)', whiteSpace: 'nowrap' }}>
-                  {logo}
-                </span>
-              ))}
-            </div>
+
+          {/* Photo 2 (Top Right) */}
+          <div className="overflow-hidden rounded-[20px] border-[6px] border-white shadow-[0_20px_40px_-18px_rgba(11,27,63,0.35)] relative group bg-slate-100">
+            <img
+              src="/hero/hero_photo_2.jpg"
+              alt="Engineers Collaborating"
+              className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
+          </div>
+
+          {/* Photo 3 (Bottom Right) */}
+          <div className="overflow-hidden rounded-[20px] border-[6px] border-white shadow-[0_20px_40px_-18px_rgba(11,27,63,0.35)] relative group bg-slate-100">
+            <img
+              src="/hero/hero_photo_3.jpg"
+              alt="Specialized Software & Cloud Talent"
+              className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
           </div>
         </motion.div>
-      </div>
-    </section>
-  );
-}
 
-function Stat({ value, label }) {
-  return (
-    <div>
-      <div style={{ fontSize: 'clamp(1.4rem, 3vw, 1.75rem)', fontWeight: 800, color: '#FFFFFF', fontFamily: '"Plus Jakarta Sans", Inter, sans-serif', lineHeight: 1 }}>{value}</div>
-      <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>{label}</div>
-    </div>
+      </div>
+
+      {/* ── 4. BOTTOM DUAL-LAYERED WAVE GRAPHIC MATCHING REFERENCE ──────────── */}
+      <svg
+        className="absolute inset-x-0 -bottom-0.5 z-0 h-[140px] w-full sm:h-[180px] md:h-[220px]"
+        viewBox="0 0 1600 220"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0,120 C300,220 500,20 850,80 C1150,130 1350,20 1600,90 L1600,220 L0,220 Z"
+          fill="#ffffff"
+        />
+        <path
+          d="M0,150 C300,250 500,50 850,110 C1150,160 1350,50 1600,120 L1600,220 L0,220 Z"
+          fill="#0c2069"
+        />
+      </svg>
+    </section>
   );
 }

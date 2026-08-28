@@ -59,30 +59,38 @@ export default function FeatureCards() {
         {/* Section header */}
         <RevealGroup
           staggerChildren={0.18}
-          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-8 sm:mb-10"
+          className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 sm:mb-12"
         >
           <motion.span
             variants={fadeUpSmall}
-            className="inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-accent-700"
+            className="inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-accent-700"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
-            What We Do
+            Where Talent Meets Technology
           </motion.span>
           <motion.h2
             variants={fadeUpSmall}
-            className="mt-5 font-display text-4xl sm:text-5xl font-extrabold leading-[1.05] tracking-tight"
+            className="mt-5 font-display text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold leading-[1.15] tracking-tight"
             style={{ color: '#1A1A18' }}
           >
-            Built for the technology challenges<br className="hidden sm:block" /> that define the next decade.
+            A world of opportunity begins when the right talent meets the right technology.
           </motion.h2>
           <motion.p
             variants={fadeUpSmall}
-            className="mt-5 text-base sm:text-lg leading-relaxed max-w-2xl"
-            style={{ color: '#3D3D3A' }}
+            className="mt-5 text-base sm:text-lg leading-relaxed max-w-3xl"
+            style={{ color: '#4A4A46' }}
           >
-            Syntera Consulting combines deep technical expertise in AI and identity security with a delivery-first mindset.
-            We build, implement, and staff the systems that enterprise organizations depend on.
+            At Syntera, we work side by side with our clients to build stronger teams, advance technology, and create solutions that move businesses forward. From specialized talent to technology consulting, we’re ready to help you turn opportunity into impact.
           </motion.p>
+          <motion.div
+            variants={fadeUpSmall}
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-100 px-4 py-1.5 text-sm font-semibold text-accent-700"
+          >
+            <span>Let’s build what’s next, together.</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+            </svg>
+          </motion.div>
         </RevealGroup>
 
         {/* Compact 4-card grid */}
