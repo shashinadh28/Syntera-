@@ -156,19 +156,28 @@ function StoryCard({ story, index }) {
         style={{ borderBottom: '1px solid rgba(15,23,42,0.07)' }}
       >
         <div
-          className="shrink-0 h-16 w-16 rounded-2xl overflow-hidden"
-          style={{ border: '2px solid rgba(47,128,237,0.2)' }}
+          className="shrink-0 h-16 w-16 rounded-2xl overflow-hidden flex items-center justify-center"
+          style={{
+            border: '2px solid rgba(47,128,237,0.2)',
+            background: 'linear-gradient(135deg, rgba(47,128,237,0.12) 0%, rgba(47,128,237,0.22) 100%)',
+          }}
         >
-          <img
-            src={story.image}
-            alt={story.name}
-            className="h-full w-full object-cover"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.parentElement.style.background = 'rgba(47,128,237,0.1)';
-            }}
-          />
+          <svg
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-full w-full"
+            aria-label={story.name}
+          >
+            {/* Background circle */}
+            <rect width="64" height="64" fill="rgba(47,128,237,0.08)" />
+            {/* Head */}
+            <circle cx="32" cy="24" r="11" fill="rgba(47,128,237,0.55)" />
+            {/* Body / shoulders */}
+            <ellipse cx="32" cy="52" rx="18" ry="12" fill="rgba(47,128,237,0.4)" />
+          </svg>
         </div>
+
         <div>
           <h3 className="font-display font-bold text-ink-900 text-base leading-tight">{story.name}</h3>
           <p className="text-xs text-ink-500 mt-0.5 leading-relaxed">{story.role}</p>
