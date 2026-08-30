@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { RevealGroup } from './Reveal.jsx';
-import { fadeUp, fadeUpSmall } from '../utils/motion';
+import { fadeUp } from '../utils/motion';
 
 const RESOURCES = [
   { label: 'Contact Us', href: '/contact', isRoute: true },
@@ -34,9 +34,7 @@ const SOCIALS = [
   },
 ];
 
-/* Decorative "network globe" mark behind the Resources / Policies columns —
-   nods to Syntera's technology-consulting focus without competing with the
-   copy in front of it. */
+/* Decorative "network globe" mark behind the Resources / Policies columns */
 function NetworkMark() {
   return (
     <svg
@@ -45,47 +43,47 @@ function NetworkMark() {
       fill="none"
       aria-hidden="true"
     >
-      <line x1="452.7" y1="457.5" x2="529.1" y2="403.4" stroke="#5B9DFF" stroke-width="0.6" opacity="0.09" />
-      <line x1="847.6" y1="391.1" x2="855.7" y2="485.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.1" />
-      <line x1="847.6" y1="391.1" x2="817.2" y2="338.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.23" />
-      <line x1="898.7" y1="295.3" x2="825.2" y2="273.3" stroke="#5B9DFF" stroke-width="0.6" opacity="0.12" />
-      <line x1="898.7" y1="295.3" x2="924.3" y2="222.0" stroke="#5B9DFF" stroke-width="0.6" opacity="0.21" />
-      <line x1="898.7" y1="295.3" x2="875.8" y2="208.8" stroke="#5B9DFF" stroke-width="0.6" opacity="0.24" />
-      <line x1="739.9" y1="347.0" x2="759.0" y2="342.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.21" />
-      <line x1="739.9" y1="347.0" x2="738.8" y2="385.5" stroke="#5B9DFF" stroke-width="0.6" opacity="0.24" />
-      <line x1="510.1" y1="404.6" x2="482.3" y2="373.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.21" />
-      <line x1="510.1" y1="404.6" x2="481.2" y2="323.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.23" />
-      <line x1="791.9" y1="426.0" x2="833.5" y2="438.9" stroke="#5B9DFF" stroke-width="0.6" opacity="0.22" />
-      <line x1="791.9" y1="426.0" x2="855.7" y2="485.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.22" />
-      <line x1="791.9" y1="426.0" x2="817.2" y2="338.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.08" />
-      <line x1="791.9" y1="426.0" x2="759.0" y2="342.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.14" />
-      <line x1="650.4" y1="127.2" x2="572.1" y2="145.7" stroke="#5B9DFF" stroke-width="0.6" opacity="0.19" />
-      <line x1="834.3" y1="457.8" x2="855.7" y2="485.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.24" />
-      <line x1="834.3" y1="457.8" x2="858.5" y2="382.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.24" />
-      <line x1="671.7" y1="603.9" x2="622.2" y2="592.3" stroke="#5B9DFF" stroke-width="0.6" opacity="0.1" />
-      <line x1="515.0" y1="153.9" x2="486.7" y2="193.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.18" />
-      <line x1="515.0" y1="153.9" x2="554.2" y2="113.3" stroke="#5B9DFF" stroke-width="0.6" opacity="0.2" />
-      <line x1="515.0" y1="153.9" x2="508.9" y2="168.0" stroke="#5B9DFF" stroke-width="0.6" opacity="0.24" />
-      <line x1="833.5" y1="438.9" x2="855.7" y2="485.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.19" />
-      <line x1="833.5" y1="438.9" x2="858.5" y2="382.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.13" />
-      <line x1="947.7" y1="337.5" x2="948.5" y2="325.7" stroke="#5B9DFF" stroke-width="0.6" opacity="0.13" />
-      <line x1="825.2" y1="273.3" x2="817.2" y2="338.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.1" />
-      <line x1="807.5" y1="343.6" x2="858.5" y2="382.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.17" />
-      <line x1="807.5" y1="343.6" x2="738.8" y2="385.5" stroke="#5B9DFF" stroke-width="0.6" opacity="0.13" />
-      <line x1="486.7" y1="193.6" x2="410.6" y2="186.8" stroke="#5B9DFF" stroke-width="0.6" opacity="0.16" />
-      <line x1="534.5" y1="54.8" x2="603.2" y2="37.9" stroke="#5B9DFF" stroke-width="0.6" opacity="0.09" />
-      <line x1="448.0" y1="247.7" x2="401.4" y2="311.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.22" />
-      <line x1="448.0" y1="247.7" x2="481.2" y2="323.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.11" />
-      <line x1="817.2" y1="338.2" x2="759.0" y2="342.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.12" />
-      <line x1="817.2" y1="338.2" x2="867.0" y2="366.4" stroke="#5B9DFF" stroke-width="0.6" opacity="0.15" />
-      <line x1="416.9" y1="280.9" x2="410.6" y2="186.8" stroke="#5B9DFF" stroke-width="0.6" opacity="0.2" />
-      <line x1="416.9" y1="280.9" x2="481.2" y2="323.2" stroke="#5B9DFF" stroke-width="0.6" opacity="0.19" />
-      <line x1="759.0" y1="342.2" x2="738.8" y2="385.5" stroke="#5B9DFF" stroke-width="0.6" opacity="0.21" />
-      <line x1="572.1" y1="145.7" x2="589.6" y2="151.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.15" />
-      <line x1="572.1" y1="145.7" x2="539.3" y2="180.6" stroke="#5B9DFF" stroke-width="0.6" opacity="0.24" />
-      <line x1="572.1" y1="145.7" x2="508.9" y2="168.0" stroke="#5B9DFF" stroke-width="0.6" opacity="0.12" />
-      <line x1="867.0" y1="366.4" x2="948.5" y2="325.7" stroke="#5B9DFF" stroke-width="0.6" opacity="0.12" />
-      <line x1="577.1" y1="351.2" x2="635.2" y2="349.9" stroke="#5B9DFF" stroke-width="0.6" opacity="0.09" />
+      <line x1="452.7" y1="457.5" x2="529.1" y2="403.4" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.09" />
+      <line x1="847.6" y1="391.1" x2="855.7" y2="485.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.1" />
+      <line x1="847.6" y1="391.1" x2="817.2" y2="338.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.23" />
+      <line x1="898.7" y1="295.3" x2="825.2" y2="273.3" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.12" />
+      <line x1="898.7" y1="295.3" x2="924.3" y2="222.0" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.21" />
+      <line x1="898.7" y1="295.3" x2="875.8" y2="208.8" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.24" />
+      <line x1="739.9" y1="347.0" x2="759.0" y2="342.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.21" />
+      <line x1="739.9" y1="347.0" x2="738.8" y2="385.5" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.24" />
+      <line x1="510.1" y1="404.6" x2="482.3" y2="373.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.21" />
+      <line x1="510.1" y1="404.6" x2="481.2" y2="323.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.23" />
+      <line x1="791.9" y1="426.0" x2="833.5" y2="438.9" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.22" />
+      <line x1="791.9" y1="426.0" x2="855.7" y2="485.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.22" />
+      <line x1="791.9" y1="426.0" x2="817.2" y2="338.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.08" />
+      <line x1="791.9" y1="426.0" x2="759.0" y2="342.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.14" />
+      <line x1="650.4" y1="127.2" x2="572.1" y2="145.7" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.19" />
+      <line x1="834.3" y1="457.8" x2="855.7" y2="485.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.24" />
+      <line x1="834.3" y1="457.8" x2="858.5" y2="382.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.24" />
+      <line x1="671.7" y1="603.9" x2="622.2" y2="592.3" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.1" />
+      <line x1="515.0" y1="153.9" x2="486.7" y2="193.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.18" />
+      <line x1="515.0" y1="153.9" x2="554.2" y2="113.3" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.2" />
+      <line x1="515.0" y1="153.9" x2="508.9" y2="168.0" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.24" />
+      <line x1="833.5" y1="438.9" x2="855.7" y2="485.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.19" />
+      <line x1="833.5" y1="438.9" x2="858.5" y2="382.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.13" />
+      <line x1="947.7" y1="337.5" x2="948.5" y2="325.7" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.13" />
+      <line x1="825.2" y1="273.3" x2="817.2" y2="338.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.1" />
+      <line x1="807.5" y1="343.6" x2="858.5" y2="382.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.17" />
+      <line x1="807.5" y1="343.6" x2="738.8" y2="385.5" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.13" />
+      <line x1="486.7" y1="193.6" x2="410.6" y2="186.8" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.16" />
+      <line x1="534.5" y1="54.8" x2="603.2" y2="37.9" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.09" />
+      <line x1="448.0" y1="247.7" x2="401.4" y2="311.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.22" />
+      <line x1="448.0" y1="247.7" x2="481.2" y2="323.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.11" />
+      <line x1="817.2" y1="338.2" x2="759.0" y2="342.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.12" />
+      <line x1="817.2" y1="338.2" x2="867.0" y2="366.4" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.15" />
+      <line x1="416.9" y1="280.9" x2="410.6" y2="186.8" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.2" />
+      <line x1="416.9" y1="280.9" x2="481.2" y2="323.2" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.19" />
+      <line x1="759.0" y1="342.2" x2="738.8" y2="385.5" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.21" />
+      <line x1="572.1" y1="145.7" x2="589.6" y2="151.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.15" />
+      <line x1="572.1" y1="145.7" x2="539.3" y2="180.6" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.24" />
+      <line x1="572.1" y1="145.7" x2="508.9" y2="168.0" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.12" />
+      <line x1="867.0" y1="366.4" x2="948.5" y2="325.7" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.12" />
+      <line x1="577.1" y1="351.2" x2="635.2" y2="349.9" stroke="#5B9DFF" strokeWidth="0.6" opacity="0.09" />
       <circle cx="733.7" cy="35.0" r="1.5" fill="#5B9DFF" opacity="0.77" />
       <circle cx="515.0" cy="153.9" r="1.7" fill="#5B9DFF" opacity="0.38" />
       <circle cx="791.9" cy="426.0" r="1.9" fill="#5B9DFF" opacity="0.69" />
@@ -247,6 +245,13 @@ export default function Footer() {
                   <p>Plano, Texas 75023</p>
                 </div>
               </div>
+
+              {/* Prominent copyright line in white space */}
+              <div className="mt-6 pt-4 border-t border-slate-100 max-w-sm">
+                <p className="text-xs font-semibold text-slate-700 tracking-wide">
+                  ©️ 2026 Syntera Consulting LLC. All Rights Reserved
+                </p>
+              </div>
             </motion.div>
 
             {/* Resources — sits on the dark panel */}
@@ -278,17 +283,19 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ── Bottom bar ── */}
-      <div className="border-t border-slate-200">
-        <RevealGroup
-          staggerChildren={0.1}
-          className="mx-auto flex max-w-page container-px flex-col items-center justify-between gap-6 py-6 text-xs text-slate-500 sm:flex-row"
-        >
-          <motion.div variants={fadeUpSmall} className="text-center sm:text-left space-y-1">
-            <div>© 2025 Syntera Consulting | Technology &amp; Talent Solutions All Rights Reserved.</div>
-            <div className="text-[11px] text-slate-400 font-medium">©️ 2026 Syntera Consulting LLC. All Rights Reserved</div>
-          </motion.div>
-          <motion.div variants={fadeUpSmall} className="flex items-center gap-3">
+      {/* ── Bottom bar (Always 100% visible, no animation delays) ── */}
+      <div className="border-t border-slate-200 bg-white relative z-10">
+        <div className="mx-auto flex max-w-page container-px flex-col items-center justify-between gap-4 py-6 text-xs sm:flex-row">
+          <div className="text-center sm:text-left space-y-1">
+            <p className="font-bold text-slate-800 text-sm tracking-wide">
+              ©️ 2026 Syntera Consulting LLC. All Rights Reserved
+            </p>
+            <p className="text-slate-500 text-xs">
+              © 2025 Syntera Consulting | Technology &amp; Talent Solutions All Rights Reserved.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3">
             {SOCIALS.map(({ label, href, path }) => (
               <a
                 key={label}
@@ -296,15 +303,15 @@ export default function Footer() {
                 aria-label={label}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="grid h-9 w-9 place-items-center rounded-full border border-slate-300 text-slate-500 transition-all hover:-translate-y-0.5 hover:border-accent-400 hover:bg-accent-50 hover:text-accent-500"
+                className="grid h-9 w-9 place-items-center rounded-full border border-slate-300 text-slate-600 transition-all hover:-translate-y-0.5 hover:border-accent-400 hover:bg-accent-50 hover:text-accent-500 shadow-sm"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
                   <path d={path} />
                 </svg>
               </a>
             ))}
-          </motion.div>
-        </RevealGroup>
+          </div>
+        </div>
       </div>
     </footer>
   );
