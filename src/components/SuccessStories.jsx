@@ -150,10 +150,10 @@ export default function SuccessStories() {
   return (
     <section
       id="stories"
-      className="relative py-14 sm:py-20 overflow-hidden"
+      className="relative py-12 sm:py-16 overflow-hidden"
       style={{
         backgroundColor: '#FAFAF8',
-        backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.11) 1.5px, transparent 1.5px)',
+        backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.13) 1.5px, transparent 1.5px)',
         backgroundSize: '26px 26px',
       }}
     >
@@ -161,12 +161,12 @@ export default function SuccessStories() {
       <div
         aria-hidden
         className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] blur-[100px]"
-        style={{ background: 'rgba(47,128,237,0.06)' }}
+        style={{ background: 'rgba(47,128,237,0.05)' }}
       />
 
       <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* ── Header ── */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-12">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-8">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -190,8 +190,9 @@ export default function SuccessStories() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOnce}
-            transition={{ duration: 0.7, ease, delay: 0.2 }}
-            className="mt-4 text-base sm:text-lg font-medium leading-relaxed max-w-2xl text-slate-600"
+            transition={{ duration: 0.7, ease, delay: 0.25 }}
+            className="mt-4 text-base sm:text-lg leading-relaxed max-w-2xl"
+            style={{ color: '#475569' }}
           >
             Real people. Meaningful opportunities. Successful careers.
           </motion.p>
@@ -233,15 +234,12 @@ export default function SuccessStories() {
 function StoryCard({ story, index }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={viewportOnce}
-      transition={{ duration: 0.6, ease, delay: (index % 3) * 0.08 }}
-      className="group relative flex flex-col justify-between bg-white rounded-2xl overflow-hidden transition-all duration-400 hover:-translate-y-1.5 hover:shadow-xl"
-      style={{
-        border: '1px solid rgba(15,23,42,0.08)',
-        boxShadow: '0 2px 12px rgba(15,23,42,0.05)',
-      }}
+      transition={{ duration: 0.7, ease, delay: (index % 3) * 0.08 }}
+      className="group relative flex flex-col bg-white rounded-2xl overflow-hidden transition-all duration-400 hover:-translate-y-1.5 hover:shadow-xl"
+      style={{ border: '1px solid rgba(15,23,42,0.08)', boxShadow: '0 2px 12px rgba(15,23,42,0.06)' }}
     >
       {/* Top brand blue accent */}
       <span
@@ -249,27 +247,16 @@ function StoryCard({ story, index }) {
         style={{ background: 'linear-gradient(90deg, transparent, #2F80ED, transparent)' }}
       />
 
-      {/* Story Number & Topic Tag */}
-      <div className="px-6 pt-5 pb-3 flex items-center justify-between border-b border-slate-100 bg-slate-50/60">
-        <span className="text-xs font-bold text-[#2F80ED] tracking-wider font-mono">
-          {story.num} — {story.storyTitle}
-        </span>
-        <div className="flex items-center gap-0.5 text-amber-400">
-          {[...Array(5)].map((_, i) => (
-            <svg key={i} width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
-          ))}
-        </div>
-      </div>
-
       {/* Profile area */}
-      <div className="flex items-center gap-3.5 px-6 pt-5 pb-4">
+      <div
+        className="flex items-center gap-4 px-6 pt-6 pb-5"
+        style={{ borderBottom: '1px solid rgba(15,23,42,0.07)' }}
+      >
         <div
-          className="shrink-0 h-13 w-13 rounded-xl overflow-hidden flex items-center justify-center p-2.5"
+          className="shrink-0 h-16 w-16 rounded-2xl overflow-hidden flex items-center justify-center"
           style={{
-            border: '1.5px solid rgba(47,128,237,0.2)',
-            background: 'linear-gradient(135deg, rgba(47,128,237,0.08) 0%, rgba(47,128,237,0.18) 100%)',
+            border: '2px solid rgba(47,128,237,0.2)',
+            background: 'linear-gradient(135deg, rgba(47,128,237,0.12) 0%, rgba(47,128,237,0.22) 100%)',
           }}
         >
           <svg
@@ -279,48 +266,58 @@ function StoryCard({ story, index }) {
             className="h-full w-full"
             aria-label={story.name}
           >
-            <circle cx="32" cy="24" r="11" fill="rgba(47,128,237,0.65)" />
-            <ellipse cx="32" cy="52" rx="18" ry="12" fill="rgba(47,128,237,0.5)" />
+            {/* Background circle */}
+            <rect width="64" height="64" fill="rgba(47,128,237,0.08)" />
+            {/* Head */}
+            <circle cx="32" cy="24" r="11" fill="rgba(47,128,237,0.55)" />
+            {/* Body / shoulders */}
+            <ellipse cx="32" cy="52" rx="18" ry="12" fill="rgba(47,128,237,0.4)" />
           </svg>
         </div>
 
-        <div className="min-w-0 flex-1">
-          <h3 className="font-display font-black text-slate-900 text-[15px] leading-tight uppercase tracking-tight truncate">
+        <div>
+          <h3 className="font-display font-bold text-ink-900 text-base leading-tight uppercase">
             {story.name}
           </h3>
-          <p className="text-xs font-semibold text-slate-600 mt-0.5 leading-snug truncate">
-            {story.role}
-          </p>
-          <div className="mt-1 flex items-center gap-1.5">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">PLACED AT •</span>
-            <span className="text-[10px] font-bold text-[#1E5DB8] uppercase tracking-wide truncate">
-              {story.company}
-            </span>
-          </div>
+          <p className="text-xs text-ink-500 mt-0.5 leading-relaxed">{story.role}</p>
+          <span
+            className="inline-block mt-1.5 text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-0.5 rounded-full"
+            style={{ background: 'rgba(47,128,237,0.1)', color: '#1E5DB8' }}
+          >
+            PLACED AT • {story.company}
+          </span>
         </div>
       </div>
 
       {/* Quote */}
-      <div className="px-6 pb-6 pt-1 flex-1 flex flex-col justify-between">
-        <div className="relative">
-          <svg
-            className="mb-2 shrink-0 opacity-20 text-[#2F80ED]"
-            width="20"
-            height="15"
-            viewBox="0 0 24 18"
-            fill="currentColor"
-            aria-hidden
-          >
-            <path d="M0 18V10.8C0 7.2 1.2 4.2 3.6 1.8L6 0l1.8 1.8C6.6 3 5.7 4.5 5.1 6H9V18H0zm15 0V10.8c0-3.6 1.2-6.6 3.6-9L21 0l1.8 1.8C21.6 3 20.7 4.5 20.1 6H24V18H15z" />
-          </svg>
-          <p className="text-sm leading-relaxed text-slate-600 font-normal italic">
-            “{story.quote}”
-          </p>
-        </div>
+      <div className="px-6 py-5 flex-1 flex flex-col">
+        {/* Quote mark */}
+        <svg
+          className="mb-3 shrink-0"
+          width="24"
+          height="18"
+          viewBox="0 0 24 18"
+          fill="none"
+          aria-hidden
+        >
+          <path
+            d="M0 18V10.8C0 7.2 1.2 4.2 3.6 1.8L6 0l1.8 1.8C6.6 3 5.7 4.5 5.1 6H9V18H0zm15 0V10.8c0-3.6 1.2-6.6 3.6-9L21 0l1.8 1.8C21.6 3 20.7 4.5 20.1 6H24V18H15z"
+            fill="#2F80ED"
+            fillOpacity="0.25"
+          />
+        </svg>
+        <p className="text-sm leading-relaxed flex-1" style={{ color: '#475569' }}>
+          {story.quote}
+        </p>
 
-        <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
-          <span>Verified Consultant</span>
-          <span className="text-[#2F80ED] font-semibold">Syntera Talent Network</span>
+        {/* Stars */}
+        <div className="flex items-center gap-0.5 mt-5">
+          {[...Array(5)].map((_, i) => (
+            <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#2F80ED" stroke="none">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          ))}
+          <span className="text-[11px] font-semibold ml-1.5" style={{ color: '#2F80ED' }}>5.0</span>
         </div>
       </div>
 
