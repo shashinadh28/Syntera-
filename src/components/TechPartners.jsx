@@ -7,9 +7,8 @@ const ease = [0.22, 1, 0.36, 1];
 
 function OktaIcon() {
   return (
-    <div className="flex items-center gap-2">
-      <img width="40" height="40" src="https://img.icons8.com/color/40/okta.png" alt="Okta" />
-      <span className="font-display text-base font-extrabold text-slate-800 tracking-tight">Okta</span>
+    <div className="flex items-center justify-center">
+      <img className="h-8 w-auto object-contain max-h-8" src="/okta.webp" alt="Okta" />
     </div>
   );
 }

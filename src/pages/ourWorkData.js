@@ -1936,7 +1936,7 @@ export const ourWorkItems = [
     servicesList: ["AI Coach Development", "Mobile App Development", "Gamification Engine"],
     solutionsList: ["AI Life Skills Coach", "Microlearning Platform", "Gamification & Streaks"],
     aiTools: ["GPT-4 AI coach", "Personalised learning path ML", "Engagement prediction"],
-    image: "/our-work/webp-format-images/\"Adulting sidekick\" app for an EdTech AI startup.webp",
+    image: "/our-work/webp-format-images/Adulting sidekick app for an EdTech AI startup.webp",
     outcomesHighlights: [
       "90-day user retention rate of 68% — 3x industry average",
       "AI coach completed 2M+ learning conversations in year one",

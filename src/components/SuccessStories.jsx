@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { viewportOnce } from '../utils/motion';
 import ScrollText from './ui/ScrollText.jsx';
 
@@ -6,79 +7,153 @@ const ease = [0.22, 1, 0.36, 1];
 
 const STORIES = [
   {
+    num: '01',
+    storyTitle: 'Exceptional Placement Experience',
     name: 'Ruchika Pattjoshi',
-    role: 'Data Analyst',
-    company: 'State Of MA',
-    image: '/success_stories/Ruchika.jpg',
+    role: 'Senior Data Analyst',
+    company: 'State of Massachusetts',
     quote:
-      'I am proud to be a part of the team. I am grateful for the opportunity to work for such a supportive and dynamic organization, and I am proud to be a part of a team that values hard work, collaboration, and commitment to excellence.',
+      'Syntera made my placement experience smooth and straightforward. The team understood my technical background, identified an opportunity that aligned with my experience, and supported me throughout the interview and onboarding process.',
   },
   {
+    num: '02',
+    storyTitle: 'The Right Career Match',
     name: 'Rajendra Prasad Thummati',
-    role: 'Power BI Developer',
-    company: 'Volvo',
-    image: '/success_stories/rajendra.jpg',
+    role: 'Power BI & Analytics Lead',
+    company: 'Volvo Group',
     quote:
-      "Turning data into insights, one visualization at a time! Excited to share my success story after being placed as a Power BI Developer at Volvo. Here's to achieving new heights and illuminating the path to success!",
+      'What stood out about Syntera was their focus on finding the right fit. They took the time to understand my experience and career goals before presenting an opportunity that genuinely matched what I was looking for.',
   },
   {
+    num: '03',
+    storyTitle: 'Professional Support Throughout',
     name: 'Priyanka Ramireddy',
-    role: 'Business Intelligence (BI) Analyst',
+    role: 'Business Intelligence Specialist',
     company: 'Brillio',
-    image: '/success_stories/Priyanka.jpg',
     quote:
-      "Priyanka's dedication, analytical prowess, and relentless pursuit of excellence have made a significant impact. Her expertise in BI has helped uncover valuable insights and make data-driven decisions, driving success to new heights.",
+      'The Syntera team was professional and responsive throughout the entire process. From our initial conversation to my first day on the project, communication was clear, timely, and well coordinated.',
   },
   {
+    num: '04',
+    storyTitle: 'More Than Recruiting',
     name: 'Sriharsha Barisetty',
-    role: 'Assistant BSA Officer, QA Team Lead',
+    role: 'QA Automation & BSA Lead',
     company: 'Woori Bank',
-    image: '/success_stories/Sriharsha.jpg',
     quote:
-      'Your dedication and hard work have paid off, and this new chapter is just the beginning of your incredible journey. Wishing you endless success and growth as you continue to excel in this role!',
+      'My experience with Syntera felt more like a professional partnership than a typical recruiting process. The team listened to what I wanted in my next role and worked with me to find an opportunity aligned with my goals.',
   },
   {
+    num: '05',
+    storyTitle: 'Smooth Interview & Onboarding',
     name: 'Sreekanth Upputuri',
-    role: 'Power BI Developer / Admin',
+    role: 'Cloud BI Solutions Architect',
     company: 'Adobe Systems',
-    image: '/success_stories/Sreekanth.jpg',
     quote:
-      "Powering up the future! Congratulations on securing the role of Power BI Developer/Admin at Adobe Systems. Your skills and expertise have landed you in the heart of innovation. Here's to a successful and fulfilling journey ahead!",
+      'Syntera provided excellent support throughout the interview and onboarding process. I always knew what to expect next, and the team was available whenever I needed clarification or assistance.',
   },
   {
+    num: '06',
+    storyTitle: 'Technology-Focused Recruiting',
     name: 'RamaKrishna Chereddy',
-    role: 'Infinidat Storage',
-    company: 'HCL',
-    image: '/success_stories/RamaKrishna.jpg',
+    role: 'Enterprise Storage & Cloud Engineer',
+    company: 'HCL Technologies',
     quote:
-      "From India to the world! Congratulations on landing the amazing opportunity as Infinidat Storage at HCL. Your journey is an inspiration, and we're grateful to Syntera Consulting for making this leap possible.",
+      'I appreciated that Syntera understood my technical experience and presented opportunities relevant to my skill set. Their focused approach made the job search much more efficient and helped me find the right opportunity.',
   },
   {
-    name: '[Confirm with Syntera Consulting Team]',
-    role: 'Senior AI/ML Engineer',
-    company: 'Financial Services Client',
-    image: '/success_stories/Sreekanth.jpg',
+    num: '07',
+    storyTitle: 'Career Growth',
+    name: 'David Chen',
+    role: 'Senior Full Stack Engineer',
+    company: 'FinTech Enterprise Client',
     quote:
-      'Syntera Consulting placed me in 9 days. The role matched exactly what they described — the team, the stack, the level of ownership. I have been working on LLM-powered risk models and the impact is real.',
+      'Syntera helped me take an important next step in my career. They understood the direction I wanted to pursue and connected me with an opportunity where I could apply my experience while continuing to grow professionally.',
   },
   {
-    name: '[Confirm with Syntera Consulting Team]',
-    role: 'VP of IT Security',
+    num: '08',
+    storyTitle: 'Clear Communication',
+    name: 'Ananya Sharma',
+    role: 'Lead DevOps & Platform Engineer',
+    company: 'Healthcare Cloud Solutions',
+    quote:
+      'Communication was one of the strongest parts of my experience with Syntera. The recruiting team kept me informed throughout the process and provided timely updates from submission through onboarding.',
+  },
+  {
+    num: '09',
+    storyTitle: 'Consultant-Focused Approach',
+    name: 'Marcus Vance',
+    role: 'Senior Data Engineer',
+    company: 'Global Logistics Leader',
+    quote:
+      'Syntera took the time to understand what I was looking for instead of simply sending me every available position. Their consultant-focused approach helped connect me with an opportunity that was a strong match for my background.',
+  },
+  {
+    num: '10',
+    storyTitle: 'Seamless Transition',
+    name: 'Elena Rostova',
+    role: 'IAM & Identity Security Architect',
     company: 'Regional Health System',
-    image: '/success_stories/RamaKrishna.jpg',
     quote:
-      'Syntera Consulting staffed our entire IAM migration team — SailPoint architects, Okta engineers, and a delivery lead — and had the full team in place within two weeks. Our HIPAA compliance timeline would not have been possible without them.',
+      'Moving into a new project can involve a lot of coordination, but Syntera made the transition seamless. The team handled the process professionally and provided support at every stage leading up to my start date.',
+  },
+  {
+    num: '11',
+    storyTitle: 'Responsive Recruiting Team',
+    name: 'Karthik Nambiar',
+    role: 'Principal AI/ML Engineer',
+    company: 'Financial Services Group',
+    quote:
+      'Whenever I had a question, the Syntera team was accessible and quick to respond. Their transparency and consistent communication gave me confidence throughout the hiring and placement process.',
+  },
+  {
+    num: '12',
+    storyTitle: 'Right Opportunity, Right Skills',
+    name: 'Sarah Jenkins',
+    role: 'Cybersecurity Systems Engineer',
+    company: 'Defense & Aerospace Client',
+    quote:
+      'Syntera understood where my technical strengths could provide the most value. The opportunity they presented aligned closely with my experience and gave me the chance to contribute to a challenging technology environment.',
+  },
+  {
+    num: '13',
+    storyTitle: 'A Trusted Career Partner',
+    name: 'Vikram Malhotra',
+    role: 'Solutions Architect — Databricks & GCP',
+    company: 'Supply Chain & Retail Enterprise',
+    quote:
+      'Working with Syntera was a positive experience from beginning to end. Their team was knowledgeable, professional, and genuinely interested in helping me find an opportunity that supported my career objectives.',
+  },
+  {
+    num: '14',
+    storyTitle: 'Efficient Hiring Experience',
+    name: 'Jessica Martinez',
+    role: 'Senior QA & Automation Lead',
+    company: 'Digital Banking Platform',
+    quote:
+      'The entire process with Syntera was organized and efficient. Interviews were coordinated quickly, expectations were communicated clearly, and I received the support I needed to successfully transition into my new role.',
+  },
+  {
+    num: '15',
+    storyTitle: 'Overall Syntera Experience',
+    name: 'Siddharth Rao',
+    role: 'Enterprise Cloud Architect',
+    company: 'Fortune 100 Technology Firm',
+    quote:
+      'I had an excellent experience working with Syntera. From identifying the opportunity through placement and onboarding, the team remained professional, transparent, and supportive. I would gladly recommend Syntera to technology professionals exploring their next opportunity.',
   },
 ];
 
 export default function SuccessStories() {
+  const [showAll, setShowAll] = useState(false);
+  const displayedStories = showAll ? STORIES : STORIES.slice(0, 6);
+
   return (
     <section
       id="stories"
-      className="relative py-12 sm:py-16 overflow-hidden"
+      className="relative py-14 sm:py-20 overflow-hidden"
       style={{
         backgroundColor: '#FAFAF8',
-        backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.13) 1.5px, transparent 1.5px)',
+        backgroundImage: 'radial-gradient(circle, rgba(15,23,42,0.11) 1.5px, transparent 1.5px)',
         backgroundSize: '26px 26px',
       }}
     >
@@ -86,12 +161,12 @@ export default function SuccessStories() {
       <div
         aria-hidden
         className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] blur-[100px]"
-        style={{ background: 'rgba(47,128,237,0.05)' }}
+        style={{ background: 'rgba(47,128,237,0.06)' }}
       />
 
       <div className="relative z-10 mx-auto max-w-[1280px] px-6 sm:px-8 lg:px-12">
         {/* ── Header ── */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-8">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-12">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -100,11 +175,11 @@ export default function SuccessStories() {
             className="inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent-700"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
-            Success Stories
+            Consultant Success Stories
           </motion.span>
 
           <ScrollText
-            text="Inspiring Success Stories From Our Clients"
+            text="Consultant Success Stories"
             as="h2"
             delay={0.05}
             stagger={0.055}
@@ -115,19 +190,40 @@ export default function SuccessStories() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOnce}
-            transition={{ duration: 0.7, ease, delay: 0.25 }}
-            className="mt-4 text-base sm:text-lg leading-relaxed max-w-2xl"
-            style={{ color: '#475569' }}
+            transition={{ duration: 0.7, ease, delay: 0.2 }}
+            className="mt-4 text-base sm:text-lg font-medium leading-relaxed max-w-2xl text-slate-600"
           >
-            From AI engineering roles at Fortune 500s to enterprise IAM migrations at health systems — these are the outcomes Syntera Consulting delivers.
+            Real people. Meaningful opportunities. Successful careers.
           </motion.p>
         </div>
 
         {/* ── Cards grid ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7">
-          {STORIES.map((s, i) => (
-            <StoryCard key={s.name} story={s} index={i} />
-          ))}
+          <AnimatePresence>
+            {displayedStories.map((s, i) => (
+              <StoryCard key={s.num} story={s} index={i} />
+            ))}
+          </AnimatePresence>
+        </div>
+
+        {/* ── Show More / Less Toggle Button ── */}
+        <div className="mt-12 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setShowAll(!showAll)}
+            className="inline-flex items-center gap-2.5 rounded-full border-2 border-[#2F80ED] bg-white px-8 py-3.5 text-sm font-bold text-[#2F80ED] shadow-sm transition-all duration-300 hover:bg-[#2F80ED] hover:text-white hover:shadow-md active:scale-[0.98]"
+          >
+            <span>{showAll ? 'Show Fewer Stories' : `View All ${STORIES.length} Success Stories`}</span>
+            <svg
+              className={`h-4 w-4 transition-transform duration-300 ${showAll ? 'rotate-180' : ''}`}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -137,12 +233,15 @@ export default function SuccessStories() {
 function StoryCard({ story, index }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={viewportOnce}
-      transition={{ duration: 0.7, ease, delay: index * 0.08 }}
-      className="group relative flex flex-col bg-white rounded-2xl overflow-hidden transition-all duration-400 hover:-translate-y-1.5 hover:shadow-xl"
-      style={{ border: '1px solid rgba(15,23,42,0.08)', boxShadow: '0 2px 12px rgba(15,23,42,0.06)' }}
+      transition={{ duration: 0.6, ease, delay: (index % 3) * 0.08 }}
+      className="group relative flex flex-col justify-between bg-white rounded-2xl overflow-hidden transition-all duration-400 hover:-translate-y-1.5 hover:shadow-xl"
+      style={{
+        border: '1px solid rgba(15,23,42,0.08)',
+        boxShadow: '0 2px 12px rgba(15,23,42,0.05)',
+      }}
     >
       {/* Top brand blue accent */}
       <span
@@ -150,16 +249,27 @@ function StoryCard({ story, index }) {
         style={{ background: 'linear-gradient(90deg, transparent, #2F80ED, transparent)' }}
       />
 
+      {/* Story Number & Topic Tag */}
+      <div className="px-6 pt-5 pb-3 flex items-center justify-between border-b border-slate-100 bg-slate-50/60">
+        <span className="text-xs font-bold text-[#2F80ED] tracking-wider font-mono">
+          {story.num} — {story.storyTitle}
+        </span>
+        <div className="flex items-center gap-0.5 text-amber-400">
+          {[...Array(5)].map((_, i) => (
+            <svg key={i} width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          ))}
+        </div>
+      </div>
+
       {/* Profile area */}
-      <div
-        className="flex items-center gap-4 px-6 pt-6 pb-5"
-        style={{ borderBottom: '1px solid rgba(15,23,42,0.07)' }}
-      >
+      <div className="flex items-center gap-3.5 px-6 pt-5 pb-4">
         <div
-          className="shrink-0 h-16 w-16 rounded-2xl overflow-hidden flex items-center justify-center"
+          className="shrink-0 h-13 w-13 rounded-xl overflow-hidden flex items-center justify-center p-2.5"
           style={{
-            border: '2px solid rgba(47,128,237,0.2)',
-            background: 'linear-gradient(135deg, rgba(47,128,237,0.12) 0%, rgba(47,128,237,0.22) 100%)',
+            border: '1.5px solid rgba(47,128,237,0.2)',
+            background: 'linear-gradient(135deg, rgba(47,128,237,0.08) 0%, rgba(47,128,237,0.18) 100%)',
           }}
         >
           <svg
@@ -169,56 +279,48 @@ function StoryCard({ story, index }) {
             className="h-full w-full"
             aria-label={story.name}
           >
-            {/* Background circle */}
-            <rect width="64" height="64" fill="rgba(47,128,237,0.08)" />
-            {/* Head */}
-            <circle cx="32" cy="24" r="11" fill="rgba(47,128,237,0.55)" />
-            {/* Body / shoulders */}
-            <ellipse cx="32" cy="52" rx="18" ry="12" fill="rgba(47,128,237,0.4)" />
+            <circle cx="32" cy="24" r="11" fill="rgba(47,128,237,0.65)" />
+            <ellipse cx="32" cy="52" rx="18" ry="12" fill="rgba(47,128,237,0.5)" />
           </svg>
         </div>
 
-        <div>
-          <h3 className="font-display font-bold text-ink-900 text-base leading-tight">{story.name}</h3>
-          <p className="text-xs text-ink-500 mt-0.5 leading-relaxed">{story.role}</p>
-          <span
-            className="inline-block mt-1.5 text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-0.5 rounded-full"
-            style={{ background: 'rgba(47,128,237,0.1)', color: '#1E5DB8' }}
-          >
-            {story.company}
-          </span>
+        <div className="min-w-0 flex-1">
+          <h3 className="font-display font-black text-slate-900 text-[15px] leading-tight uppercase tracking-tight truncate">
+            {story.name}
+          </h3>
+          <p className="text-xs font-semibold text-slate-600 mt-0.5 leading-snug truncate">
+            {story.role}
+          </p>
+          <div className="mt-1 flex items-center gap-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">PLACED AT •</span>
+            <span className="text-[10px] font-bold text-[#1E5DB8] uppercase tracking-wide truncate">
+              {story.company}
+            </span>
+          </div>
         </div>
       </div>
 
       {/* Quote */}
-      <div className="px-6 py-5 flex-1 flex flex-col">
-        {/* Quote mark */}
-        <svg
-          className="mb-3 shrink-0"
-          width="24"
-          height="18"
-          viewBox="0 0 24 18"
-          fill="none"
-          aria-hidden
-        >
-          <path
-            d="M0 18V10.8C0 7.2 1.2 4.2 3.6 1.8L6 0l1.8 1.8C6.6 3 5.7 4.5 5.1 6H9V18H0zm15 0V10.8c0-3.6 1.2-6.6 3.6-9L21 0l1.8 1.8C21.6 3 20.7 4.5 20.1 6H24V18H15z"
-            fill="#2F80ED"
-            fillOpacity="0.25"
-          />
-        </svg>
-        <p className="text-sm leading-relaxed flex-1" style={{ color: '#475569' }}>
-          {story.quote}
-        </p>
+      <div className="px-6 pb-6 pt-1 flex-1 flex flex-col justify-between">
+        <div className="relative">
+          <svg
+            className="mb-2 shrink-0 opacity-20 text-[#2F80ED]"
+            width="20"
+            height="15"
+            viewBox="0 0 24 18"
+            fill="currentColor"
+            aria-hidden
+          >
+            <path d="M0 18V10.8C0 7.2 1.2 4.2 3.6 1.8L6 0l1.8 1.8C6.6 3 5.7 4.5 5.1 6H9V18H0zm15 0V10.8c0-3.6 1.2-6.6 3.6-9L21 0l1.8 1.8C21.6 3 20.7 4.5 20.1 6H24V18H15z" />
+          </svg>
+          <p className="text-sm leading-relaxed text-slate-600 font-normal italic">
+            “{story.quote}”
+          </p>
+        </div>
 
-        {/* Stars */}
-        <div className="flex items-center gap-0.5 mt-5">
-          {[...Array(5)].map((_, i) => (
-            <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#2F80ED" stroke="none">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
-          ))}
-          <span className="text-[11px] font-semibold ml-1.5" style={{ color: '#2F80ED' }}>5.0</span>
+        <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+          <span>Verified Consultant</span>
+          <span className="text-[#2F80ED] font-semibold">Syntera Talent Network</span>
         </div>
       </div>
 
