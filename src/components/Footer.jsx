@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { RevealGroup } from './Reveal.jsx';
 import { fadeUp } from '../utils/motion';
@@ -247,11 +247,11 @@ export default function Footer() {
               </div>
 
               {/* Prominent copyright line in white space */}
-              <div className="mt-6 pt-4 border-t border-slate-100 max-w-sm">
+              {/* <div className="mt-6 pt-4 border-t border-slate-100 max-w-sm">
                 <p className="text-xs font-semibold text-slate-700 tracking-wide">
                   ©️ 2026 Syntera Consulting LLC. All Rights Reserved
                 </p>
-              </div>
+              </div> */}
             </motion.div>
 
             {/* Resources — sits on the dark panel */}
