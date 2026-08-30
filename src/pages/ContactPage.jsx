@@ -43,11 +43,11 @@ export default function ContactPage() {
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-6"
             style={{ border: '1px solid rgba(47,128,237,0.3)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-current" />Get in Touch
+            <span className="h-1.5 w-1.5 rounded-full bg-current" />LET’S CONNECT
           </motion.span>
 
           <ScrollText
-            text="Contact Syntera Consulting"
+            text="Let’s Build What’s Next."
             as="h1"
             delay={0.2}
             stagger={0.12}
@@ -62,7 +62,7 @@ export default function ContactPage() {
             className="mt-5 text-lg leading-relaxed max-w-xl mx-auto"
             style={{ color: 'rgba(255,255,255,0.5)' }}
           >
-            Tell us what you're building. Our team will follow up quickly with next steps.
+            Whether you’re looking for specialized technology talent, exploring a staffing
           </motion.p>
         </div>
       </section>
