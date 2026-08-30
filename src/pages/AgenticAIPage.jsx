@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+﻿import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, animate } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { viewportOnce } from '../utils/motion.js';
@@ -7,7 +7,7 @@ import Footer from '../components/Footer.jsx';
 
 const ease = [0.22, 1, 0.36, 1];
 
-/* ── Arrow SVG ── */
+/* â”€â”€ Arrow SVG â”€â”€ */
 const ArrowRight = ({ size = 14, color = 'currentColor' }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
@@ -20,7 +20,7 @@ const ArrowUpRight = ({ size = 14, color = 'currentColor' }) => (
   </svg>
 );
 
-/* ── Animated counter ── */
+/* â”€â”€ Animated counter â”€â”€ */
 function CountUp({ to, suffix = '', duration = 2 }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
@@ -34,9 +34,9 @@ function CountUp({ to, suffix = '', duration = 2 }) {
   return <span ref={ref}>{display}{suffix}</span>;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    CUSTOM SVG ILLUSTRATIONS (ORANGE THEME MATCHING IMAGE 3)
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 /* Services Card 1: Ongoing management */
 const ManagementIllustration = () => (
@@ -203,9 +203,9 @@ const GovernanceIllustration = () => (
   </div>
 );
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    SERVICES & ACCELERATORS DATA
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 const SERVICES_CARDS = [
   {
@@ -303,14 +303,14 @@ const ACCELERATOR_CARDS = [
   },
 ];
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    CASE STUDIES DATA
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 const CASE_STUDIES = [
   {
     title: 'Operationalizing GenAI at scale for a global CPG leader',
-    desc: "The CPG giant partnered with Tredence to scale GenAI across its global businesses by addressing fragmented AI efforts, compliance risks and complex integration. Tredence deployed a structured LLMOps-led transformation via the CPG leader's AI Engagement Framework, starting with a 3-month maturity assessment and followed by a 6-month execution phase.\n\nThis included a secure LLM Gateway, GenAI governance via GenAI Lens, AI accelerators, and the Client's GenAI platform for business users. The result was a scalable, compliant, and cross-cloud GenAI ecosystem that enabled the Client to industrialize GenAI and drive faster, governed enterprise adoption.",
+    desc: "The CPG giant partnered with Syntera Consulting to scale GenAI across its global businesses by addressing fragmented AI efforts, compliance risks and complex integration. Syntera Consulting deployed a structured LLMOps-led transformation via the CPG leader's AI Engagement Framework, starting with a 3-month maturity assessment and followed by a 6-month execution phase.\n\nThis included a secure LLM Gateway, GenAI governance via Syntera AI Governance, AI accelerators, and the Client's GenAI platform for business users. The result was a scalable, compliant, and cross-cloud GenAI ecosystem that enabled the Client to industrialize GenAI and drive faster, governed enterprise adoption.",
     badges: [
       '3X faster GenAI adoption',
       '30% boost in productivity',
@@ -322,7 +322,7 @@ const CASE_STUDIES = [
   },
   {
     title: 'Autonomous Demand Sensing & Supply Chain Optimization for Global Retailer',
-    desc: 'A Fortune 100 retailer faced volatile inventory stockouts and millions in obsolete markdowns. Tredence deployed a multi-agent orchestration mesh combining real-time POS data, weather indices, and localized foot traffic.\n\nThe autonomous replenishment agent dynamically reallocated stock across 1,200 stores without human intervention, boosting on-shelf availability while cutting logistics overhead dramatically.',
+    desc: 'A Fortune 100 retailer faced volatile inventory stockouts and millions in obsolete markdowns. Syntera Consulting deployed a multi-agent orchestration mesh combining real-time POS data, weather indices, and localized foot traffic.\n\nThe autonomous replenishment agent dynamically reallocated stock across 1,200 stores without human intervention, boosting on-shelf availability while cutting logistics overhead dramatically.',
     badges: [
       '45% reduction in stockouts',
       '$14M annual logistics cost savings',
@@ -334,7 +334,7 @@ const CASE_STUDIES = [
   },
   {
     title: 'Enterprise Multi-Agent Customer Intelligence for Financial Services Leader',
-    desc: 'Handling over 50,000 complex daily mortgage and insurance inquiries, the client integrated Tredence agentic intelligence into their legacy contact center and core banking databases.\n\nOur agentic system resolved multi-layered policy inquiries with zero hallucinations, reduced escalation volume by 62%, and enabled real-time compliance audit logging across every interaction.',
+    desc: 'Handling over 50,000 complex daily mortgage and insurance inquiries, the client integrated Syntera Consulting agentic intelligence into their legacy contact center and core banking databases.\n\nOur agentic system resolved multi-layered policy inquiries with zero hallucinations, reduced escalation volume by 62%, and enabled real-time compliance audit logging across every interaction.',
     badges: [
       '62% reduction in escalations',
       '4.2X faster query resolution',
@@ -346,9 +346,9 @@ const CASE_STUDIES = [
   },
 ];
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    FAQS DATA
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 const FAQS_DATA = [
   {
@@ -372,18 +372,18 @@ const FAQS_DATA = [
     a: 'Governance is achieved through multi-layered architecture: deterministic prompt-inspection guardrails, granular Role-Based Access Controls (RBAC), secure LLM gateways with rate limiting, human-in-the-loop (HITL) checkpoints for high-stakes decisions, tamper-proof audit trails, and continuous automated red-teaming to prevent model drift, data leakage, and compliance breaches.',
   },
   {
-    q: 'Why partner with an Agentic AI Consulting Company like Tredence?',
-    a: 'At Tredence, we help enterprises automate workflows by embedding intelligent AI agents that reason, act, and improve continuously. Our services are built for scale, speed, and business alignment so your agents don’t just run–they perform. Ultimately, our goal is to aid clients in navigating a future with a reduced dependency on consultants and an increased reliance on agentic systems that power the best enterprise decisions.',
+    q: 'Why partner with an Agentic AI Consulting Company like Syntera Consulting?',
+    a: 'At Syntera Consulting, we help enterprises automate workflows by embedding intelligent AI agents that reason, act, and improve continuously. Our services are built for scale, speed, and business alignment so your agents donâ€™t just runâ€“they perform. Ultimately, our goal is to aid clients in navigating a future with a reduced dependency on consultants and an increased reliance on agentic systems that power the best enterprise decisions.',
   },
 ];
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    MAIN PAGE COMPONENT
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 export default function AgenticAIPage() {
   useEffect(() => {
-    document.title = 'Agentic AI — Autonomous Enterprise Intelligence | Syntera';
+    document.title = 'Agentic AI â€” Autonomous Enterprise Intelligence | Syntera';
     window.scrollTo(0, 0);
   }, []);
 
@@ -416,9 +416,9 @@ export default function AgenticAIPage() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    1. HERO SECTION (Matches Image 1)
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function HeroSection() {
   return (
     <section className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-start overflow-hidden bg-[#040A18]">
@@ -506,9 +506,9 @@ function HeroSection() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    2. RECOGNITION & THOUGHT LEADERSHIP (Matches Image 2)
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function RecognitionSection() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -540,7 +540,7 @@ function RecognitionSection() {
               {/* Databricks Partner Badge */}
               <div className="relative p-5 rounded-2xl bg-white border border-slate-200 shadow-lg text-center flex-1 max-w-[210px]">
                 <div className="flex items-center justify-center gap-1.5 mb-2">
-                  <span className="text-amber-500 font-bold text-xs">★★★★</span>
+                  <span className="text-amber-500 font-bold text-xs">â˜…â˜…â˜…â˜…</span>
                   <span className="text-[10px] font-extrabold text-slate-800 tracking-tight">databricks</span>
                 </div>
                 <div className="text-[9px] uppercase font-bold text-red-500 tracking-widest mb-1">RCG PARTNER</div>
@@ -554,10 +554,10 @@ function RecognitionSection() {
           <div className="lg:col-span-6 bg-slate-50/70 border-l-4 border-slate-300 p-8 rounded-r-2xl">
             <div className="flex items-start gap-3 mb-6">
               <span className="flex-shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-md bg-slate-300 text-white text-xs font-bold">
-                ★
+                â˜…
               </span>
               <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-normal italic">
-                &ldquo;Tredence seeks to aid its clients in navigating a future with a reduced dependency on consultants and an increased reliance on agentic systems by developing an automated stack featuring agents as a service.&rdquo;
+                &ldquo;Syntera Consulting seeks to aid its clients in navigating a future with a reduced dependency on consultants and an increased reliance on agentic systems by developing an automated stack featuring agents as a service.&rdquo;
               </p>
             </div>
 
@@ -606,7 +606,7 @@ function RecognitionSection() {
                 Enabling always-on intelligence with purpose-built AI agent
               </h3>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-                Tredence is a pioneer in Agentic AI, powering autonomous decisions for the world’s leading data-driven enterprises.
+                Syntera Consulting is a pioneer in Agentic AI, powering autonomous decisions for the worldâ€™s leading data-driven enterprises.
               </p>
               <a
                 href="#solutions"
@@ -630,7 +630,7 @@ function RecognitionSection() {
                   NEWS
                 </span>
                 <h4 className="font-display text-base sm:text-lg font-extrabold text-slate-900 leading-snug group-hover:text-blue-600 transition-colors">
-                  Tredence Launches Retail &amp; CPG GenAI Suite of Accelerators at NRF &apos;25
+                  Syntera Consulting Launches Retail &amp; CPG GenAI Suite of Accelerators at NRF &apos;25
                 </h4>
               </div>
               <div className="mt-4 flex justify-end">
@@ -688,14 +688,14 @@ function RecognitionSection() {
                   aria-label="Previous items"
                   className="px-3 py-1.5 hover:bg-slate-100 text-slate-600 text-xs border-r border-slate-200"
                 >
-                  ▲
+                  â–²
                 </button>
                 <button
                   type="button"
                   aria-label="Next items"
                   className="px-3 py-1.5 hover:bg-slate-100 text-slate-600 text-xs"
                 >
-                  ▼
+                  â–¼
                 </button>
               </div>
               <span className="inline-flex items-center justify-center w-6 h-6 rounded bg-emerald-600 text-white text-xs font-bold">
@@ -709,9 +709,9 @@ function RecognitionSection() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    3. TRAIN MARQUEE SECTION (Matches Image 5 & Request #2)
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function TrainMarqueeSection() {
   const partners = [
     { name: 'Google Cloud', logo: 'https://img.icons8.com/color/48/google-cloud.png' },
@@ -798,7 +798,7 @@ function TrainMarqueeSection() {
         </div>
       </div>
 
-      {/* ── TRAIN MARQUEE 1: PARTNER LOGOS (Scrolling Right to Left like a Train) ── */}
+      {/* â”€â”€ TRAIN MARQUEE 1: PARTNER LOGOS (Scrolling Right to Left like a Train) â”€â”€ */}
       <div className="relative w-full overflow-hidden mask-fade-edges py-3 mb-16">
         <div className="animate-train-marquee flex items-center gap-12 sm:gap-16">
           {[...partners, ...partners, ...partners].map((p, i) => (
@@ -838,7 +838,7 @@ function TrainMarqueeSection() {
         </div>
       </div>
 
-      {/* ── TRAIN MARQUEE 2: ANALYST BADGES (Scrolling Right to Left like a Train) ── */}
+      {/* â”€â”€ TRAIN MARQUEE 2: ANALYST BADGES (Scrolling Right to Left like a Train) â”€â”€ */}
       <div className="relative w-full overflow-hidden mask-fade-edges py-4">
         <div className="animate-train-marquee-slow flex items-center gap-6">
           {[...analystBadges, ...analystBadges].map((b, i) => (
@@ -866,9 +866,9 @@ function TrainMarqueeSection() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    4. SERVICES & ACCELERATORS TABS (Matches Image 3)
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ServicesAndAcceleratorsSection() {
   const [currentTab, setCurrentTab] = useState('services'); // 'services' | 'accelerators'
 
@@ -886,7 +886,7 @@ function ServicesAndAcceleratorsSection() {
                 : 'text-slate-500 hover:text-slate-800'
             }`}
           >
-            <span className="text-base">⚙️</span>
+            <span className="text-base">âš™ï¸</span>
             <span>Services</span>
             {currentTab === 'services' && (
               <motion.div
@@ -905,7 +905,7 @@ function ServicesAndAcceleratorsSection() {
                 : 'text-slate-500 hover:text-slate-800'
             }`}
           >
-            <span className="text-base">🌀</span>
+            <span className="text-base">ðŸŒ€</span>
             <span>Accelerators</span>
             {currentTab === 'accelerators' && (
               <motion.div
@@ -935,7 +935,7 @@ function ServicesAndAcceleratorsSection() {
               </div>
               <div className="lg:col-span-6">
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Tredence helps enterprises agentify their operations by embedding intelligent AI agents that reason, act and improve autonomously. Our services are built for scale, speed and business alignment so your agents don’t just run, they perform.
+                  Syntera Consulting helps enterprises agentify their operations by embedding intelligent AI agents that reason, act and improve autonomously. Our services are built for scale, speed and business alignment so your agents donâ€™t just run, they perform.
                 </p>
               </div>
             </div>
@@ -996,7 +996,7 @@ function ServicesAndAcceleratorsSection() {
               </div>
               <div className="lg:col-span-6">
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Tredence has engineered a library of high-impact Agentic AI solutions designed to address your most critical operational challenges. These agents are business-aware, domain-trained and built to execute at scale, eliminate inefficiencies, accelerate decisions, and maximize operating impact.
+                  Syntera Consulting has engineered a library of high-impact Agentic AI solutions designed to address your most critical operational challenges. These agents are business-aware, domain-trained and built to execute at scale, eliminate inefficiencies, accelerate decisions, and maximize operating impact.
                 </p>
               </div>
             </div>
@@ -1046,9 +1046,9 @@ function ServicesAndAcceleratorsSection() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    5. METRICS & CASE STUDY SLIDER (Matches Image 4)
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function MetricsAndCaseStudySlider() {
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -1066,7 +1066,7 @@ function MetricsAndCaseStudySlider() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold text-slate-900 leading-tight tracking-tight">
-            Activate enterprise intelligence with Tredence AI agents
+            Activate enterprise intelligence with Syntera Consulting AI agents
           </h2>
         </div>
 
@@ -1158,7 +1158,7 @@ function MetricsAndCaseStudySlider() {
           </div>
         </div>
 
-        {/* ── CASE STUDY SLIDER (Matching Image 4) ── */}
+        {/* â”€â”€ CASE STUDY SLIDER (Matching Image 4) â”€â”€ */}
         <div>
           <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight mb-8">
             Here&apos;s how we&apos;ve helped our customers win at the last mile
@@ -1221,7 +1221,7 @@ function MetricsAndCaseStudySlider() {
                 className="w-9 h-9 rounded-lg border border-slate-200 bg-white hover:bg-slate-100 flex items-center justify-center text-slate-700 transition-colors"
                 aria-label="Previous Case Study"
               >
-                ‹
+                â€¹
               </button>
               <button
                 type="button"
@@ -1229,7 +1229,7 @@ function MetricsAndCaseStudySlider() {
                 className="w-9 h-9 rounded-lg border border-slate-200 bg-white hover:bg-slate-100 flex items-center justify-center text-slate-700 transition-colors"
                 aria-label="Next Case Study"
               >
-                ›
+                â€º
               </button>
             </div>
 
@@ -1257,9 +1257,9 @@ function MetricsAndCaseStudySlider() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    6. FAQS SECTION (Matches Request #1)
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function FaqsSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
@@ -1335,9 +1335,9 @@ function FaqsSection() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    7. FINAL CTA SECTION
-   ═══════════════════════════════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function FinalCTASection() {
   return (
     <section id="contact" className="py-20 bg-[#0B1120] relative overflow-hidden text-white">
@@ -1378,3 +1378,4 @@ function FinalCTASection() {
     </section>
   );
 }
+

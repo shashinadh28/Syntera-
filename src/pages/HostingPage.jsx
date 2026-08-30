@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+﻿import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, animate } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { viewportOnce } from '../utils/motion.js';
@@ -85,7 +85,7 @@ function HeroSection() {
               style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}
             >
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-pulse" />
-              Eficens Services
+              Syntera Consulting
             </motion.span>
 
             <motion.h1
@@ -217,7 +217,7 @@ function WhatWeDoSection() {
 
           <div className="lg:col-span-7 space-y-4">
             <p className="text-base sm:text-lg leading-relaxed text-slate-600">
-              Eficens&apos; managed hosting service takes the operational burden of running production infrastructure off your team&apos;s plate. From initial provisioning and security hardening through 24/7 monitoring, patching, and incident response, we handle every layer of the stack.
+              Syntera&apos; managed hosting service takes the operational burden of running production infrastructure off your team&apos;s plate. From initial provisioning and security hardening through 24/7 monitoring, patching, and incident response, we handle every layer of the stack.
             </p>
             <p className="text-base leading-relaxed text-slate-500">
               Our hosting environments are built on enterprise-grade cloud infrastructure with multi-region availability, automated backups, and SLA-backed uptime guarantees. Whether you&apos;re hosting a startup MVP or a high-traffic enterprise application, we build the environment to match your requirements and grow with your load.
@@ -447,7 +447,7 @@ const CASE_STUDIES = [
     challenge:
       'An online learning platform expected 40,000 concurrent users during national exam season — 8× their normal peak — and their single-region setup had buckled at 5,000 users the previous year.',
     whatWeDid:
-      'Eficens designed and deployed a multi-region auto-scaling architecture on AWS. The platform sustained 41,000 concurrent users during peak with zero downtime and response times under 200ms throughout.',
+      'Syntera designed and deployed a multi-region auto-scaling architecture on AWS. The platform sustained 41,000 concurrent users during peak with zero downtime and response times under 200ms throughout.',
   },
   {
     industry: 'FinTech / Compliance',
@@ -457,7 +457,7 @@ const CASE_STUDIES = [
     challenge:
       'A regulated payments company needed SOC 2 Type II compliant infrastructure before their enterprise sales pipeline would close — their existing setup had no audit logging, encryption-at-rest, or access controls.',
     whatWeDid:
-      'Eficens built a fully compliant AWS environment from scratch in 8 weeks, implementing HashiCorp Vault, centralised audit logging, and least-privilege IAM. The company passed their SOC 2 audit first time.',
+      'Syntera built a fully compliant AWS environment from scratch in 8 weeks, implementing HashiCorp Vault, centralised audit logging, and least-privilege IAM. The company passed their SOC 2 audit first time.',
   },
   {
     industry: 'Consumer Tech / Startup',
@@ -467,7 +467,7 @@ const CASE_STUDIES = [
     challenge:
       'A consumer app went from 5,000 to 100,000 monthly active users in 4 months after a viral moment — their fixed infrastructure couldn’t scale and costs were spiralling unpredictably.',
     whatWeDid:
-      'Eficens migrated the app to an auto-scaling ECS architecture with cost-aware spot instance strategies. The platform now scales to any load automatically and infrastructure costs grew at only 40% the rate of user growth.',
+      'Syntera migrated the app to an auto-scaling ECS architecture with cost-aware spot instance strategies. The platform now scales to any load automatically and infrastructure costs grew at only 40% the rate of user growth.',
   },
 ];
 
@@ -668,7 +668,7 @@ const RESOURCES = [
     body: 'Running your own cloud infrastructure feels like the cheaper option until you add up the engineering hours. Here’s an honest cost model for both approaches.',
     img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=80',
     color: '#2F80ED',
-    link: 'https://www.eficens.ai/resources/hosting-managed-vs-diy-cloud',
+    link: 'https://www.Syntera.ai/resources/hosting-managed-vs-diy-cloud',
   },
   {
     cat: 'Infrastructure SLA',
@@ -678,7 +678,7 @@ const RESOURCES = [
     body: '99.99% uptime sounds impressive. It allows 52 minutes of downtime per year. Here’s what architecture, monitoring, and operational practice it actually takes to hit that number.',
     img: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=700&q=80',
     color: '#1E5DB8',
-    link: 'https://www.eficens.ai/resources/hosting-uptime-sla',
+    link: 'https://www.Syntera.ai/resources/hosting-uptime-sla',
   },
   {
     cat: 'Cloud Security',
@@ -688,7 +688,7 @@ const RESOURCES = [
     body: 'Enterprise clients and compliance auditors ask the same questions. Here’s the infrastructure checklist that answers them — and why getting these right early saves months of catch-up later.',
     img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=700&q=80',
     color: '#0EA5E9',
-    link: 'https://www.eficens.ai/resources/hosting-security-compliance',
+    link: 'https://www.Syntera.ai/resources/hosting-security-compliance',
   },
 ];
 
@@ -708,7 +708,7 @@ function ResourcesSection() {
               Further Reading
             </h2>
           </div>
-          <a href="https://www.eficens.ai/resources" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.Syntera.ai/resources" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider pb-1 transition-all duration-200 whitespace-nowrap"
             style={{ color: '#2F80ED', borderBottom: '2px solid #2F80ED', textDecoration: 'none' }}>
             View all resources <ArrowRight size={12} />
@@ -800,7 +800,7 @@ function FinalCTASection() {
 
 export default function HostingPage() {
   useEffect(() => {
-    document.title = 'Infrastructure you never have to think about | Hosting | Eficens Services';
+    document.title = 'Infrastructure you never have to think about | Hosting | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -819,3 +819,4 @@ export default function HostingPage() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+﻿import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, animate } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { viewportOnce } from '../utils/motion.js';
@@ -85,7 +85,7 @@ function HeroSection() {
               style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}
             >
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-pulse" />
-              Eficens Services
+              Syntera Consulting
             </motion.span>
 
             <motion.h1
@@ -217,7 +217,7 @@ function WhatWeDoSection() {
 
           <div className="lg:col-span-7 space-y-4">
             <p className="text-base sm:text-lg leading-relaxed text-slate-600">
-              Eficens&apos; QA as a Service embeds senior test automation engineers directly into your development workflow. We write maintainable test suites, set up automated CI runs, conduct structured exploratory testing, and flag critical defects before code reaches your users.
+              Syntera&apos; QA as a Service embeds senior test automation engineers directly into your development workflow. We write maintainable test suites, set up automated CI runs, conduct structured exploratory testing, and flag critical defects before code reaches your users.
             </p>
             <p className="text-base leading-relaxed text-slate-500">
               Whether you need to clear a testing backlog, build an automated regression suite from scratch, or scale QA capacity for a major release, our flexible model scales up or down with your team&apos;s velocity.
@@ -447,7 +447,7 @@ const CASE_STUDIES = [
     challenge:
       'A B2B SaaS platform was shipping bugs to production on nearly every release — developers spent 30% of sprint capacity fixing regressions reported by angry enterprise users.',
     whatWeDid:
-      'Eficens implemented a Playwright end-to-end regression suite covering 140+ core user flows in GitHub Actions. Production defect rate dropped 78% within two release cycles.',
+      'Syntera implemented a Playwright end-to-end regression suite covering 140+ core user flows in GitHub Actions. Production defect rate dropped 78% within two release cycles.',
   },
   {
     industry: 'FinTech / Payments',
@@ -457,7 +457,7 @@ const CASE_STUDIES = [
     challenge:
       'A payment processor was adding multi-currency support and needed contract testing across 6 downstream payment gateway APIs before launching in Europe.',
     whatWeDid:
-      'Eficens executed contract testing and edge-case API scenario suites that caught a rounding error in currency conversion. Fixing it prevented an estimated $2.4M in settlement discrepancies.',
+      'Syntera executed contract testing and edge-case API scenario suites that caught a rounding error in currency conversion. Fixing it prevented an estimated $2.4M in settlement discrepancies.',
   },
   {
     industry: 'E-Commerce',
@@ -467,7 +467,7 @@ const CASE_STUDIES = [
     challenge:
       'An e-commerce retailer was launching a redesigned checkout flow ahead of Black Friday and needed load testing + OWASP vulnerability scans under tight time pressure.',
     whatWeDid:
-      'Eficens ran k6 load tests simulating 50,000 peak checkout sessions alongside OWASP security scans, identifying 12 critical vulnerabilities and a database deadlock before go-live.',
+      'Syntera ran k6 load tests simulating 50,000 peak checkout sessions alongside OWASP security scans, identifying 12 critical vulnerabilities and a database deadlock before go-live.',
   },
 ];
 
@@ -668,7 +668,7 @@ const RESOURCES = [
     body: 'Catching bugs in development costs 10× less than catching them in QA—and 100× less than in production. Here’s how to shift testing left.',
     img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80',
     color: '#2F80ED',
-    link: 'https://www.eficens.ai/resources/qa-shift-left-testing',
+    link: 'https://www.Syntera.ai/resources/qa-shift-left-testing',
   },
   {
     cat: 'Performance Testing',
@@ -678,7 +678,7 @@ const RESOURCES = [
     body: 'Ramping up 10,000 synthetic requests to an endpoint isn’t load testing—it’s a Denial of Service attack. Here’s how to build realistic user scenarios.',
     img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80',
     color: '#1E5DB8',
-    link: 'https://www.eficens.ai/resources/qa-performance-k6-testing',
+    link: 'https://www.Syntera.ai/resources/qa-performance-k6-testing',
   },
   {
     cat: 'Test Automation',
@@ -688,7 +688,7 @@ const RESOURCES = [
     body: 'Each framework has clear sweet spots. Here’s an honest, hands-on comparison based on running 500,000 test executions across enterprise clients.',
     img: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80',
     color: '#0EA5E9',
-    link: 'https://www.eficens.ai/resources/qa-playwright-vs-cypress-vs-selenium',
+    link: 'https://www.Syntera.ai/resources/qa-playwright-vs-cypress-vs-selenium',
   },
 ];
 
@@ -708,7 +708,7 @@ function ResourcesSection() {
               Further Reading
             </h2>
           </div>
-          <a href="https://www.eficens.ai/resources" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.Syntera.ai/resources" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider pb-1 transition-all duration-200 whitespace-nowrap"
             style={{ color: '#2F80ED', borderBottom: '2px solid #2F80ED', textDecoration: 'none' }}>
             View all resources <ArrowRight size={12} />
@@ -800,7 +800,7 @@ function FinalCTASection() {
 
 export default function QaAsAServicePage() {
   useEffect(() => {
-    document.title = 'Ship with confidence, every single release | QA as a Service | Eficens Services';
+    document.title = 'Ship with confidence, every single release | QA as a Service | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -819,3 +819,4 @@ export default function QaAsAServicePage() {
     </div>
   );
 }
+

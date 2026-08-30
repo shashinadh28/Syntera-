@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+﻿import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, animate } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { viewportOnce } from '../utils/motion.js';
@@ -85,7 +85,7 @@ function HeroSection() {
               style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}
             >
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-pulse" />
-              Eficens Services
+              Syntera Consulting
             </motion.span>
 
             <motion.h1
@@ -217,7 +217,7 @@ function WhatWeDoSection() {
 
           <div className="lg:col-span-7 space-y-4">
             <p className="text-base sm:text-lg leading-relaxed text-slate-600">
-              Eficens&apos; Staffing practice connects technology leaders with senior software engineers, data architects, QA automation engineers, and DevOps specialists. We rigorously assess both technical depth and communication skills so candidates contribute meaningfully from their first week.
+              Syntera&apos; Staffing practice connects technology leaders with senior software engineers, data architects, QA automation engineers, and DevOps specialists. We rigorously assess both technical depth and communication skills so candidates contribute meaningfully from their first week.
             </p>
             <p className="text-base leading-relaxed text-slate-500">
               Whether you need a single specialist to unblock a critical sprint or a complete cross-functional team to build a new product line, we handle sourcing, vetting, compliance, and onboarding with speed and transparency.
@@ -447,7 +447,7 @@ const CASE_STUDIES = [
     challenge:
       'A Series B SaaS company signed 3 enterprise deals that required custom security features — but their internal team was fully allocated to core product development.',
     whatWeDid:
-      'Eficens deployed 6 pre-vetted senior backend and DevOps engineers within 7 business days. The custom security features were delivered on schedule without delaying the main roadmap.',
+      'Syntera deployed 6 pre-vetted senior backend and DevOps engineers within 7 business days. The custom security features were delivered on schedule without delaying the main roadmap.',
   },
   {
     industry: 'FinTech',
@@ -457,7 +457,7 @@ const CASE_STUDIES = [
     challenge:
       'A fintech scaling up its mobile app experienced 40% attrition in their contractor team due to poor screening and culture fit from traditional staffing agencies.',
     whatWeDid:
-      'Eficens provided a dedicated squad of 5 React Native engineers evaluated for both technical proficiency and team fit. All 5 completed their 12-month contract, and 3 converted to full-time hires.',
+      'Syntera provided a dedicated squad of 5 React Native engineers evaluated for both technical proficiency and team fit. All 5 completed their 12-month contract, and 3 converted to full-time hires.',
   },
   {
     industry: 'HealthTech',
@@ -467,7 +467,7 @@ const CASE_STUDIES = [
     challenge:
       'A digital health startup needed HIPAA-certified DevOps engineers to harden their cloud infrastructure before a crucial partner audit in less than a month.',
     whatWeDid:
-      'Eficens deployed 2 senior Cloud & Security engineers with healthcare experience. They remediated 34 infrastructure gaps, enabling the startup to pass the HIPAA audit with zero non-conformances.',
+      'Syntera deployed 2 senior Cloud & Security engineers with healthcare experience. They remediated 34 infrastructure gaps, enabling the startup to pass the HIPAA audit with zero non-conformances.',
   },
 ];
 
@@ -669,7 +669,7 @@ const RESOURCES = [
     body: 'Headcount cost isn’t just salary. When you factor in recruitment fees, onboarding delay, overhead, and severance risk, the total cost model changes dramatically.',
     img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80',
     color: '#2F80ED',
-    link: 'https://www.eficens.ai/resources/staffing-augmentation-vs-fte-cost-model',
+    link: 'https://www.Syntera.ai/resources/staffing-augmentation-vs-fte-cost-model',
   },
   {
     cat: 'Talent Vetting',
@@ -679,7 +679,7 @@ const RESOURCES = [
     body: 'Resume screening and LeetCode questions miss real-world execution ability. Here’s the 4-stage practical assessment matrix we use to evaluate senior engineers.',
     img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=700&q=80',
     color: '#1E5DB8',
-    link: 'https://www.eficens.ai/resources/staffing-4-stage-assessment-matrix',
+    link: 'https://www.Syntera.ai/resources/staffing-4-stage-assessment-matrix',
   },
   {
     cat: 'Team Culture',
@@ -689,7 +689,7 @@ const RESOURCES = [
     body: 'Contract engineers succeed or fail based on onboarding clarity. Here are 5 lightweight practices that get augmented engineers making pull requests on Day 2.',
     img: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80',
     color: '#0EA5E9',
-    link: 'https://www.eficens.ai/resources/staffing-integrating-embedded-engineers',
+    link: 'https://www.Syntera.ai/resources/staffing-integrating-embedded-engineers',
   },
 ];
 
@@ -709,7 +709,7 @@ function ResourcesSection() {
               Further Reading
             </h2>
           </div>
-          <a href="https://www.eficens.ai/resources" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.Syntera.ai/resources" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider pb-1 transition-all duration-200 whitespace-nowrap"
             style={{ color: '#2F80ED', borderBottom: '2px solid #2F80ED', textDecoration: 'none' }}>
             View all resources <ArrowRight size={12} />
@@ -801,7 +801,7 @@ function FinalCTASection() {
 
 export default function StaffingPage() {
   useEffect(() => {
-    document.title = 'Scale your team without compromise | Staffing | Eficens Services';
+    document.title = 'Scale your team without compromise | Staffing | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -820,3 +820,4 @@ export default function StaffingPage() {
     </div>
   );
 }
+

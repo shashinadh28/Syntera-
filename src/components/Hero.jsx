@@ -20,7 +20,7 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className="relative overflow-hidden bg-[#F7F8FB] px-6 pb-32 pt-8 sm:pb-36 sm:pt-10 md:px-12 lg:px-16 lg:pb-40 lg:pt-12"
+      className="relative overflow-hidden bg-[#F7F8FB] px-6 pb-32 pt-16 sm:pb-36 sm:pt-20 md:px-12 lg:px-16 lg:pb-40 lg:pt-24"
     >
       {/* ── 1. FAINT WORLD-MAP / DOT PATTERN BACKGROUND ───────────────────────── */}
       <div
@@ -68,7 +68,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
         
         {/* ── LEFT COLUMN: Text, Buttons, Ratings & Stats ── */}
-        <div className="flex flex-col items-start text-left">
+        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           
           {/* Eyebrow Pill Badge */}
           <motion.div
@@ -76,7 +76,7 @@ export default function Hero() {
             variants={item}
             initial="hidden"
             animate="visible"
-            className="mb-4 inline-flex items-center gap-2.5 rounded-full border border-[#d7ddf0] bg-white py-1.5 pl-2 pr-4 text-xs sm:text-sm font-semibold text-[#0b1b3f] shadow-[0_2px_8px_-2px_rgba(11,27,63,0.08)]"
+            className="mb-4 inline-flex items-center gap-2.5 rounded-full border border-[#d7ddf0] bg-white py-1.5 pl-2 pr-4 text-xs sm:text-sm font-semibold text-[#0b1b3f] shadow-[0_2px_8px_-2px_rgba(11,27,63,0.08)] mx-auto lg:mx-0"
           >
             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2f5fe0] text-xs text-white">
               👥
@@ -90,7 +90,7 @@ export default function Hero() {
             variants={item}
             initial="hidden"
             animate="visible"
-            className="mb-4 font-display text-4xl sm:text-5xl lg:text-[50px] font-extrabold leading-[1.1] tracking-tight text-[#0b1b3f]"
+            className="mb-4 font-display text-4xl sm:text-5xl lg:text-[50px] font-extrabold leading-[1.1] tracking-tight text-[#0b1b3f] text-center lg:text-left"
           >
             Where Talent Meets <br />
             <span className="text-[#2f5fe0]">Technology.</span>
@@ -102,7 +102,7 @@ export default function Hero() {
             variants={item}
             initial="hidden"
             animate="visible"
-            className="mb-4 max-w-[500px] text-base leading-relaxed text-[#5b6478] sm:text-lg"
+            className="mb-4 max-w-[500px] text-base leading-relaxed text-[#5b6478] sm:text-lg text-center lg:text-left mx-auto lg:mx-0"
           >
             Connecting exceptional talent, innovative technology, and ambitious businesses to build what’s next.
           </motion.p>
@@ -113,7 +113,7 @@ export default function Hero() {
             variants={item}
             initial="hidden"
             animate="visible"
-            className="mb-6 text-xs sm:text-sm font-medium text-[#5b6478]/90 border-l-2 border-[#2f5fe0] pl-3 leading-relaxed max-w-[480px]"
+            className="mb-6 text-xs sm:text-sm font-medium text-[#5b6478]/90 border-l-2 lg:border-l-2 border-t-2 lg:border-t-0 border-[#2f5fe0] pl-3 lg:pl-3 pt-3 lg:pt-0 leading-relaxed max-w-[480px] text-center lg:text-left mx-auto lg:mx-0"
           >
             Let’s build what’s next, together. Trusted by enterprise organizations across the U.S. and globally.
           </motion.p>
@@ -124,7 +124,7 @@ export default function Hero() {
             variants={item}
             initial="hidden"
             animate="visible"
-            className="mb-7 flex flex-wrap gap-4"
+            className="mb-7 flex flex-wrap gap-4 justify-center lg:justify-start"
           >
             <a
               href="#contact"
@@ -151,10 +151,10 @@ export default function Hero() {
             className="w-full"
           >
             <div className="mb-6">
-              <span className="mb-2 block text-xs font-bold uppercase tracking-wider text-[#5b6478]">
+              <span className="mb-2 block text-xs font-bold uppercase tracking-wider text-[#5b6478] text-center lg:text-left">
                 Trusted By Our Clients
               </span>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div className="flex gap-1 text-lg leading-none text-[#2f5fe0]">
                   <span>★</span>
                   <span>★</span>
@@ -170,7 +170,7 @@ export default function Hero() {
             </div>
 
             {/* 4 Stats Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-5 border-t border-slate-200/90 w-full">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-5 border-t border-slate-200/90 w-full text-center lg:text-left">
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-[#0b1b3f]">500+</div>
                 <div className="text-xs text-[#5b6478] font-semibold mt-0.5">Talent Engagements</div>

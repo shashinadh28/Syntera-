@@ -117,58 +117,48 @@ export default function Navbar() {
     dropdownTimeout.current = setTimeout(() => setDropdownOpen(null), 150);
   };
 
-  const isVisible = scrolled || forceWhite || open;
-
   return (
     <motion.header
-      initial={{ y: -40, opacity: 0 }}
-      animate={isVisible ? { y: 0, opacity: 1 } : { y: -30, opacity: 0 }}
-      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      initial={{ y: 0, opacity: 1 }}
+      animate={{ y: 0, opacity: 1 }}
       style={{
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
         zIndex: 50,
-        pointerEvents: isVisible ? 'auto' : 'none',
-        background: 'rgba(255,255,255,0.98)',
+        pointerEvents: 'auto',
+        background: scrolled || open ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.95)',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
-        borderBottom: '1px solid rgba(15,23,42,0.08)',
-        boxShadow: '0 4px 24px rgba(15,23,42,0.08)',
-        paddingTop: '12px',
-        paddingBottom: '12px',
-        transition: 'background 0.3s ease, padding 0.3s ease, opacity 0.3s ease, transform 0.3s ease',
+        borderBottom: scrolled || open ? '1px solid rgba(15,23,42,0.09)' : '1px solid rgba(15,23,42,0.05)',
+        boxShadow: scrolled || open ? '0 4px 24px rgba(15,23,42,0.08)' : '0 1px 3px rgba(15,23,42,0.03)',
+        paddingTop: '10px',
+        paddingBottom: '10px',
+        transition: 'background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
       }}
     >
       <nav
-        className="nav-inner"
+        className="nav-inner mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8"
         style={{
           maxWidth: '1280px',
-          margin: '0 auto',
-          paddingLeft: '2rem',
-          paddingRight: '2rem',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
         }}
       >
         {/* Logo */}
-        <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <Link
+          to="/"
+          onClick={() => { setOpen(false); window.scrollTo(0, 0); }}
+          style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}
+        >
           <img
             src="/LOGO/new/Syntera-LOGO.webp"
             alt="Syntera Consulting"
-            style={{
-              height: '38px',
-              width: 'auto',
-              objectFit: 'contain',
-              transition: 'all 0.3s ease',
-            }}
+            className="nav-logo h-8 sm:h-9 md:h-10 w-auto object-contain transition-all duration-300"
           />
         </Link>
 
         {/* Desktop Nav Links */}
-        <ul className="nav-desktop-links" style={{ display: 'flex', alignItems: 'center', gap: '4px', listStyle: 'none', margin: 0, padding: 0 }}>
+        <ul className="nav-desktop-links hidden lg:flex items-center gap-1 list-none m-0 p-0">
           {NAV_LINKS.map((link) => (
             <li
               key={link.label}
@@ -184,8 +174,8 @@ export default function Navbar() {
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '4px',
-                    padding: '8px 14px',
-                    fontSize: '14px',
+                    padding: '8px 12px',
+                    fontSize: '13.5px',
                     fontWeight: 600,
                     color: '#0F172A',
                     borderRadius: '8px',
@@ -205,8 +195,8 @@ export default function Navbar() {
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '4px',
-                    padding: '8px 14px',
-                    fontSize: '14px',
+                    padding: '8px 12px',
+                    fontSize: '13.5px',
                     fontWeight: 600,
                     color: '#0F172A',
                     background: 'none',
@@ -242,8 +232,8 @@ export default function Navbar() {
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '4px',
-                    padding: '8px 14px',
-                    fontSize: '14px',
+                    padding: '8px 12px',
+                    fontSize: '13.5px',
                     fontWeight: 600,
                     color: '#0F172A',
                     borderRadius: '8px',
@@ -344,12 +334,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Contact Us CTA Button */}
-        <div className="nav-desktop-links" style={{ display: 'flex', alignItems: 'center' }}>
+        {/* Desktop Contact Us CTA Button */}
+        <div className="nav-desktop-contact-btn hidden lg:flex items-center">
           <Link
             to="/contact"
             onClick={() => window.scrollTo(0, 0)}
-            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300"
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 shadow-sm"
             style={{
               backgroundColor: '#2F80ED',
               boxShadow: '0 4px 16px rgba(47,128,237,0.35)',
@@ -369,18 +359,11 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="nav-mobile-toggle"
-          aria-label="Toggle navigation"
-          style={{
-            display: 'none',
-            background: 'none',
-            border: 'none',
-            color: '#0F172A',
-            cursor: 'pointer',
-            padding: '8px',
-          }}
+          className="nav-mobile-toggle inline-flex lg:hidden items-center justify-center p-2 rounded-xl text-slate-800 hover:text-[#2F80ED] hover:bg-blue-50/80 transition-colors focus:outline-none"
+          aria-label="Toggle navigation menu"
+          aria-expanded={open}
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
             {open ? (
               <path d="M18 6L6 18M6 6l12 12" />
             ) : (
@@ -397,106 +380,75 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            className="mobile-menu-panel lg:hidden bg-white border-t border-slate-100 shadow-xl overflow-hidden"
             style={{
-              background: '#FFFFFF',
-              borderBottom: '1px solid #E2E8F0',
-              overflow: 'hidden',
-              paddingLeft: '2rem',
-              paddingRight: '2rem',
-              paddingTop: '1rem',
-              paddingBottom: '1.5rem',
+              maxHeight: 'calc(100vh - 65px)',
+              overflowY: 'auto',
             }}
           >
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div className="px-5 py-4 flex flex-col gap-1">
               {NAV_LINKS.map((link) => (
-                <div key={link.label}>
+                <div key={link.label} className="border-b border-slate-100/70 last:border-b-0 pb-1">
                   {link.dropdown ? (
                     <div>
                       <button
                         type="button"
                         onClick={() => setMobileDropdownOpen(mobileDropdownOpen === link.label ? null : link.label)}
-                        style={{
-                          width: '100%',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          padding: '10px 0',
-                          fontSize: '15px',
-                          fontWeight: 600,
-                          color: '#0F172A',
-                          background: 'none',
-                          border: 'none',
-                          cursor: 'pointer',
-                        }}
+                        className="w-full flex items-center justify-between py-3 text-[15px] font-bold text-slate-800 hover:text-[#2F80ED] transition-colors"
                       >
-                        {link.label}
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2.5"
+                        <span>{link.label}</span>
+                        <div
+                          className="w-7 h-7 rounded-lg bg-slate-50 flex items-center justify-center text-slate-500 transition-transform duration-200"
                           style={{
                             transform: mobileDropdownOpen === link.label ? 'rotate(180deg)' : 'rotate(0deg)',
-                            transition: 'transform 0.2s ease',
                           }}
                         >
-                          <polyline points="6 9 12 15 18 9" />
-                        </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                            <polyline points="6 9 12 15 18 9" />
+                          </svg>
+                        </div>
                       </button>
 
-                      {mobileDropdownOpen === link.label && (
-                        <div style={{ paddingLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '6px', paddingTop: '4px', paddingBottom: '8px' }}>
-                          {link.dropdown.map((sub) =>
-                            sub.isRoute ? (
-                              <Link
-                                key={sub.label}
-                                to={sub.href}
-                                onClick={() => { setOpen(false); window.scrollTo(0, 0); }}
-                                style={{
-                                  padding: '6px 0',
-                                  fontSize: '14px',
-                                  fontWeight: 500,
-                                  color: '#475569',
-                                  textDecoration: 'none',
-                                }}
-                              >
-                                {sub.label}
-                              </Link>
-                            ) : (
-                              <a
-                                key={sub.label}
-                                href={sub.href}
-                                onClick={(e) => handleAnchorNav(e, sub.href)}
-                                style={{
-                                  padding: '6px 0',
-                                  fontSize: '14px',
-                                  fontWeight: 500,
-                                  color: '#475569',
-                                  textDecoration: 'none',
-                                }}
-                              >
-                                {sub.label}
-                              </a>
-                            )
-                          )}
-                        </div>
-                      )}
+                      <AnimatePresence>
+                        {mobileDropdownOpen === link.label && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="pl-3 pr-1 pb-3 flex flex-col gap-1 overflow-hidden"
+                          >
+                            {link.dropdown.map((sub) =>
+                              sub.isRoute ? (
+                                <Link
+                                  key={sub.label}
+                                  to={sub.href}
+                                  onClick={() => { setOpen(false); window.scrollTo(0, 0); }}
+                                  className="py-2 px-3 rounded-lg text-[13.5px] font-semibold text-slate-600 hover:text-[#2F80ED] hover:bg-blue-50/60 transition-colors"
+                                >
+                                  {sub.label}
+                                </Link>
+                              ) : (
+                                <a
+                                  key={sub.label}
+                                  href={sub.href}
+                                  onClick={(e) => handleAnchorNav(e, sub.href)}
+                                  className="py-2 px-3 rounded-lg text-[13.5px] font-semibold text-slate-600 hover:text-[#2F80ED] hover:bg-blue-50/60 transition-colors"
+                                >
+                                  {sub.label}
+                                </a>
+                              )
+                            )}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     </div>
                   ) : link.isRoute ? (
                     <Link
                       to={link.href}
                       onClick={() => { setOpen(false); window.scrollTo(0, 0); }}
-                      style={{
-                        display: 'block',
-                        padding: '10px 0',
-                        fontSize: '15px',
-                        fontWeight: 600,
-                        color: '#0F172A',
-                        textDecoration: 'none',
-                      }}
+                      className="block py-3 text-[15px] font-bold text-slate-800 hover:text-[#2F80ED] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -504,14 +456,7 @@ export default function Navbar() {
                     <a
                       href={link.href}
                       onClick={(e) => handleAnchorNav(e, link.href)}
-                      style={{
-                        display: 'block',
-                        padding: '10px 0',
-                        fontSize: '15px',
-                        fontWeight: 600,
-                        color: '#0F172A',
-                        textDecoration: 'none',
-                      }}
+                      className="block py-3 text-[15px] font-bold text-slate-800 hover:text-[#2F80ED] transition-colors"
                     >
                       {link.label}
                     </a>
@@ -519,11 +464,12 @@ export default function Navbar() {
                 </div>
               ))}
 
-              <div style={{ paddingTop: '1rem' }}>
+              {/* Mobile Contact Button */}
+              <div className="pt-4 pb-2">
                 <Link
                   to="/contact"
                   onClick={() => { setOpen(false); window.scrollTo(0, 0); }}
-                  className="w-full inline-flex items-center justify-center gap-2 rounded-full py-3 text-sm font-bold uppercase tracking-wider text-white"
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-full py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-md transition-all active:scale-[0.98]"
                   style={{
                     backgroundColor: '#2F80ED',
                     boxShadow: '0 4px 16px rgba(47,128,237,0.35)',
@@ -531,6 +477,9 @@ export default function Navbar() {
                   }}
                 >
                   Contact Us
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+                  </svg>
                 </Link>
               </div>
             </div>

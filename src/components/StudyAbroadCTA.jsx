@@ -87,7 +87,7 @@ export default function StudyAbroadCTA() {
 
           <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center p-8 sm:p-12 lg:p-16">
             {/* LEFT — Text */}
-            <RevealGroup staggerChildren={0.16} className="lg:col-span-7">
+            <RevealGroup staggerChildren={0.16} className="study-abroad-text lg:col-span-7 flex flex-col items-center text-center lg:items-start lg:text-left">
               <motion.span
                 variants={fadeUpSmall}
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-white"
@@ -95,7 +95,7 @@ export default function StudyAbroadCTA() {
                 <GlobeIcon /> Syntera Consulting Academy
               </motion.span>
 
-              <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.05] tracking-tightest text-white">
+              <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.05] tracking-tightest text-white text-center lg:text-left">
                 <RevealText
                   text="Study Abroad"
                   staggerChildren={0.08}
@@ -111,7 +111,7 @@ export default function StudyAbroadCTA() {
 
               <motion.p
                 variants={fadeUpSmall}
-                className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-white/85"
+                className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-white/85 text-center lg:text-left mx-auto lg:mx-0"
               >
                 Explore a realm of educational opportunities alongside Syntera Consulting, your committed
                 ally in Study Abroad services. Our proficient team leads you through each phase,

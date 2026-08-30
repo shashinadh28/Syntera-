@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+﻿import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, animate } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { viewportOnce } from '../utils/motion.js';
@@ -85,7 +85,7 @@ function HeroSection() {
               style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}
             >
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-pulse" />
-              Eficens Services
+              Syntera Consulting
             </motion.span>
 
             <motion.h1
@@ -217,7 +217,7 @@ function WhatWeDoSection() {
 
           <div className="lg:col-span-7 space-y-4">
             <p className="text-base sm:text-lg leading-relaxed text-slate-600">
-              Eficens&apos; app development practice takes ownership of the entire build lifecycle — from discovery and architecture through delivery, testing, and post-launch support. We work in close partnership with your stakeholders to translate business requirements into robust, scalable software.
+              Syntera&apos; app development practice takes ownership of the entire build lifecycle — from discovery and architecture through delivery, testing, and post-launch support. We work in close partnership with your stakeholders to translate business requirements into robust, scalable software.
             </p>
             <p className="text-base leading-relaxed text-slate-500">
               Our engineers follow opinionated engineering standards (CI/CD, code review, automated testing) so that what gets shipped stays maintainable for years.
@@ -447,7 +447,7 @@ const CASE_STUDIES = [
     challenge:
       'A payments startup needed a real-time transaction dashboard handling 10,000 concurrent users, with a hard deadline tied to a Series A investor demo.',
     whatWeDid:
-      'Eficens delivered a React + Node.js platform in 7 weeks — two weeks ahead of deadline. The demo closed the round. The platform now processes $2B+ in annualised transaction volume.',
+      'Syntera delivered a React + Node.js platform in 7 weeks — two weeks ahead of deadline. The demo closed the round. The platform now processes $2B+ in annualised transaction volume.',
   },
   {
     industry: 'Healthcare',
@@ -457,7 +457,7 @@ const CASE_STUDIES = [
     challenge:
       'A regional hospital network needed a cross-platform patient portal (web + iOS + Android) to reduce missed appointments and manual scheduling overhead.',
     whatWeDid:
-      'Eficens built and launched the portal in 10 weeks. Appointment no-shows dropped 34% within 90 days, saving the network an estimated $1.2M annually in administrative costs.',
+      'Syntera built and launched the portal in 10 weeks. Appointment no-shows dropped 34% within 90 days, saving the network an estimated $1.2M annually in administrative costs.',
   },
   {
     industry: 'Retail / E-commerce',
@@ -467,7 +467,7 @@ const CASE_STUDIES = [
     challenge:
       'A national retailer was running a 10-year-old Java monolith that released once per quarter — making it impossible to respond to market changes or competitor moves.',
     whatWeDid:
-      'Eficens migrated the platform to a microservices architecture over 6 months using strangler-fig migration to keep the existing system live. Release cycles dropped from 12 weeks to under 2 weeks.',
+      'Syntera migrated the platform to a microservices architecture over 6 months using strangler-fig migration to keep the existing system live. Release cycles dropped from 12 weeks to under 2 weeks.',
   },
 ];
 
@@ -668,7 +668,7 @@ const RESOURCES = [
     body: 'The CRM records what happened. Signal-led outbound decides what happens next—before a prospect ever enters the funnel. This is the pre-CRM execution layer, and it’s where pipeline is actually created.',
     img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80',
     color: '#2F80ED',
-    link: 'https://www.eficens.ai/resources/signal-led-outbound-pre-crm-execution',
+    link: 'https://www.Syntera.ai/resources/signal-led-outbound-pre-crm-execution',
   },
   {
     cat: 'Revenue Operations',
@@ -678,7 +678,7 @@ const RESOURCES = [
     body: 'A prospect who fits your ICP perfectly but isn’t in-market right now is not a sales opportunity—they’re a future opportunity being mismanaged. Static lists confuse relevance with intent, and it’s costing teams millions in wasted outreach.',
     img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80',
     color: '#1E5DB8',
-    link: 'https://www.eficens.ai/resources/intent-vs-relevance-static-lists',
+    link: 'https://www.Syntera.ai/resources/intent-vs-relevance-static-lists',
   },
   {
     cat: 'Productivity',
@@ -688,7 +688,7 @@ const RESOURCES = [
     body: 'The SDR bottleneck is not a headcount problem—it is a research problem. Autonomous signal interpretation removes 80% of the pre-outreach research burden, allowing a single SDR to work the pipeline of ten.',
     img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80',
     color: '#0EA5E9',
-    link: 'https://www.eficens.ai/resources/10x-sdr-productivity-signal-interpretation',
+    link: 'https://www.Syntera.ai/resources/10x-sdr-productivity-signal-interpretation',
   },
 ];
 
@@ -708,7 +708,7 @@ function ResourcesSection() {
               Further Reading
             </h2>
           </div>
-          <a href="https://www.eficens.ai/resources" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.Syntera.ai/resources" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider pb-1 transition-all duration-200 whitespace-nowrap"
             style={{ color: '#2F80ED', borderBottom: '2px solid #2F80ED', textDecoration: 'none' }}>
             View all resources <ArrowRight size={12} />
@@ -800,7 +800,7 @@ function FinalCTASection() {
 
 export default function AppDevelopmentPage() {
   useEffect(() => {
-    document.title = 'Software built to last | App Development | Eficens Services';
+    document.title = 'Software built to last | App Development | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -819,3 +819,4 @@ export default function AppDevelopmentPage() {
     </div>
   );
 }
+

@@ -110,7 +110,7 @@ export default function FinalCTA() {
         <div className="finalcta-grid grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
           {/* ── LEFT: Steps ───────────────────────────────────── */}
-          <div className="finalcta-left">
+          <div className="finalcta-left flex flex-col items-center text-center lg:items-start lg:text-left">
             {/* Badge */}
             <motion.span
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -125,7 +125,7 @@ export default function FinalCTA() {
             <motion.h2
               initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={viewportOnce} transition={{ duration: 0.85, ease, delay: 0.08 }}
-              className="font-display text-4xl sm:text-5xl font-extrabold leading-[1.05] tracking-tight text-white mb-5"
+              className="font-display text-4xl sm:text-5xl font-extrabold leading-[1.05] tracking-tight text-white mb-5 text-center lg:text-left"
             >
               Tell us what you are building.{' '}
               <span style={{ color: '#1565D8' }}>We will respond within 24 hours.</span>
@@ -134,7 +134,7 @@ export default function FinalCTA() {
             <motion.p
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={viewportOnce} transition={{ duration: 0.7, ease, delay: 0.16 }}
-              className="text-base leading-[1.8] max-w-md mb-10"
+              className="text-base leading-[1.8] max-w-md mb-10 text-center lg:text-left mx-auto lg:mx-0"
               style={{ color: 'rgba(255,255,255,0.55)' }}
             >
               Whether you need an IAM architect, an AI engineering team, or a technology delivery partner — share the details and we will come back with a tailored plan.

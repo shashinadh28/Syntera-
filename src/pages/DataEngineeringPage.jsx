@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+﻿import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useInView, useMotionValue, animate } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { viewportOnce } from '../utils/motion.js';
@@ -85,7 +85,7 @@ function HeroSection() {
               style={{ border: '1px solid rgba(47,128,237,0.35)', background: 'rgba(47,128,237,0.1)', color: '#2F80ED' }}
             >
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-pulse" />
-              Eficens Services
+              Syntera Consulting
             </motion.span>
 
             <motion.h1
@@ -217,7 +217,7 @@ function WhatWeDoSection() {
 
           <div className="lg:col-span-7 space-y-4">
             <p className="text-base sm:text-lg leading-relaxed text-slate-600">
-              Eficens&apos; Data Engineering practice designs and builds the data infrastructure that organisations need to move from raw events to business intelligence. We work across the modern data stack — ingestion, transformation, orchestration, and delivery — implementing pipelines that are observable, testable, and maintainable.
+              Syntera&apos; Data Engineering practice designs and builds the data infrastructure that organisations need to move from raw events to business intelligence. We work across the modern data stack — ingestion, transformation, orchestration, and delivery — implementing pipelines that are observable, testable, and maintainable.
             </p>
             <p className="text-base leading-relaxed text-slate-500">
               Whether you&apos;re starting from scratch with a greenfield data platform or untangling an existing spaghetti of scripts and ETLs, our engineers bring structure, documentation, and best practices that make your data a reliable asset rather than a liability.
@@ -447,7 +447,7 @@ const CASE_STUDIES = [
     challenge:
       'A 3PL provider needed real-time visibility across 14 carrier APIs and 3 warehouse systems — their batch ETL ran nightly, making same-day operational decisions impossible.',
     whatWeDid:
-      'Eficens built a Kafka-based streaming pipeline processing 2.2M events per day with sub-5-second latency. Operations teams can now re-route shipments in real time, reducing late deliveries by 28%.',
+      'Syntera built a Kafka-based streaming pipeline processing 2.2M events per day with sub-5-second latency. Operations teams can now re-route shipments in real time, reducing late deliveries by 28%.',
   },
   {
     industry: 'Healthcare',
@@ -457,7 +457,7 @@ const CASE_STUDIES = [
     challenge:
       'A healthcare platform’s reporting queries took up to 45 minutes on a legacy PostgreSQL instance, causing timeouts for enterprise clients trying to generate compliance reports.',
     whatWeDid:
-      'Eficens migrated the data warehouse to Snowflake with dbt modeling and dimensional schemas. Query execution dropped from 45 minutes to under 3 seconds — a 900× performance gain.',
+      'Syntera migrated the data warehouse to Snowflake with dbt modeling and dimensional schemas. Query execution dropped from 45 minutes to under 3 seconds — a 900× performance gain.',
   },
   {
     industry: 'Financial Services',
@@ -467,7 +467,7 @@ const CASE_STUDIES = [
     challenge:
       'A fintech startup had two full-time data engineers manually fixing broken scripts and reconciling data discrepancies every week instead of building new data capabilities.',
     whatWeDid:
-      'Eficens implemented Great Expectations data testing, Airflow DAG alerting, and automated schema migration pipelines. Data pipeline failures dropped 92%, freeing the team to focus on new features.',
+      'Syntera implemented Great Expectations data testing, Airflow DAG alerting, and automated schema migration pipelines. Data pipeline failures dropped 92%, freeing the team to focus on new features.',
   },
 ];
 
@@ -668,7 +668,7 @@ const RESOURCES = [
     body: 'The shift from traditional ETL to dbt-based in-warehouse ELT isn’t just a tech trend—it’s an operational change that makes data teams 5× faster.',
     img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80',
     color: '#2F80ED',
-    link: 'https://www.eficens.ai/resources/data-engineering-elt-vs-etl',
+    link: 'https://www.Syntera.ai/resources/data-engineering-elt-vs-etl',
   },
   {
     cat: 'Real-Time Data',
@@ -678,7 +678,7 @@ const RESOURCES = [
     body: 'Moving from nightly batch jobs to real-time event streaming with Kafka requires a fundamental rethink of schema design, state management, and error handling.',
     img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=700&q=80',
     color: '#1E5DB8',
-    link: 'https://www.eficens.ai/resources/data-engineering-batch-to-streaming',
+    link: 'https://www.Syntera.ai/resources/data-engineering-batch-to-streaming',
   },
   {
     cat: 'Data Quality',
@@ -688,7 +688,7 @@ const RESOURCES = [
     body: 'Silent data corruption is worse than a broken pipeline. Here’s how automated freshness, volume, and distribution testing protects downstream analytics.',
     img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80',
     color: '#0EA5E9',
-    link: 'https://www.eficens.ai/resources/data-engineering-observability',
+    link: 'https://www.Syntera.ai/resources/data-engineering-observability',
   },
 ];
 
@@ -708,7 +708,7 @@ function ResourcesSection() {
               Further Reading
             </h2>
           </div>
-          <a href="https://www.eficens.ai/resources" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.Syntera.ai/resources" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider pb-1 transition-all duration-200 whitespace-nowrap"
             style={{ color: '#2F80ED', borderBottom: '2px solid #2F80ED', textDecoration: 'none' }}>
             View all resources <ArrowRight size={12} />
@@ -800,7 +800,7 @@ function FinalCTASection() {
 
 export default function DataEngineeringPage() {
   useEffect(() => {
-    document.title = 'Data infrastructure that your team trusts | Data Engineering | Eficens Services';
+    document.title = 'Data infrastructure that your team trusts | Data Engineering | Syntera Consulting';
     window.scrollTo(0, 0);
   }, []);
 
@@ -819,3 +819,4 @@ export default function DataEngineeringPage() {
     </div>
   );
 }
+

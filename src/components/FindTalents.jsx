@@ -49,7 +49,7 @@ export default function FindTalents() {
         <div className="find-talents-grid grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* ── LEFT: Content ───────────────────────────────────── */}
-          <div className="find-talents-text-col">
+          <div className="find-talents-text-col flex flex-col items-center text-center lg:items-start lg:text-left">
             {/* Badge */}
             <motion.span
               initial={{ opacity: 0, scale: 0.9 }}

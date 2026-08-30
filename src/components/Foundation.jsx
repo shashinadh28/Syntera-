@@ -115,7 +115,7 @@ export default function Foundation() {
         </motion.div>
 
         {/* RIGHT — Text */}
-        <RevealGroup staggerChildren={0.16} className="lg:col-span-6">
+        <RevealGroup staggerChildren={0.16} className="lg:col-span-6 foundation-text-right flex flex-col items-center text-center lg:items-start lg:text-left">
           <motion.span
             variants={fadeUpSmall}
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-brand-200"
@@ -124,7 +124,7 @@ export default function Foundation() {
             Foundation
           </motion.span>
 
-          <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.08] tracking-tightest text-white">
+          <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.08] tracking-tightest text-white text-center lg:text-left">
             <RevealText text="The" staggerChildren={0.08} className="inline-block" />{' '}
             <RevealText
               text="Syntera Consulting Foundation"
@@ -136,7 +136,7 @@ export default function Foundation() {
 
           <motion.p
             variants={fadeUpSmall}
-            className="mt-6 text-base sm:text-lg leading-relaxed text-white/70 max-w-xl"
+            className="mt-6 text-base sm:text-lg leading-relaxed text-white/70 max-w-xl text-center lg:text-left mx-auto lg:mx-0"
           >
             At Syntera Consulting, our mission is clear: we are dedicated to changing lives every single day.
             With unwavering commitment and compassion, we strive to make a tangible difference in
@@ -148,7 +148,7 @@ export default function Foundation() {
               hidden: {},
               visible: { transition: { staggerChildren: 0.12, delayChildren: 0.15 } },
             }}
-            className="mt-9 grid grid-cols-3 gap-4 max-w-md"
+            className="mt-9 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0"
           >
             {STATS.map((s) => (
               <StatTile key={s.label} {...s} />
