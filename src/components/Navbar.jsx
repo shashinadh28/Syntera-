@@ -417,7 +417,7 @@ export default function Navbar() {
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.2 }}
-                            className="pl-3 pr-1 pb-3 flex flex-col gap-1 overflow-hidden"
+                            className="pl-2 pr-1 pb-3 grid grid-cols-2 gap-x-2 gap-y-0.5 overflow-hidden"
                           >
                             {link.dropdown.map((sub) =>
                               sub.isRoute ? (

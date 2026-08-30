@@ -1,50 +1,19 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { RevealGroup } from './Reveal.jsx';
 import { fadeUp, fadeUpSmall, viewportOnce } from '../utils/motion';
 
-const QUICK_LINKS = [
-  { label: 'Home', href: '/', isRoute: true },
-  { label: 'AI & IAM', href: '#ai-iam' },
-  { label: 'Services', href: '#services' },
-  { label: 'Industries', href: '#industries' },
-  { label: 'Success Stories', href: '#stories' },
-  { label: 'Insights', href: '#insights' },
-  { label: 'Careers', href: '#careers' },
-  { label: 'Contact', href: '#contact' },
+const RESOURCES = [
+  { label: 'Contact Us', href: '/contact', isRoute: true },
+  { label: 'Syntera Careers', href: '/syntera-careers', isRoute: true },
+  { label: 'Labor Condition Applications', href: '/labor-condition-applications', isRoute: true },
+  { label: 'Technology Partnerships', href: '/partnerships', isRoute: true },
 ];
 
-const SERVICES = [
-  { label: 'Agentic AI', href: '/agentic-ai', isRoute: true },
-  { label: 'AI Implementation', href: '/artificial-intelligence', isRoute: true },
-  { label: 'IAM Solutions', href: '#iam' },
-  { label: 'Data & Cloud', href: '/technology-services', isRoute: true },
-  { label: 'Talent Solutions', href: '/talent-solutions', isRoute: true },
-  { label: 'Pricing & Revenue', href: '/pricing-revenue-management', isRoute: true },
-  { label: 'IAM Maturity Check', href: '/iam-maturity-check', isRoute: true },
-];
-
-const US_LOCATIONS = [
-  {
-    name: 'Austin – Branch Office',
-    lines: ['2006 S Bagdad Rd, Suite 180', 'Leander, TX 78641'],
-    phones: ['913.804.7687'],
-  },
-  {
-    name: 'Denton – Corporate HQ',
-    lines: ['300 N Carroll Blvd, Suite 103', 'Denton, TX 76201'],
-    phones: ['919.607.2143', '913.804.7687'],
-  },
-  {
-    name: 'Milpitas – Branch Office',
-    lines: ['329 Odyssey Lane', 'Milpitas, CA 95035'],
-    phones: ['669.437.1139'],
-  },
-  {
-    name: 'Fort Mill SC – Branch Office',
-    lines: ['148 Ravensara Ave', 'Fort Mill, SC 29715'],
-    phones: ['424.242.4567'],
-  },
+const POLICIES = [
+  { label: '1095-C Request', href: '/1095-c-request', isRoute: true },
+  { label: 'Low Voltage and Security Licensing', href: '/low-voltage-security-licensing', isRoute: true },
+  { label: 'Mandatory Notices', href: '/mandatory-notices', isRoute: true },
 ];
 
 const SOCIALS = [
@@ -65,26 +34,51 @@ const SOCIALS = [
   },
 ];
 
+function FooterLink({ item }) {
+  if (item.isRoute) {
+    return (
+      <Link
+        to={item.href}
+        onClick={() => window.scrollTo(0, 0)}
+        className="group inline-flex items-center text-sm text-white/70 transition-colors hover:text-white"
+      >
+        <span className="relative">
+          {item.label}
+          <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-accent-400 transition-all group-hover:w-full" />
+        </span>
+      </Link>
+    );
+  }
+  return (
+    <a href={item.href} className="group inline-flex items-center text-sm text-white/70 transition-colors hover:text-white">
+      <span className="relative">
+        {item.label}
+        <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-accent-400 transition-all group-hover:w-full" />
+      </span>
+    </a>
+  );
+}
+
 export default function Footer() {
   return (
     <footer
       className="relative overflow-hidden"
       style={{ backgroundColor: '#0B1120', borderTop: '1px solid rgba(255,255,255,0.08)' }}
     >
-      {/* Subtle glow accent */}
+      {/* Subtle glow */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[400px] w-[800px] rounded-full bg-accent-500/5 blur-[120px]" />
       </div>
 
-      <div className="mx-auto max-w-page container-px py-16 sm:py-12">
-        {/* ── ROW 1: Company Info + Quick Links + Services ── */}
+      <div className="mx-auto max-w-page container-px py-14 sm:py-16">
+        {/* ── MAIN ROW ── */}
         <RevealGroup
           staggerChildren={0.12}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10"
         >
           {/* Company Info */}
-          <motion.div variants={fadeUp}>
-            <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <motion.div variants={fadeUp} className="footer-company-col lg:col-span-2">
+            <Link to="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
               <img
                 src="/LOGO/new/Syntera-LOGO.webp"
                 alt="Syntera Consulting"
@@ -95,188 +89,58 @@ export default function Footer() {
               Your growth is our progress
             </p>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Where Talent Meets Technology.
+              A new world of opportunity awaits. We stand ready to partner side by side with you — developing solutions that transform your technology stack, your business, and your workforce. Where Talent Meets Technology.
             </p>
 
-            <div className="mt-6 text-sm text-white/65 space-y-1">
-              <p className="font-semibold text-white/90">Head Office:</p>
-              <p>300 N Carroll Blvd, Suite 103</p>
-              <p>Denton, TX 76201</p>
-              <p className="mt-2">📞 919.607.2143</p>
-              <p>📞 913.804.7687</p>
-              <p className="mt-2">
-                <a href="mailto:info@synterasolutions.com" className="hover:text-white transition-colors">
-                  📧 info@synterasolutions.com
+            {/* Contact */}
+            <div className="mt-6 text-sm text-white/65 space-y-1.5">
+              <p>
+                <a href="mailto:Info@synterainc.com" className="hover:text-white transition-colors">
+                  📧 Info@synterainc.com
                 </a>
               </p>
-            </div>
-
-            <p className="mt-6 text-xs text-white/40">
-              © 2025 Syntera Consulting All Rights Reserved.
-            </p>
-            <Link to="/privacy-policy" className="mt-1 block text-xs text-white/40 hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-          </motion.div>
-
-          {/* Quick Links */}
-          <motion.div variants={fadeUp}>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45">
-              Quick Links
-            </h4>
-            <motion.ul
-              variants={{
-                hidden: {},
-                visible: { transition: { staggerChildren: 0.06, delayChildren: 0.1 } },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              viewport={viewportOnce}
-              className="mt-5 space-y-3"
-            >
-              {QUICK_LINKS.map((l) => (
-                <motion.li key={l.label} variants={fadeUpSmall}>
-                  {l.isRoute ? (
-                    <Link
-                      to={l.href}
-                      className="group inline-flex items-center text-sm text-white/70 transition-colors hover:text-white"
-                    >
-                      <span className="relative">
-                        {l.label}
-                        <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-accent-400 transition-all group-hover:w-full" />
-                      </span>
-                    </Link>
-                  ) : (
-                    <a
-                      href={l.href}
-                      className="group inline-flex items-center text-sm text-white/70 transition-colors hover:text-white"
-                    >
-                      <span className="relative">
-                        {l.label}
-                        <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-accent-400 transition-all group-hover:w-full" />
-                      </span>
-                    </a>
-                  )}
-                </motion.li>
-              ))}
-            </motion.ul>
-          </motion.div>
-
-          {/* Services */}
-          <motion.div variants={fadeUp} className="sm:col-span-2 lg:col-span-2">
-            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45">
-              Services
-            </h4>
-            <motion.ul
-              variants={{
-                hidden: {},
-                visible: { transition: { staggerChildren: 0.04, delayChildren: 0.1 } },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              viewport={viewportOnce}
-              className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3"
-            >
-              {SERVICES.map((s) => (
-                <motion.li key={s.label} variants={fadeUpSmall}>
-                  {s.isRoute ? (
-                    <Link
-                      to={s.href}
-                      className="group inline-flex items-center text-sm text-white/70 transition-colors hover:text-white"
-                    >
-                      <span className="relative">
-                        {s.label}
-                        <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-accent-400 transition-all group-hover:w-full" />
-                      </span>
-                    </Link>
-                  ) : (
-                    <a
-                      href={s.href}
-                      className="group inline-flex items-center text-sm text-white/70 transition-colors hover:text-white"
-                    >
-                      <span className="relative">
-                        {s.label}
-                        <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-accent-400 transition-all group-hover:w-full" />
-                      </span>
-                    </a>
-                  )}
-                </motion.li>
-              ))}
-            </motion.ul>
-          </motion.div>
-        </RevealGroup>
-
-        {/* ── ROW 2: US Locations + India Location ── */}
-        <RevealGroup
-          staggerChildren={0.1}
-          delay={0.1}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 py-12 border-b border-white/10"
-        >
-          {/* US Locations heading — badge is a sibling element, NOT inside the heading text */}
-          <div className="col-span-full flex items-center gap-2">
-            <motion.span
-              variants={fadeUpSmall}
-              className="inline-flex h-5 w-7 items-center justify-center rounded-sm border border-white/15 bg-white/5 text-[10px] font-bold text-white/80"
-              aria-hidden="true"
-            >
-              US
-            </motion.span>
-            <motion.h4
-              variants={fadeUpSmall}
-              className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45"
-            >
-              Locations
-            </motion.h4>
-          </div>
-
-          {US_LOCATIONS.map((loc) => (
-            <motion.div key={loc.name} variants={fadeUp}>
-              <p className="text-sm font-semibold text-white/90">{loc.name}</p>
-              <ul className="mt-2 space-y-1 text-sm text-white/65">
-                {loc.lines.map((line, i) => (
-                  <li key={i}>{line}</li>
-                ))}
-                {loc.phones.map((phone, i) => (
-                  <li key={`p-${i}`} className="mt-1.5">📞 {phone}</li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
-
-          {/* India Location — badge is a sibling, NOT inside the heading text */}
-          <motion.div variants={fadeUp}>
-            <div className="flex items-center gap-2 mb-4">
-              <span
-                className="inline-flex h-5 w-7 items-center justify-center rounded-sm border border-white/15 bg-white/5 text-[10px] font-bold text-white/80"
-                aria-hidden="true"
-              >
-                IN
-              </span>
-              <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45">
-                India Location
-              </h4>
-            </div>
-            <p className="text-sm font-semibold text-white/90">Vijayawada, Andhra Pradesh</p>
-            <ul className="mt-2 space-y-1 text-sm text-white/65">
-              <li>D No: 5-141, Koudinya Nagar,</li>
-              <li>Penamaluru (MD), Krishna District,</li>
-              <li>Andhra Pradesh 521139</li>
-              <li className="mt-2">
-                <a href="mailto:info@synterasolutions.com" className="hover:text-white transition-colors">
-                  📧 info@synterasolutions.com
+              <p>
+                <a href="mailto:hr@synterainc.com" className="hover:text-white transition-colors">
+                  👤 HR: hr@synterainc.com
                 </a>
-              </li>
-              <li className="mt-1.5">📞 +91 8885555474</li>
+              </p>
+              <p className="mt-2 font-semibold text-white/80">Main Address:</p>
+              <p>3415 Custer Road, Suite 153</p>
+              <p>Plano, Texas 75023</p>
+            </div>
+          </motion.div>
+
+          {/* Resources */}
+          <motion.div variants={fadeUp}>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45">Resources</h4>
+            <ul className="mt-5 space-y-3">
+              {RESOURCES.map((item) => (
+                <li key={item.label}>
+                  <FooterLink item={item} />
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Policies */}
+          <motion.div variants={fadeUp}>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-white/45">Policies</h4>
+            <ul className="mt-5 space-y-3">
+              {POLICIES.map((item) => (
+                <li key={item.label}>
+                  <FooterLink item={item} />
+                </li>
+              ))}
             </ul>
           </motion.div>
         </RevealGroup>
 
-        {/* ── ROW 3: Bottom bar ── */}
+        {/* ── BOTTOM BAR ── */}
         <RevealGroup
           staggerChildren={0.1}
           className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 text-xs text-white/45"
         >
-          <motion.div variants={fadeUpSmall}>
+          <motion.div variants={fadeUpSmall} className="text-center sm:text-left">
             © 2025 Syntera Consulting | Technology &amp; Talent Solutions All Rights Reserved.
           </motion.div>
           <motion.div variants={fadeUpSmall} className="flex items-center gap-3">

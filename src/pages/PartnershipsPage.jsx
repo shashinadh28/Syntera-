@@ -283,7 +283,7 @@ export default function PartnershipsPage() {
     {
       tag: 'Success Story',
       title: 'Amazon Q Business for Sales Enablement in Banking',
-      desc: 'A leading commercial bank partnered with TEKsystems Global Services to implement Amazon Q Business, delivering fast, AI-powered answers for sales teams while maintaining compliance and security.',
+      desc: 'A leading commercial bank partnered with Syntera Consulting to implement Amazon Q Business, delivering fast, AI-powered answers for sales teams while maintaining compliance and security.',
       bgGradient: 'linear-gradient(135deg, #1E293B 0%, #0F172A 100%)',
       accentColor: '#3B82F6',
       iconText: '🏦',

@@ -56,6 +56,10 @@ import OurProcessPage from './pages/OurProcessPage.jsx';
 import SynteraCareersPage from './pages/SynteraCareersPage.jsx';
 import OurWorkPage from './pages/OurWorkPage.jsx';
 import OurWorkDetailPage from './pages/OurWorkDetailPage.jsx';
+import Form1095CPage from './pages/Form1095CPage.jsx';
+import LowVoltageLicensingPage from './pages/LowVoltageLicensingPage.jsx';
+import MandatoryNoticesPage from './pages/MandatoryNoticesPage.jsx';
+
 
 function HomePage() {
   const location = useLocation();
@@ -160,6 +164,9 @@ export default function App() {
           <Route path="/careers" element={<SynteraCareersPage />} />
           <Route path="/our-work" element={<OurWorkPage />} />
           <Route path="/our-work/:slug" element={<OurWorkDetailPage />} />
+          <Route path="/1095-c-request" element={<Form1095CPage />} />
+          <Route path="/low-voltage-security-licensing" element={<LowVoltageLicensingPage />} />
+          <Route path="/mandatory-notices" element={<MandatoryNoticesPage />} />
         </Routes>
       </div>
     </>
